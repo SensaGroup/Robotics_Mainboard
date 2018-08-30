@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EE2-5NU
+D Relay Signal 2FormC 5V 10uA DPDT Surface Mount Non-Latching Relay, 2 A, 5V dc
+K
+F http://www.kemet.com/Lists/ProductCatalog/Attachments/479/KEM_R7002_EC2_EE2.pdf
+$ENDCMP
+#
+#End Doc Library
