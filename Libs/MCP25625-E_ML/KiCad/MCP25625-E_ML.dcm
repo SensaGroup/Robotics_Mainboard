@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP25625-E_ML
+D CAN Controller with Transceiver QFN28 Microchip MCP25625-E/ML, CAN Controller, 28-Pin QFN
+K
+F http://docs-europe.electrocomponents.com/webdocs/137c/0900766b8137cddf.pdf
+$ENDCMP
+#
+#End Doc Library

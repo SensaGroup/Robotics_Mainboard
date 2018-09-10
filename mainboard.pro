@@ -1,4 +1,4 @@
-update=четвртак, 30. август 2018. 19:45:06 CEST
+update=недеља, 09. септембар 2018. 01:43:26 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -154,13 +164,4 @@ LibName122=/home/sg/Development/KicadFiles/SparkFun-KiCad-Libraries-master/Libra
 LibName123=/home/sg/Development/KicadFiles/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Aesthetics
 LibName124=/home/sg/Development/KicadFiles/arduino-kicad-library-master/arduino
 LibName125=Libs/EE2-5NU/KiCad/EE2-5NU
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName126=Libs/MCP25625-E_ML/KiCad/MCP25625-E_ML
