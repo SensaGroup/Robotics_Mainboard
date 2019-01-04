@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 1702473
+#
+DEF 1702473 J 0 40 Y Y 1 L N
+F0 "J" -200 300 50 H V L BNN
+F1 "1702473" -200 -401 50 H V L BNN
+F2 "PHOENIX_1702473" 0 0 50 H I L BNN
+F3 "277-2337-1-ND" 0 0 50 H I L BNN
+F4 "https://www.digikey.rs/product-detail/en/phoenix-contact/1702473/277-2337-1-ND/2643219?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F5 "None" 0 0 50 H I L BNN
+F6 "1702473" 0 0 50 H I L BNN
+F7 "Fixed Miniature Connectors, Spring Cage, Horizontal, SMD, 2 Pos" 0 0 50 H I L BNN
+F8 "Phoenix Contact" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -200 300 -200 -300 N
+P 2 0 0 10 -200 -300 200 -300 N
+P 2 0 0 10 200 -300 200 300 N
+P 2 0 0 10 200 300 -200 300 N
+X 1 1 -400 200 200 R 40 40 0 0 P 
+X 2 2 -400 100 200 R 40 40 0 0 P 
+X SHIELD SH1 -400 -200 200 R 40 40 0 0 P 
+X SHIELD SH2 -400 -200 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
