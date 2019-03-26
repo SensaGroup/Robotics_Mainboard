@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:mainboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1728,7 +1728,7 @@ Connection ~ 7550 7450
 Wire Wire Line
 	5950 8150 6000 8150
 $Comp
-L Bluetooth:Bluetooth_HC-05 U4
+L mainboard-rescue:Bluetooth_HC-05-Bluetooth U4
 U 1 1 5D18ACD6
 P 5650 1350
 F 0 "U4" H 5751 1937 60  0000 C CNN
@@ -3400,7 +3400,7 @@ F 3 "https://www.vishay.com/docs/88711/s1.pdf" H 4900 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 1702473:1702473 J23
+L mainboard-rescue:1702473-1702473 J23
 U 1 1 5C2AB30F
 P 11300 7500
 F 0 "J23" H 11100 7150 50  0000 L CNN
@@ -3440,7 +3440,7 @@ Wire Wire Line
 Wire Wire Line
 	12100 7700 12050 7700
 $Comp
-L 1702473:1702473 J24
+L mainboard-rescue:1702473-1702473 J24
 U 1 1 5C4121AE
 P 10000 7450
 F 0 "J24" H 9850 7100 50  0000 C CNN
@@ -3506,7 +3506,7 @@ F 3 "https://www.digikey.com/product-detail/en/diodes-incorporated/DMP2100U-7/DM
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 1702473:1702473 J25
+L mainboard-rescue:1702473-1702473 J25
 U 1 1 5C6EBC8F
 P 8750 7450
 F 0 "J25" H 8600 7100 50  0000 C CNN
@@ -3572,7 +3572,7 @@ F 3 "" H 9650 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1702473:1702473 J35
+L mainboard-rescue:1702473-1702473 J35
 U 1 1 5C886E21
 P 4250 4750
 F 0 "J35" V 4500 4550 50  0000 C CNN
@@ -3686,7 +3686,7 @@ F 3 "https://www.vishay.com/docs/88711/s1.pdf" H 6100 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 1702473:1702473 J36
+L mainboard-rescue:1702473-1702473 J36
 U 1 1 5CA93910
 P 5450 4750
 F 0 "J36" V 5700 4550 50  0000 C CNN
@@ -3840,7 +3840,7 @@ P 7350 8700
 F 0 "Y1" V 7150 8600 50  0000 L CNN
 F 1 "Crystal_GND24" V 7050 8550 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm_HandSoldering" H 7350 8700 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/ecs-inc/ECS-160-20-3X-TR/XC1776CT-ND/2676640" H 7350 8700 50  0001 C CNN
+F 3 "" H 7350 8700 50  0001 C CNN
 	1    7350 8700
 	0    1    1    0   
 $EndComp

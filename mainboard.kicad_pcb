@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.1-33cea8e~68~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(6.0.0-rc1-dev-1469-gd619da17c)")
 
   (general
     (thickness 1.6)
@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
     (user_trace_width 0.8)
@@ -55,8 +55,6 @@
     (zone_clearance 0.508)
     (zone_45_only yes)
     (trace_min 0.2)
-    (segment_width 0.2)
-    (edge_width 0.15)
     (via_size 0.6)
     (via_drill 0.4)
     (via_min_size 0.4)
@@ -66,6 +64,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.15)
+    (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -1319,41 +1319,6 @@
       (net 123 "Net-(XA1-PadVIN)"))
     (pad A0 smd rect (at 50.8 -0.762 90) (size 2.51 1) (layers B.Cu B.Paste B.Mask)
       (net 9 BIN_SEN1))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm_SMD_Pin1Right.wrl
-      (offset (xyz 30.22599954605102 50.79999923706055 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 90))
-    )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x08_Pitch2.54mm_SMD_Pin1Right.wrl
-      (offset (xyz 54.60999917984009 50.79999923706055 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 90))
-    )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x08_Pitch2.54mm_SMD_Pin1Right.wrl
-      (offset (xyz 77.46999883651733 50.79999923706055 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 90))
-    )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x08_Pitch2.54mm_SMD_Pin1Right.wrl
-      (offset (xyz 36.8299994468689 2.539999961853027 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 90))
-    )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x08_Pitch2.54mm_SMD_Pin1Right.wrl
-      (offset (xyz 59.68999910354614 2.539999961853027 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 90))
-    )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x08_Pitch2.54mm_SMD_Pin1Right.wrl
-      (offset (xyz 82.54999876022339 2.539999961853027 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 90))
-    )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x18_Pitch2.54mm_SMD.wrl
-      (offset (xyz 95.24999856948853 29.20999956130981 -1.523999977111816))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 180))
-    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5C0A0BA3)
