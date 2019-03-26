@@ -20,3 +20,4 @@ We used an Arduino Mega for the base and we developed the extension board
 - I2C/UART pinouts
 
 ## Pictures
+![Top_view](https://raw.githubusercontent.com/SensaOrg/Robotics_Mainboard/master/Images/top_view.jpeg)
