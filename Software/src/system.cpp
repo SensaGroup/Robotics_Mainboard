@@ -90,7 +90,6 @@ void init_system(void) {
     init_timer();
     init_jumper();
     init_switches();
-
     //init_display();
 
     if(fucked) {
@@ -99,6 +98,7 @@ void init_system(void) {
     } 
 
     Serial.println("Ready... waiting for jumper...");
+    
     // wait for jumper to be pulled, loop while it is not pulled
     //while(!jumper_pulled);
 

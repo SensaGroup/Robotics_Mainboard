@@ -111,4 +111,4 @@ uint8_t lidar_detected(void) {
 
     return can_wait_for_finish();
 
-}
+} // end of lidar_detected(...)
