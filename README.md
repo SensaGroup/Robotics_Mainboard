@@ -24,4 +24,4 @@ All software is written in C for AVR.
 View README in the Software folder.
 
 ## Pictures
-![Top_view](https://raw.githubusercontent.com/SensaOrg/Robotics_Mainboard/master/Images/top_view.jpeg)
+![Top_view](https://raw.githubusercontent.com/SensaOrg/Robotics_Mainboard/master/Hardware/Images/top_view.jpeg)
