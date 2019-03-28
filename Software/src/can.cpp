@@ -12,6 +12,10 @@ long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
 
+/*
+ * Function:        bool init_can(void)
+ * Description:     init the MCP25625
+ */
 bool init_can(void) {
 
     // Initialize MCP2515 running at 16MHz with a baudrate of 100kb/s and the masks and filters disabled.
@@ -28,12 +32,23 @@ bool init_can(void) {
 
     return true;
 
-}
+} // end of init_can(...)
 
+/*
+ * Function:        void can_send(uint32_t ID, byte *data)
+ * Description:     send data to an ID on the CAN Bus
+ * Parameters:      uint32_t ID     - the ID of the device
+ *                  byte *data      - array data (8 bit)
+ */
 void can_send(uint32_t ID, byte *data) {
     CAN0.sendMsgBuf(ID, 0, 8, data);
-}
+} // end of can_send(...)
 
+/*
+ * Function:        void can_return_data(byte *data)
+ * Description:     wait to receive data
+ * Parameters:      byte *data - the data we are receiving
+ */
 void can_return_data(byte *data) {
     
     while(digitalRead(CAN0_INT));
@@ -43,8 +58,12 @@ void can_return_data(byte *data) {
     for(int i=0; i<8; i++) {
         data[i] = rxBuf[i];
     }
-}
+} // end of can_return_data(...)
 
+/*
+ * Function:        uint8_t can_wait_for_finish(void)
+ * Description:     wait for a data from other devices 
+ */
 uint8_t can_wait_for_finish(void) {
 
     while(1) {
@@ -67,5 +86,5 @@ uint8_t can_wait_for_finish(void) {
     }
 
     return 0;
-}
+} // end of can_wait_finish(...)
 
