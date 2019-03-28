@@ -1,0 +1,4423 @@
+EESchema Schematic File Version 4
+LIBS:mainboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Main Board"
+Date "2018-12-10"
+Rev "1.1"
+Comp "SENSA"
+Comment1 "Developed by Silard Gal "
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mainboard-rescue:Arduino_Mega2560_Shield XA1
+U 1 1 5B80832C
+P 2450 7750
+F 0 "XA1" V 2550 7750 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" V 2350 7750 60  0000 C CNN
+F 2 "Arduino:Arduino_Mega2560_Shield" H 3150 10500 60  0001 C CNN
+F 3 "" H 3150 10500 60  0001 C CNN
+	1    2450 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:ULN2003A U1
+U 1 1 5B832580
+P 7550 4300
+F 0 "U1" H 7550 4825 50  0000 C CNN
+F 1 "ULN2003A" H 7550 4750 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 7600 3650 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ULN2003V12.pdf" H 7650 4200 50  0001 C CNN
+	1    7550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR05
+U 1 1 5B832947
+P 7550 5050
+F 0 "#PWR05" H 7550 4800 50  0001 C CNN
+F 1 "GND" H 7550 4900 50  0000 C CNN
+F 2 "" H 7550 5050 50  0001 C CNN
+F 3 "" H 7550 5050 50  0001 C CNN
+	1    7550 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 4050 2    60   Input ~ 0
+R1_SIG
+NoConn ~ 7950 4600
+NoConn ~ 7150 4600
+Text GLabel 7000 4050 0    60   Input ~ 0
+R1_CONT
+Text GLabel 3800 9900 2    60   Input ~ 0
+CAN_CS
+Text GLabel 3800 9700 2    60   Input ~ 0
+CAN_MOSI
+Text GLabel 3800 9800 2    60   Input ~ 0
+CAN_SCK
+Text GLabel 3800 9600 2    60   Input ~ 0
+CAN_MISO
+$Comp
+L mainboard-rescue:GND #PWR06
+U 1 1 5B8C69EF
+P 1100 9000
+F 0 "#PWR06" H 1100 8750 50  0001 C CNN
+F 1 "GND" V 1100 8800 50  0000 C CNN
+F 2 "" H 1100 9000 50  0001 C CNN
+F 3 "" H 1100 9000 50  0001 C CNN
+	1    1100 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR07
+U 1 1 5B8C6AA0
+P 1100 9100
+F 0 "#PWR07" H 1100 8850 50  0001 C CNN
+F 1 "GND" V 1100 8900 50  0000 C CNN
+F 2 "" H 1100 9100 50  0001 C CNN
+F 3 "" H 1100 9100 50  0001 C CNN
+	1    1100 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR08
+U 1 1 5B8C6B4A
+P 1100 9200
+F 0 "#PWR08" H 1100 8950 50  0001 C CNN
+F 1 "GND" V 1100 9000 50  0000 C CNN
+F 2 "" H 1100 9200 50  0001 C CNN
+F 3 "" H 1100 9200 50  0001 C CNN
+	1    1100 9200
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR09
+U 1 1 5B8C6BF4
+P 1100 9300
+F 0 "#PWR09" H 1100 9050 50  0001 C CNN
+F 1 "GND" V 1100 9100 50  0000 C CNN
+F 2 "" H 1100 9300 50  0001 C CNN
+F 3 "" H 1100 9300 50  0001 C CNN
+	1    1100 9300
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR010
+U 1 1 5B8C6C9E
+P 1100 9400
+F 0 "#PWR010" H 1100 9150 50  0001 C CNN
+F 1 "GND" V 1100 9200 50  0000 C CNN
+F 2 "" H 1100 9400 50  0001 C CNN
+F 3 "" H 1100 9400 50  0001 C CNN
+	1    1100 9400
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:+3V3 #PWR011
+U 1 1 5B8C6D15
+P 1100 9500
+F 0 "#PWR011" H 1100 9350 50  0001 C CNN
+F 1 "+3V3" V 1100 9750 50  0000 C CNN
+F 2 "" H 1100 9500 50  0001 C CNN
+F 3 "" H 1100 9500 50  0001 C CNN
+	1    1100 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR012
+U 1 1 5B8C7643
+P 1100 9600
+F 0 "#PWR012" H 1100 9450 50  0001 C CNN
+F 1 "+5V" V 1100 9850 50  0000 C CNN
+F 2 "" H 1100 9600 50  0001 C CNN
+F 3 "" H 1100 9600 50  0001 C CNN
+	1    1100 9600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR013
+U 1 1 5B8C7C84
+P 1100 9700
+F 0 "#PWR013" H 1100 9550 50  0001 C CNN
+F 1 "+5V" V 1100 9950 50  0000 C CNN
+F 2 "" H 1100 9700 50  0001 C CNN
+F 3 "" H 1100 9700 50  0001 C CNN
+	1    1100 9700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR014
+U 1 1 5B8C7D2E
+P 1100 9800
+F 0 "#PWR014" H 1100 9650 50  0001 C CNN
+F 1 "+5V" V 1100 10050 50  0000 C CNN
+F 2 "" H 1100 9800 50  0001 C CNN
+F 3 "" H 1100 9800 50  0001 C CNN
+	1    1100 9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:NTR2101P Q1
+U 1 1 5B8CEBBB
+P 10650 7750
+F 0 "Q1" V 10850 7600 50  0000 L CNN
+F 1 "DMP2100U" V 10550 7800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 7675 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/diodes-incorporated/DMP2100U-7/DMP2100U-7CT-ND/3829371" H 10650 7750 50  0001 L CNN
+	1    10650 7750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR017
+U 1 1 5B8D2556
+P 10900 7600
+F 0 "#PWR017" H 10900 7450 50  0001 C CNN
+F 1 "+5V" H 10900 7740 50  0000 C CNN
+F 2 "" H 10900 7600 50  0001 C CNN
+F 3 "" H 10900 7600 50  0001 C CNN
+	1    10900 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR024
+U 1 1 5B8DA00F
+P 12100 7650
+F 0 "#PWR024" H 12100 7500 50  0001 C CNN
+F 1 "+12V" H 12100 7800 50  0000 C CNN
+F 2 "" H 12100 7650 50  0001 C CNN
+F 3 "" H 12100 7650 50  0001 C CNN
+	1    12100 7650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 9500 2    60   Input ~ 0
+CAN_INT
+Text GLabel 1100 8700 0    60   Input ~ 0
+RST
+Text GLabel 2200 4600 0    60   Input ~ 0
+RST
+$Comp
+L mainboard-rescue:SW_Push RESET1
+U 1 1 5B909B22
+P 2450 4600
+F 0 "RESET1" H 2500 4700 50  0000 L CNN
+F 1 "SW_Push" H 2450 4540 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 2450 4800 50  0001 C CNN
+F 3 "" H 2450 4800 50  0001 C CNN
+	1    2450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR030
+U 1 1 5B909F07
+P 2700 4600
+F 0 "#PWR030" H 2700 4350 50  0001 C CNN
+F 1 "GND" H 2700 4450 50  0000 C CNN
+F 2 "" H 2700 4600 50  0001 C CNN
+F 3 "" H 2700 4600 50  0001 C CNN
+	1    2700 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1600 4700 2    60   Input ~ 0
+SDA
+$Comp
+L mainboard-rescue:R R30
+U 1 1 5B90C3CA
+P 1400 4700
+F 0 "R30" V 1480 4700 50  0000 C CNN
+F 1 "4k7" V 1400 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 4700 50  0001 C CNN
+F 3 "" H 1400 4700 50  0001 C CNN
+	1    1400 4700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1600 4550 2    60   Input ~ 0
+SCL
+$Comp
+L mainboard-rescue:R R31
+U 1 1 5B90CCB9
+P 1400 4550
+F 0 "R31" V 1480 4550 50  0000 C CNN
+F 1 "4k7" V 1400 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 4550 50  0001 C CNN
+F 3 "" H 1400 4550 50  0001 C CNN
+	1    1400 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR031
+U 1 1 5B90D48D
+P 1200 4700
+F 0 "#PWR031" H 1200 4550 50  0001 C CNN
+F 1 "+5V" H 1200 4840 50  0000 C CNN
+F 2 "" H 1200 4700 50  0001 C CNN
+F 3 "" H 1200 4700 50  0001 C CNN
+	1    1200 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR032
+U 1 1 5B90DEAC
+P 1200 4550
+F 0 "#PWR032" H 1200 4400 50  0001 C CNN
+F 1 "+5V" H 1200 4690 50  0000 C CNN
+F 2 "" H 1200 4550 50  0001 C CNN
+F 3 "" H 1200 4550 50  0001 C CNN
+	1    1200 4550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1100 6200 0    60   Input ~ 0
+AX_RX
+Text GLabel 1100 6300 0    60   Input ~ 0
+AX_TX
+Text GLabel 1100 5800 0    60   Input ~ 0
+DBG_RX
+Text GLabel 1100 5900 0    60   Input ~ 0
+DBG_TX
+$Comp
+L mainboard-rescue:74LS241 U5
+U 1 1 5B95F26F
+P 2000 2000
+F 0 "U5" H 2050 1800 50  0000 C CNN
+F 1 "74LS241" H 2100 1600 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 2000 2000 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/texas-instruments/SN74LS241DWR/296-38240-1-ND/4967445" H 2000 2000 50  0001 C CNN
+	1    2000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR034
+U 1 1 5B96174A
+P 1700 1450
+F 0 "#PWR034" H 1700 1300 50  0001 C CNN
+F 1 "+5V" H 1700 1590 50  0000 C CNN
+F 2 "" H 1700 1450 50  0001 C CNN
+F 3 "" H 1700 1450 50  0001 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR035
+U 1 1 5B9629F7
+P 1700 2550
+F 0 "#PWR035" H 1700 2300 50  0001 C CNN
+F 1 "GND" H 1700 2400 50  0000 C CNN
+F 2 "" H 1700 2550 50  0001 C CNN
+F 3 "" H 1700 2550 50  0001 C CNN
+	1    1700 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 1500 0    60   Input ~ 0
+AX_SIGNAL
+Text GLabel 1250 2200 0    60   Input ~ 0
+AX_TX
+Text GLabel 1200 2450 0    60   Input ~ 0
+AX_CONTROL
+Text GLabel 2750 1500 2    60   Input ~ 0
+AX_RX
+Text GLabel 2750 2200 2    60   Input ~ 0
+AX_SIGNAL
+NoConn ~ 1300 1600
+NoConn ~ 1300 1700
+NoConn ~ 1300 1800
+NoConn ~ 1300 1900
+NoConn ~ 1300 2000
+NoConn ~ 1300 2100
+NoConn ~ 2700 1600
+NoConn ~ 2700 1700
+NoConn ~ 2700 1800
+NoConn ~ 2700 1900
+NoConn ~ 2700 2000
+NoConn ~ 2700 2100
+$Comp
+L mainboard-rescue:GND #PWR036
+U 1 1 5B97A41A
+P 2250 1250
+F 0 "#PWR036" H 2250 1000 50  0001 C CNN
+F 1 "GND" H 2250 1100 50  0000 C CNN
+F 2 "" H 2250 1250 50  0001 C CNN
+F 3 "" H 2250 1250 50  0001 C CNN
+	1    2250 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:CP C8
+U 1 1 5B97A4E4
+P 2000 1150
+F 0 "C8" H 2025 1250 50  0000 L CNN
+F 1 "CP" H 2025 1050 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 2038 1000 50  0001 C CNN
+F 3 "" H 2000 1150 50  0001 C CNN
+	1    2000 1150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1700 1000 0    60   Input ~ 0
+AX_SIGNAL
+$Comp
+L mainboard-rescue:D D4
+U 1 1 5B94A3C7
+P 11900 7700
+F 0 "D4" H 11900 7800 50  0000 C CNN
+F 1 "D" H 11900 7600 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 11900 7700 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88711/s1.pdf" H 11900 7700 50  0001 C CNN
+	1    11900 7700
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:Screw_Terminal_01x04 J2
+U 1 1 5BB67B6D
+P 1900 650
+F 0 "J2" V 2000 750 50  0000 C CNN
+F 1 "AX" V 2000 450 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 1900 650 50  0001 C CNN
+F 3 "" H 1900 650 50  0001 C CNN
+	1    1900 650 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 4800 8000 4800
+Wire Wire Line
+	7550 5000 7550 5050
+Wire Wire Line
+	3750 9600 3800 9600
+Wire Wire Line
+	3750 9700 3800 9700
+Wire Wire Line
+	3750 9800 3800 9800
+Wire Wire Line
+	3750 9900 3800 9900
+Wire Wire Line
+	1100 5800 1150 5800
+Wire Wire Line
+	1100 5900 1150 5900
+Wire Wire Line
+	1100 6400 1150 6400
+Wire Wire Line
+	1100 6500 1150 6500
+Wire Wire Line
+	3750 5600 3800 5600
+Wire Wire Line
+	3750 5700 3800 5700
+Wire Wire Line
+	1100 9000 1150 9000
+Wire Wire Line
+	1100 9100 1150 9100
+Wire Wire Line
+	1100 9200 1150 9200
+Wire Wire Line
+	1100 9300 1150 9300
+Wire Wire Line
+	1100 9400 1150 9400
+Wire Wire Line
+	1100 9500 1150 9500
+Wire Wire Line
+	1100 9600 1150 9600
+Wire Wire Line
+	1150 9700 1100 9700
+Wire Wire Line
+	1100 9800 1150 9800
+Wire Wire Line
+	3750 8400 3800 8400
+Wire Wire Line
+	3750 8500 3800 8500
+Wire Wire Line
+	3750 8600 3800 8600
+Wire Wire Line
+	3750 8700 3800 8700
+Wire Wire Line
+	3750 8800 3800 8800
+Wire Wire Line
+	3750 8900 3800 8900
+Wire Wire Line
+	3750 6200 3800 6200
+Wire Wire Line
+	3750 6300 3800 6300
+Wire Wire Line
+	3750 6400 3800 6400
+Wire Wire Line
+	3750 6500 3800 6500
+Wire Wire Line
+	3750 6600 3800 6600
+Wire Wire Line
+	3750 6700 3800 6700
+Wire Wire Line
+	3800 6000 3750 6000
+Wire Wire Line
+	3750 6100 3800 6100
+Wire Wire Line
+	3800 5800 3750 5800
+Wire Wire Line
+	3800 5900 3750 5900
+Wire Wire Line
+	3750 9000 3800 9000
+Wire Wire Line
+	3750 9100 3800 9100
+Wire Wire Line
+	3800 9200 3750 9200
+Wire Wire Line
+	3750 9500 3800 9500
+Wire Wire Line
+	1100 6900 1150 6900
+Wire Wire Line
+	1100 7000 1150 7000
+Wire Wire Line
+	1100 7100 1150 7100
+Wire Wire Line
+	1100 7200 1150 7200
+Wire Wire Line
+	1100 7300 1150 7300
+Wire Wire Line
+	1100 7400 1150 7400
+Wire Wire Line
+	1100 7500 1150 7500
+Wire Wire Line
+	1100 7600 1150 7600
+Wire Wire Line
+	1100 7700 1150 7700
+Wire Wire Line
+	1100 7800 1150 7800
+Wire Wire Line
+	1100 7900 1150 7900
+Wire Wire Line
+	1100 8000 1150 8000
+Wire Wire Line
+	1100 8100 1150 8100
+Wire Wire Line
+	1100 8200 1150 8200
+Wire Wire Line
+	1100 8300 1150 8300
+Wire Wire Line
+	1100 8400 1150 8400
+Wire Wire Line
+	3750 6800 3800 6800
+Wire Wire Line
+	3750 6900 3800 6900
+Wire Wire Line
+	3750 7000 3800 7000
+Wire Wire Line
+	3750 7100 3800 7100
+Wire Wire Line
+	3750 7200 3800 7200
+Wire Wire Line
+	3750 7300 3800 7300
+Wire Wire Line
+	3750 7400 3800 7400
+Wire Wire Line
+	3750 7500 3800 7500
+Wire Wire Line
+	3750 7600 3800 7600
+Wire Wire Line
+	3750 7700 3800 7700
+Wire Wire Line
+	3750 7800 3800 7800
+Wire Wire Line
+	3750 7900 3800 7900
+Wire Wire Line
+	3800 8000 3750 8000
+Wire Wire Line
+	3750 8100 3800 8100
+Wire Wire Line
+	3750 8300 3800 8300
+Wire Wire Line
+	3750 8200 3800 8200
+Wire Wire Line
+	1100 8700 1150 8700
+Wire Wire Line
+	2200 4600 2250 4600
+Wire Wire Line
+	2650 4600 2700 4600
+Wire Wire Line
+	1200 4700 1250 4700
+Wire Wire Line
+	1550 4700 1600 4700
+Wire Wire Line
+	1200 4550 1250 4550
+Wire Wire Line
+	1550 4550 1600 4550
+Wire Wire Line
+	1100 6200 1150 6200
+Wire Wire Line
+	1100 6300 1150 6300
+Wire Wire Line
+	1200 2450 1250 2450
+Wire Wire Line
+	1250 2400 1250 2450
+Wire Wire Line
+	1250 2400 1300 2400
+Wire Wire Line
+	1250 2500 1300 2500
+Connection ~ 1250 2450
+Wire Wire Line
+	1250 2200 1300 2200
+Wire Wire Line
+	1250 1500 1300 1500
+Wire Wire Line
+	2700 1500 2750 1500
+Wire Wire Line
+	2700 2200 2750 2200
+Wire Wire Line
+	1800 1150 1850 1150
+Wire Wire Line
+	2200 900  2200 1150
+Wire Wire Line
+	2200 900  2100 900 
+Wire Wire Line
+	2100 900  2100 850 
+Wire Wire Line
+	2150 1150 2200 1150
+Connection ~ 2200 1150
+Wire Wire Line
+	2000 850  2000 1000
+Wire Wire Line
+	2000 1000 1700 1000
+Wire Wire Line
+	1800 850  1800 900 
+Wire Wire Line
+	1800 900  1900 900 
+Wire Wire Line
+	1900 900  1900 850 
+Connection ~ 1800 900 
+Wire Wire Line
+	15000 7150 15050 7150
+$Comp
+L mainboard-rescue:Screw_Terminal_01x02 J5
+U 1 1 5BB933C3
+P 15250 7050
+F 0 "J5" V 15450 6950 50  0000 C CNN
+F 1 "S1" V 15350 7000 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 15250 7050 50  0001 C CNN
+F 3 "" H 15250 7050 50  0001 C CNN
+	1    15250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:PC817 U2
+U 1 1 5BBE5BE4
+P 10000 1300
+F 0 "U2" H 9800 1500 50  0000 L CNN
+F 1 "PC817" H 10000 1500 50  0000 L CNN
+F 2 "Package_SO:SOP-4_4.4x2.8mm_P1.27mm" H 9800 1100 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/TPC817S1B-RAG/TPC817S1BRAGCT-ND/7359679" H 10000 1300 50  0001 L CNN
+	1    10000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:Conn_01x03 J11
+U 1 1 5BBE5BEA
+P 8800 1200
+F 0 "J11" H 8800 1400 50  0000 C CNN
+F 1 "Senzor1" V 8900 1200 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 8800 1200 50  0001 C CNN
+F 3 "" H 8800 1200 50  0001 C CNN
+	1    8800 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR076
+U 1 1 5BBE5BF0
+P 9050 800
+F 0 "#PWR076" H 9050 650 50  0001 C CNN
+F 1 "+12V" H 9050 950 50  0000 C CNN
+F 2 "" H 9050 800 50  0001 C CNN
+F 3 "" H 9050 800 50  0001 C CNN
+	1    9050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR077
+U 1 1 5BBE5BF6
+P 9050 1800
+F 0 "#PWR077" H 9050 1550 50  0001 C CNN
+F 1 "GND" H 9050 1650 50  0000 C CNN
+F 2 "" H 9050 1800 50  0001 C CNN
+F 3 "" H 9050 1800 50  0001 C CNN
+	1    9050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1300 9050 1800
+Wire Wire Line
+	9050 1300 9000 1300
+Wire Wire Line
+	9050 800  9050 1100
+Wire Wire Line
+	9050 1100 9000 1100
+$Comp
+L mainboard-rescue:R R13
+U 1 1 5BBE5C00
+P 9500 1200
+F 0 "R13" V 9580 1200 50  0000 C CNN
+F 1 "500" V 9500 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9430 1200 50  0001 C CNN
+F 3 "" H 9500 1200 50  0001 C CNN
+	1    9500 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 1200 9650 1200
+$Comp
+L mainboard-rescue:GND #PWR078
+U 1 1 5BBE5C08
+P 9650 1800
+F 0 "#PWR078" H 9650 1550 50  0001 C CNN
+F 1 "GND" H 9650 1650 50  0000 C CNN
+F 2 "" H 9650 1800 50  0001 C CNN
+F 3 "" H 9650 1800 50  0001 C CNN
+	1    9650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1400 9650 1400
+Wire Wire Line
+	9650 1400 9650 1800
+$Comp
+L mainboard-rescue:R R10
+U 1 1 5BBE5C10
+P 10350 1600
+F 0 "R10" V 10430 1600 50  0000 C CNN
+F 1 "10K" V 10350 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10280 1600 50  0001 C CNN
+F 3 "" H 10350 1600 50  0001 C CNN
+	1    10350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR079
+U 1 1 5BBE5C16
+P 10350 1800
+F 0 "#PWR079" H 10350 1550 50  0001 C CNN
+F 1 "GND" H 10350 1650 50  0000 C CNN
+F 2 "" H 10350 1800 50  0001 C CNN
+F 3 "" H 10350 1800 50  0001 C CNN
+	1    10350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1400 10350 1450
+Connection ~ 10350 1400
+$Comp
+L mainboard-rescue:+5V #PWR081
+U 1 1 5BBE5C2E
+P 10350 1150
+F 0 "#PWR081" H 10350 1000 50  0001 C CNN
+F 1 "+5V" V 10350 1350 50  0000 C CNN
+F 2 "" H 10350 1150 50  0001 C CNN
+F 3 "" H 10350 1150 50  0001 C CNN
+	1    10350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1200 10300 1200
+Wire Wire Line
+	10350 1800 10350 1750
+Text GLabel 10500 1350 1    60   Input ~ 0
+SENSOR1
+NoConn ~ 2200 5150
+NoConn ~ 2300 5150
+NoConn ~ 2400 5150
+NoConn ~ 2500 5150
+NoConn ~ 2600 5150
+NoConn ~ 2700 5150
+Wire Wire Line
+	2200 1250 2250 1250
+Wire Wire Line
+	1100 5600 1150 5600
+Wire Wire Line
+	1100 5700 1150 5700
+Wire Wire Line
+	10350 1150 10350 1200
+$Comp
+L mainboard-rescue:R R1
+U 1 1 5BBFA138
+P 9300 1000
+F 0 "R1" V 9200 1000 50  0000 C CNN
+F 1 "500" V 9300 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 1000 50  0001 C CNN
+F 3 "" H 9300 1000 50  0001 C CNN
+	1    9300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:R R2
+U 1 1 5BBFAB49
+P 9300 1400
+F 0 "R2" V 9380 1400 50  0000 C CNN
+F 1 "1K" V 9300 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 1400 50  0001 C CNN
+F 3 "" H 9300 1400 50  0001 C CNN
+	1    9300 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0101
+U 1 1 5BBFBA12
+P 9300 1800
+F 0 "#PWR0101" H 9300 1550 50  0001 C CNN
+F 1 "GND" H 9300 1650 50  0000 C CNN
+F 2 "" H 9300 1800 50  0001 C CNN
+F 3 "" H 9300 1800 50  0001 C CNN
+	1    9300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1550 9300 1800
+Wire Wire Line
+	9000 1200 9300 1200
+Wire Wire Line
+	9300 1150 9300 1200
+Connection ~ 9300 1200
+$Comp
+L mainboard-rescue:+12V #PWR0102
+U 1 1 5BBFD9CA
+P 9300 800
+F 0 "#PWR0102" H 9300 650 50  0001 C CNN
+F 1 "+12V" H 9300 950 50  0000 C CNN
+F 2 "" H 9300 800 50  0001 C CNN
+F 3 "" H 9300 800 50  0001 C CNN
+	1    9300 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 800  9300 850 
+Wire Wire Line
+	10300 1400 10350 1400
+Wire Wire Line
+	1250 2450 1250 2500
+Wire Wire Line
+	2200 1150 2200 1250
+Wire Wire Line
+	1800 900  1800 1150
+Wire Wire Line
+	9300 1200 9350 1200
+Wire Wire Line
+	9300 1200 9300 1250
+Wire Wire Line
+	10500 1400 10500 1350
+Wire Wire Line
+	10350 1400 10500 1400
+$Comp
+L mainboard-rescue:+5V #PWR0138
+U 1 1 5BF35B61
+P 10700 1000
+F 0 "#PWR0138" H 10700 850 50  0001 C CNN
+F 1 "+5V" V 10700 1200 50  0000 C CNN
+F 2 "" H 10700 1000 50  0001 C CNN
+F 3 "" H 10700 1000 50  0001 C CNN
+	1    10700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0139
+U 1 1 5BF35C26
+P 10700 1500
+F 0 "#PWR0139" H 10700 1250 50  0001 C CNN
+F 1 "GND" H 10700 1350 50  0000 C CNN
+F 2 "" H 10700 1500 50  0001 C CNN
+F 3 "" H 10700 1500 50  0001 C CNN
+	1    10700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BF36D5B
+P 10700 1250
+F 0 "C1" H 10815 1296 50  0000 L CNN
+F 1 "100n" H 10815 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10738 1100 50  0001 C CNN
+F 3 "~" H 10700 1250 50  0001 C CNN
+	1    10700 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 1000 10700 1100
+Wire Wire Line
+	10700 1400 10700 1500
+$Comp
+L RF:NRF24L01_Breakout U3
+U 1 1 5C0C4DC2
+P 7950 1400
+F 0 "U3" H 8200 1900 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 7100 1900 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8100 2000 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 7950 1300 50  0001 C CNN
+	1    7950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+3V3 #PWR0150
+U 1 1 5C0C99EB
+P 7950 750
+F 0 "#PWR0150" H 7950 600 50  0001 C CNN
+F 1 "+3V3" H 7950 890 50  0000 C CNN
+F 2 "" H 7950 750 50  0001 C CNN
+F 3 "" H 7950 750 50  0001 C CNN
+	1    7950 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0151
+U 1 1 5C0CA482
+P 7950 2050
+F 0 "#PWR0151" H 7950 1800 50  0001 C CNN
+F 1 "GND" H 7950 1900 50  0000 C CNN
+F 2 "" H 7950 2050 50  0001 C CNN
+F 3 "" H 7950 2050 50  0001 C CNN
+	1    7950 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 1200 0    60   Input ~ 0
+CAN_MISO
+Text GLabel 7400 1100 0    60   Input ~ 0
+CAN_MOSI
+Text GLabel 7400 1300 0    60   Input ~ 0
+CAN_SCK
+Text GLabel 3800 9400 2    60   Input ~ 0
+NRF_CS
+Wire Wire Line
+	3750 9400 3800 9400
+Text GLabel 7400 1400 0    60   Input ~ 0
+NRF_CS
+Text GLabel 7400 1600 0    60   Input ~ 0
+NRF_CE
+Text GLabel 3800 9300 2    60   Input ~ 0
+NRF_CE
+Wire Wire Line
+	3750 9300 3800 9300
+Wire Wire Line
+	7400 1100 7450 1100
+Wire Wire Line
+	7400 1200 7450 1200
+Wire Wire Line
+	7400 1300 7450 1300
+Wire Wire Line
+	7400 1400 7450 1400
+Wire Wire Line
+	7400 1600 7450 1600
+Wire Wire Line
+	7950 2000 7950 2050
+Wire Wire Line
+	7950 750  7950 800 
+$Comp
+L mainboard-rescue:ULN2003A U7
+U 1 1 5C0CFB70
+P 13750 7750
+F 0 "U7" H 13750 8275 50  0000 C CNN
+F 1 "ULN2003A" H 13750 8200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 13800 7100 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ULN2003V12.pdf" H 13850 7650 50  0001 C CNN
+	1    13750 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0103
+U 1 1 5C10EBE1
+P 14200 8250
+F 0 "#PWR0103" H 14200 8100 50  0001 C CNN
+F 1 "+12V" V 14200 8450 50  0000 C CNN
+F 2 "" H 14200 8250 50  0001 C CNN
+F 3 "" H 14200 8250 50  0001 C CNN
+	1    14200 8250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14150 8250 14200 8250
+$Comp
+L mainboard-rescue:+12V #PWR0104
+U 1 1 5C12BE05
+P 15000 7050
+F 0 "#PWR0104" H 15000 6900 50  0001 C CNN
+F 1 "+12V" V 15000 7250 50  0000 C CNN
+F 2 "" H 15000 7050 50  0001 C CNN
+F 3 "" H 15000 7050 50  0001 C CNN
+	1    15000 7050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 14200 7450 2    60   Input ~ 0
+_S1
+Text GLabel 14200 7550 2    60   Input ~ 0
+_S2
+Text GLabel 14200 7650 2    60   Input ~ 0
+_S3
+Text GLabel 14200 7750 2    60   Input ~ 0
+_S4
+Text GLabel 14200 7850 2    60   Input ~ 0
+_S5
+Text GLabel 14200 7950 2    60   Input ~ 0
+_S6
+Wire Wire Line
+	14150 7450 14200 7450
+Wire Wire Line
+	14150 7550 14200 7550
+Wire Wire Line
+	14150 7650 14200 7650
+Wire Wire Line
+	14150 7750 14200 7750
+Wire Wire Line
+	14150 7850 14200 7850
+Wire Wire Line
+	14150 7950 14200 7950
+Text GLabel 15000 7150 0    60   Input ~ 0
+_S1
+Wire Wire Line
+	15000 7050 15050 7050
+Wire Wire Line
+	15000 7400 15050 7400
+$Comp
+L mainboard-rescue:Screw_Terminal_01x02 J21
+U 1 1 5C238A6C
+P 15250 7300
+F 0 "J21" V 15450 7200 50  0000 C CNN
+F 1 "S2" V 15350 7250 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 15250 7300 50  0001 C CNN
+F 3 "" H 15250 7300 50  0001 C CNN
+	1    15250 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0105
+U 1 1 5C238A72
+P 15000 7300
+F 0 "#PWR0105" H 15000 7150 50  0001 C CNN
+F 1 "+12V" V 15000 7500 50  0000 C CNN
+F 2 "" H 15000 7300 50  0001 C CNN
+F 3 "" H 15000 7300 50  0001 C CNN
+	1    15000 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15000 7300 15050 7300
+Wire Wire Line
+	15000 7650 15050 7650
+$Comp
+L mainboard-rescue:Screw_Terminal_01x02 J22
+U 1 1 5C257399
+P 15250 7550
+F 0 "J22" V 15450 7450 50  0000 C CNN
+F 1 "S3" V 15350 7500 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 15250 7550 50  0001 C CNN
+F 3 "" H 15250 7550 50  0001 C CNN
+	1    15250 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0106
+U 1 1 5C25739F
+P 15000 7550
+F 0 "#PWR0106" H 15000 7400 50  0001 C CNN
+F 1 "+12V" V 15000 7750 50  0000 C CNN
+F 2 "" H 15000 7550 50  0001 C CNN
+F 3 "" H 15000 7550 50  0001 C CNN
+	1    15000 7550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15000 7550 15050 7550
+Wire Wire Line
+	15000 7900 15050 7900
+$Comp
+L mainboard-rescue:Screw_Terminal_01x02 J26
+U 1 1 5C2573A8
+P 15250 7800
+F 0 "J26" V 15450 7700 50  0000 C CNN
+F 1 "S4" V 15350 7750 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 15250 7800 50  0001 C CNN
+F 3 "" H 15250 7800 50  0001 C CNN
+	1    15250 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0107
+U 1 1 5C2573AE
+P 15000 7800
+F 0 "#PWR0107" H 15000 7650 50  0001 C CNN
+F 1 "+12V" V 15000 8000 50  0000 C CNN
+F 2 "" H 15000 7800 50  0001 C CNN
+F 3 "" H 15000 7800 50  0001 C CNN
+	1    15000 7800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15000 7800 15050 7800
+Wire Wire Line
+	15000 8150 15050 8150
+$Comp
+L mainboard-rescue:Screw_Terminal_01x02 J27
+U 1 1 5C276F73
+P 15250 8050
+F 0 "J27" V 15450 7950 50  0000 C CNN
+F 1 "S5" V 15350 8000 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 15250 8050 50  0001 C CNN
+F 3 "" H 15250 8050 50  0001 C CNN
+	1    15250 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15000 8400 15050 8400
+$Comp
+L mainboard-rescue:Screw_Terminal_01x02 J28
+U 1 1 5C276F7B
+P 15250 8300
+F 0 "J28" V 15450 8200 50  0000 C CNN
+F 1 "S6" V 15350 8250 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 15250 8300 50  0001 C CNN
+F 3 "" H 15250 8300 50  0001 C CNN
+	1    15250 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0108
+U 1 1 5C276F81
+P 15000 8300
+F 0 "#PWR0108" H 15000 8150 50  0001 C CNN
+F 1 "+12V" V 15000 8500 50  0000 C CNN
+F 2 "" H 15000 8300 50  0001 C CNN
+F 3 "" H 15000 8300 50  0001 C CNN
+	1    15000 8300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15000 8300 15050 8300
+$Comp
+L mainboard-rescue:+12V #PWR0110
+U 1 1 5C2D8394
+P 15000 8050
+F 0 "#PWR0110" H 15000 7900 50  0001 C CNN
+F 1 "+12V" V 15000 8250 50  0000 C CNN
+F 2 "" H 15000 8050 50  0001 C CNN
+F 3 "" H 15000 8050 50  0001 C CNN
+	1    15000 8050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15000 8050 15050 8050
+Text GLabel 15000 7400 0    60   Input ~ 0
+_S2
+Text GLabel 15000 7650 0    60   Input ~ 0
+_S3
+Text GLabel 15000 7900 0    60   Input ~ 0
+_S4
+Text GLabel 15000 8150 0    60   Input ~ 0
+_S5
+Text GLabel 15000 8400 0    60   Input ~ 0
+_S6
+Text GLabel 13300 7450 0    60   Input ~ 0
+_S1_SIG
+Text GLabel 13300 7550 0    60   Input ~ 0
+_S2_SIG
+Text GLabel 13300 7650 0    60   Input ~ 0
+_S3_SIG
+Text GLabel 13300 7750 0    60   Input ~ 0
+_S4_SIG
+Text GLabel 13300 7850 0    60   Input ~ 0
+_S5_SIG
+Text GLabel 13300 7950 0    60   Input ~ 0
+_S6_SIG
+Wire Wire Line
+	13350 7450 13300 7450
+Wire Wire Line
+	13300 7550 13350 7550
+Wire Wire Line
+	13300 7650 13350 7650
+Wire Wire Line
+	13300 7750 13350 7750
+Wire Wire Line
+	13300 7850 13350 7850
+Wire Wire Line
+	13300 7950 13350 7950
+$Comp
+L mainboard-rescue:GND #PWR0111
+U 1 1 5C3E62CD
+P 13750 8500
+F 0 "#PWR0111" H 13750 8250 50  0001 C CNN
+F 1 "GND" H 13750 8350 50  0000 C CNN
+F 2 "" H 13750 8500 50  0001 C CNN
+F 3 "" H 13750 8500 50  0001 C CNN
+	1    13750 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 8450 13750 8500
+Text GLabel 7000 4250 0    60   Input ~ 0
+R2_CONT
+Text GLabel 8100 4250 2    60   Input ~ 0
+R2_SIG
+$Comp
+L mainboard-rescue:+12V #PWR0112
+U 1 1 5C55CFEA
+P 8000 4800
+F 0 "#PWR0112" H 8000 4650 50  0001 C CNN
+F 1 "+12V" V 8000 5050 50  0000 C CNN
+F 2 "" H 8000 4800 50  0001 C CNN
+F 3 "" H 8000 4800 50  0001 C CNN
+	1    8000 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4050 7050 4050
+Wire Wire Line
+	7050 4050 7050 4000
+Wire Wire Line
+	7050 4000 7150 4000
+Wire Wire Line
+	7050 4050 7050 4100
+Wire Wire Line
+	7050 4100 7150 4100
+Connection ~ 7050 4050
+Wire Wire Line
+	7000 4250 7050 4250
+Wire Wire Line
+	7050 4250 7050 4200
+Wire Wire Line
+	7050 4200 7150 4200
+Wire Wire Line
+	7050 4250 7050 4300
+Wire Wire Line
+	7050 4300 7150 4300
+Connection ~ 7050 4250
+Wire Wire Line
+	8050 4000 8050 4050
+Wire Wire Line
+	8050 4050 8100 4050
+Wire Wire Line
+	7950 4000 8050 4000
+Wire Wire Line
+	8050 4100 8050 4050
+Wire Wire Line
+	7950 4100 8050 4100
+Connection ~ 8050 4050
+Wire Wire Line
+	8050 4200 8050 4250
+Wire Wire Line
+	8050 4250 8100 4250
+Wire Wire Line
+	7950 4200 8050 4200
+Wire Wire Line
+	8050 4300 8050 4250
+Wire Wire Line
+	7950 4300 8050 4300
+Connection ~ 8050 4250
+NoConn ~ 7950 4400
+NoConn ~ 7950 4500
+NoConn ~ 7150 4400
+NoConn ~ 7150 4500
+$Comp
+L Relay:G5Q-1A K2
+U 1 1 5C779859
+P 4550 3900
+F 0 "K2" H 4880 3946 50  0000 L CNN
+F 1 "G5Q-1A" H 4880 3855 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 4900 3850 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/G5Q-1A4-DC12/Z223-ND/355241" H 5650 3600 50  0001 C CNN
+	1    4550 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 4300 0    60   Input ~ 0
+R2_SIG
+$Comp
+L mainboard-rescue:+12V #PWR0116
+U 1 1 5C779860
+P 4350 3550
+F 0 "#PWR0116" H 4350 3400 50  0001 C CNN
+F 1 "+12V" H 4350 3700 50  0000 C CNN
+F 2 "" H 4350 3550 50  0001 C CNN
+F 3 "" H 4350 3550 50  0001 C CNN
+	1    4350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0117
+U 1 1 5C779868
+P 4750 3550
+F 0 "#PWR0117" H 4750 3400 50  0001 C CNN
+F 1 "+12V" H 4750 3700 50  0000 C CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 6400 2    60   Input ~ 0
+PWM1
+Text GLabel 3800 6500 2    60   Input ~ 0
+PWM2
+Text GLabel 3800 6600 2    60   Input ~ 0
+PWM3
+Text GLabel 3800 6700 2    60   Input ~ 0
+PWM4
+$Comp
+L Connector_Generic:Conn_01x03 J19
+U 1 1 5C88035A
+P 9350 4550
+F 0 "J19" V 9450 4650 50  0000 L CNN
+F 1 "SERVO1" V 9450 4350 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 9350 4550 50  0001 C CNN
+F 3 "~" H 9350 4550 50  0001 C CNN
+	1    9350 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 4550 0    60   Input ~ 0
+PWM1
+$Comp
+L mainboard-rescue:+5VA #PWR0119
+U 1 1 5C881FFE
+P 9100 4450
+F 0 "#PWR0119" H 9100 4300 50  0001 C CNN
+F 1 "+5VA" V 9100 4700 50  0000 C CNN
+F 2 "" H 9100 4450 50  0001 C CNN
+F 3 "" H 9100 4450 50  0001 C CNN
+	1    9100 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0120
+U 1 1 5C882C91
+P 9100 4650
+F 0 "#PWR0120" H 9100 4400 50  0001 C CNN
+F 1 "GND" V 9100 4450 50  0000 C CNN
+F 2 "" H 9100 4650 50  0001 C CNN
+F 3 "" H 9100 4650 50  0001 C CNN
+	1    9100 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 4450 9150 4450
+Wire Wire Line
+	9100 4550 9150 4550
+Wire Wire Line
+	9100 4650 9150 4650
+$Comp
+L Connector_Generic:Conn_01x03 J20
+U 1 1 5C8E265D
+P 9350 4950
+F 0 "J20" V 9450 5050 50  0000 L CNN
+F 1 "SERVO2" V 9450 4750 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 9350 4950 50  0001 C CNN
+F 3 "~" H 9350 4950 50  0001 C CNN
+	1    9350 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 4950 0    60   Input ~ 0
+PWM2
+$Comp
+L mainboard-rescue:+5VA #PWR0121
+U 1 1 5C8E2664
+P 9100 4850
+F 0 "#PWR0121" H 9100 4700 50  0001 C CNN
+F 1 "+5VA" V 9100 5100 50  0000 C CNN
+F 2 "" H 9100 4850 50  0001 C CNN
+F 3 "" H 9100 4850 50  0001 C CNN
+	1    9100 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0122
+U 1 1 5C8E266A
+P 9100 5050
+F 0 "#PWR0122" H 9100 4800 50  0001 C CNN
+F 1 "GND" V 9100 4850 50  0000 C CNN
+F 2 "" H 9100 5050 50  0001 C CNN
+F 3 "" H 9100 5050 50  0001 C CNN
+	1    9100 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 4850 9150 4850
+Wire Wire Line
+	9100 4950 9150 4950
+Wire Wire Line
+	9100 5050 9150 5050
+$Comp
+L Connector_Generic:Conn_01x03 J33
+U 1 1 5C9033AA
+P 10100 4550
+F 0 "J33" V 10200 4650 50  0000 L CNN
+F 1 "SERVO3" V 10200 4350 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 10100 4550 50  0001 C CNN
+F 3 "~" H 10100 4550 50  0001 C CNN
+	1    10100 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 4550 0    60   Input ~ 0
+PWM3
+$Comp
+L mainboard-rescue:+5VA #PWR0123
+U 1 1 5C9033B1
+P 9850 4450
+F 0 "#PWR0123" H 9850 4300 50  0001 C CNN
+F 1 "+5VA" V 9850 4700 50  0000 C CNN
+F 2 "" H 9850 4450 50  0001 C CNN
+F 3 "" H 9850 4450 50  0001 C CNN
+	1    9850 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0124
+U 1 1 5C9033B7
+P 9850 4650
+F 0 "#PWR0124" H 9850 4400 50  0001 C CNN
+F 1 "GND" V 9850 4450 50  0000 C CNN
+F 2 "" H 9850 4650 50  0001 C CNN
+F 3 "" H 9850 4650 50  0001 C CNN
+	1    9850 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 4450 9900 4450
+Wire Wire Line
+	9850 4550 9900 4550
+Wire Wire Line
+	9850 4650 9900 4650
+$Comp
+L Connector_Generic:Conn_01x03 J34
+U 1 1 5C9033C0
+P 10100 4950
+F 0 "J34" V 10200 5050 50  0000 L CNN
+F 1 "SERVO4" V 10200 4750 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 10100 4950 50  0001 C CNN
+F 3 "~" H 10100 4950 50  0001 C CNN
+	1    10100 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 4950 0    60   Input ~ 0
+PWM4
+$Comp
+L mainboard-rescue:+5VA #PWR0125
+U 1 1 5C9033C7
+P 9850 4850
+F 0 "#PWR0125" H 9850 4700 50  0001 C CNN
+F 1 "+5VA" V 9850 5100 50  0000 C CNN
+F 2 "" H 9850 4850 50  0001 C CNN
+F 3 "" H 9850 4850 50  0001 C CNN
+	1    9850 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0126
+U 1 1 5C9033CD
+P 9850 5050
+F 0 "#PWR0126" H 9850 4800 50  0001 C CNN
+F 1 "GND" V 9850 4850 50  0000 C CNN
+F 2 "" H 9850 5050 50  0001 C CNN
+F 3 "" H 9850 5050 50  0001 C CNN
+	1    9850 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 4850 9900 4850
+Wire Wire Line
+	9850 4950 9900 4950
+Wire Wire Line
+	9850 5050 9900 5050
+$Comp
+L Interface_CAN_LIN:MCP25625-x-SS U6
+U 1 1 5CA3FA94
+P 6600 8350
+F 0 "U6" H 7050 7300 50  0000 C CNN
+F 1 "MCP25625-x-SS" H 6100 7300 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 6700 8050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/microchip-technology/MCP25625T-E-SS/MCP25625T-E-SSCT-ND/9450517" H 6600 8950 50  0001 C CNN
+	1    6600 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0127
+U 1 1 5CA41A45
+P 6500 6750
+F 0 "#PWR0127" H 6500 6600 50  0001 C CNN
+F 1 "+5V" H 6500 6890 50  0000 C CNN
+F 2 "" H 6500 6750 50  0001 C CNN
+F 3 "" H 6500 6750 50  0001 C CNN
+	1    6500 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 8150 0    60   Input ~ 0
+RST
+$Comp
+L Device:C C3
+U 1 1 5CA66069
+P 6300 7000
+F 0 "C3" V 6250 7050 50  0000 L CNN
+F 1 "100n" V 6250 6750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6338 6850 50  0001 C CNN
+F 3 "~" H 6300 7000 50  0001 C CNN
+	1    6300 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CA676E1
+P 6300 6800
+F 0 "C2" V 6250 6850 50  0000 L CNN
+F 1 "10u" V 6250 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6338 6650 50  0001 C CNN
+F 3 "~" H 6300 6800 50  0001 C CNN
+	1    6300 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 7250 6400 7150
+Wire Wire Line
+	6400 7150 6500 7150
+Wire Wire Line
+	6500 7150 6500 7250
+Wire Wire Line
+	6500 7150 6500 7000
+Connection ~ 6500 7150
+Wire Wire Line
+	6450 6800 6500 6800
+Connection ~ 6500 6800
+Wire Wire Line
+	6500 6800 6500 6750
+Wire Wire Line
+	6450 7000 6500 7000
+Connection ~ 6500 7000
+Wire Wire Line
+	6500 7000 6500 6800
+Wire Wire Line
+	6150 7000 6000 7000
+Wire Wire Line
+	6150 6800 6000 6800
+$Comp
+L mainboard-rescue:GND #PWR0128
+U 1 1 5CB3C5E6
+P 6000 6800
+F 0 "#PWR0128" H 6000 6550 50  0001 C CNN
+F 1 "GND" V 6000 6600 50  0000 C CNN
+F 2 "" H 6000 6800 50  0001 C CNN
+F 3 "" H 6000 6800 50  0001 C CNN
+	1    6000 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0129
+U 1 1 5CB3C7E9
+P 6000 7000
+F 0 "#PWR0129" H 6000 6750 50  0001 C CNN
+F 1 "GND" V 6000 6800 50  0000 C CNN
+F 2 "" H 6000 7000 50  0001 C CNN
+F 3 "" H 6000 7000 50  0001 C CNN
+	1    6000 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5CB3CBE4
+P 7000 7050
+F 0 "C4" V 7050 6900 50  0000 L CNN
+F 1 "10u" V 7050 7100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7038 6900 50  0001 C CNN
+F 3 "~" H 7000 7050 50  0001 C CNN
+	1    7000 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0130
+U 1 1 5CB3CD6A
+P 6800 7000
+F 0 "#PWR0130" H 6800 6850 50  0001 C CNN
+F 1 "+5V" H 6800 7140 50  0000 C CNN
+F 2 "" H 6800 7000 50  0001 C CNN
+F 3 "" H 6800 7000 50  0001 C CNN
+	1    6800 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 7250 6800 7050
+Wire Wire Line
+	6800 7050 6850 7050
+Connection ~ 6800 7050
+Wire Wire Line
+	6800 7050 6800 7000
+$Comp
+L mainboard-rescue:GND #PWR0131
+U 1 1 5CB861E5
+P 7200 7050
+F 0 "#PWR0131" H 7200 6800 50  0001 C CNN
+F 1 "GND" V 7300 7000 50  0000 C CNN
+F 2 "" H 7200 7050 50  0001 C CNN
+F 3 "" H 7200 7050 50  0001 C CNN
+	1    7200 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 7050 7200 7050
+$Comp
+L mainboard-rescue:GND #PWR0132
+U 1 1 5CBAC2A5
+P 5950 7450
+F 0 "#PWR0132" H 5950 7200 50  0001 C CNN
+F 1 "GND" V 5950 7250 50  0000 C CNN
+F 2 "" H 5950 7450 50  0001 C CNN
+F 3 "" H 5950 7450 50  0001 C CNN
+	1    5950 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 7450 6000 7450
+Text GLabel 5950 7650 0    60   Input ~ 0
+CAN_SCK
+Text GLabel 5950 7750 0    60   Input ~ 0
+CAN_MOSI
+Text GLabel 5950 7850 0    60   Input ~ 0
+CAN_MISO
+Text GLabel 5950 7950 0    60   Input ~ 0
+CAN_CS
+Wire Wire Line
+	5950 7650 6000 7650
+Wire Wire Line
+	5950 7750 6000 7750
+Wire Wire Line
+	5950 7850 6000 7850
+Wire Wire Line
+	5950 7950 6000 7950
+$Comp
+L mainboard-rescue:R R5
+U 1 1 5CC6CA3B
+P 5800 8550
+F 0 "R5" V 5880 8550 50  0000 C CNN
+F 1 "10K" V 5800 8550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 8550 50  0001 C CNN
+F 3 "" H 5800 8550 50  0001 C CNN
+	1    5800 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0133
+U 1 1 5CC6DC17
+P 5600 8550
+F 0 "#PWR0133" H 5600 8400 50  0001 C CNN
+F 1 "+5V" V 5600 8750 50  0000 C CNN
+F 2 "" H 5600 8550 50  0001 C CNN
+F 3 "" H 5600 8550 50  0001 C CNN
+	1    5600 8550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 8550 5650 8550
+Wire Wire Line
+	5950 8550 6000 8550
+NoConn ~ 6000 8450
+NoConn ~ 6000 8350
+NoConn ~ 6000 8750
+NoConn ~ 6000 8850
+Text GLabel 5950 9050 0    60   Input ~ 0
+CAN_INT
+Wire Wire Line
+	5950 9050 6000 9050
+NoConn ~ 6000 9250
+$Comp
+L mainboard-rescue:GND #PWR0134
+U 1 1 5CDA88E2
+P 6500 9500
+F 0 "#PWR0134" H 6500 9250 50  0001 C CNN
+F 1 "GND" H 6500 9350 50  0000 C CNN
+F 2 "" H 6500 9500 50  0001 C CNN
+F 3 "" H 6500 9500 50  0001 C CNN
+	1    6500 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0135
+U 1 1 5CDA8DF7
+P 6800 9500
+F 0 "#PWR0135" H 6800 9250 50  0001 C CNN
+F 1 "GND" H 6800 9350 50  0000 C CNN
+F 2 "" H 6800 9500 50  0001 C CNN
+F 3 "" H 6800 9500 50  0001 C CNN
+	1    6800 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 9450 6500 9500
+Wire Wire Line
+	6800 9450 6800 9500
+$Comp
+L Device:C C5
+U 1 1 5CDF9D25
+P 7650 8550
+F 0 "C5" V 7600 8600 50  0000 L CNN
+F 1 "20p" V 7600 8350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7688 8400 50  0001 C CNN
+F 3 "~" H 7650 8550 50  0001 C CNN
+	1    7650 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5CDFA225
+P 7650 8850
+F 0 "C6" V 7600 8900 50  0000 L CNN
+F 1 "20p" V 7700 8650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7688 8700 50  0001 C CNN
+F 3 "~" H 7650 8850 50  0001 C CNN
+	1    7650 8850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 8850 7850 8850
+Wire Wire Line
+	7800 8550 7850 8550
+$Comp
+L mainboard-rescue:GND #PWR0136
+U 1 1 5CEEE228
+P 7850 8550
+F 0 "#PWR0136" H 7850 8300 50  0001 C CNN
+F 1 "GND" H 7850 8400 50  0000 C CNN
+F 2 "" H 7850 8550 50  0001 C CNN
+F 3 "" H 7850 8550 50  0001 C CNN
+	1    7850 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0137
+U 1 1 5CEEE7C3
+P 7850 8850
+F 0 "#PWR0137" H 7850 8600 50  0001 C CNN
+F 1 "GND" H 7850 8700 50  0000 C CNN
+F 2 "" H 7850 8850 50  0001 C CNN
+F 3 "" H 7850 8850 50  0001 C CNN
+	1    7850 8850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 8050 7250 8050
+Wire Wire Line
+	7250 8050 7250 7850
+Wire Wire Line
+	7250 7850 7200 7850
+Wire Wire Line
+	7200 7750 7300 7750
+Wire Wire Line
+	7300 7750 7300 8150
+Wire Wire Line
+	7300 8150 7200 8150
+$Comp
+L mainboard-rescue:Conn_01x03 J15
+U 1 1 5CFC71BD
+P 7750 7550
+F 0 "J15" H 7750 7750 50  0000 C CNN
+F 1 "CAN" V 7850 7550 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 7750 7550 50  0001 C CNN
+F 3 "" H 7750 7550 50  0001 C CNN
+	1    7750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0140
+U 1 1 5CFC82B0
+P 7500 7700
+F 0 "#PWR0140" H 7500 7450 50  0001 C CNN
+F 1 "GND" H 7500 7550 50  0000 C CNN
+F 2 "" H 7500 7700 50  0001 C CNN
+F 3 "" H 7500 7700 50  0001 C CNN
+	1    7500 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 7700 7500 7650
+Wire Wire Line
+	7500 7650 7550 7650
+Wire Wire Line
+	7200 7550 7400 7550
+Wire Wire Line
+	7200 7450 7550 7450
+Connection ~ 7550 7450
+Wire Wire Line
+	5950 8150 6000 8150
+$Comp
+L mainboard-rescue:Bluetooth_HC-05-Bluetooth U4
+U 1 1 5D18ACD6
+P 5650 1350
+F 0 "U4" H 5751 1937 60  0000 C CNN
+F 1 "Bluetooth_HC-05" H 5751 1831 60  0000 C CNN
+F 2 "Bluetooth:Bluetooth_HC-05" H 5700 1200 60  0001 C CNN
+F 3 "" H 5700 1200 60  0000 C CNN
+	1    5650 1350
+	0    1    1    0   
+$EndComp
+NoConn ~ 5000 1100
+NoConn ~ 5000 1600
+$Comp
+L mainboard-rescue:R R3
+U 1 1 5D1E3CF9
+P 4150 1200
+F 0 "R3" V 4230 1200 50  0000 C CNN
+F 1 "1K" V 4150 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 1200 50  0001 C CNN
+F 3 "" H 4150 1200 50  0001 C CNN
+	1    4150 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:R R4
+U 1 1 5D1E4841
+P 4350 1400
+F 0 "R4" V 4430 1400 50  0000 C CNN
+F 1 "2K" V 4350 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 1400 50  0001 C CNN
+F 3 "" H 4350 1400 50  0001 C CNN
+	1    4350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1200 4350 1200
+Wire Wire Line
+	4350 1250 4350 1200
+Connection ~ 4350 1200
+Wire Wire Line
+	4350 1200 4300 1200
+Wire Wire Line
+	4000 1200 3950 1200
+Wire Wire Line
+	4350 1550 4350 1600
+$Comp
+L mainboard-rescue:GND #PWR0142
+U 1 1 5D2C35CD
+P 4350 1600
+F 0 "#PWR0142" H 4350 1350 50  0001 C CNN
+F 1 "GND" H 4350 1450 50  0000 C CNN
+F 2 "" H 4350 1600 50  0001 C CNN
+F 3 "" H 4350 1600 50  0001 C CNN
+	1    4350 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 1300 0    60   Input ~ 0
+DBG_RX
+Text GLabel 3950 1200 0    60   Input ~ 0
+DBG_TX
+Wire Wire Line
+	5000 1300 4950 1300
+$Comp
+L mainboard-rescue:GND #PWR0143
+U 1 1 5D2F2DB0
+P 4950 1400
+F 0 "#PWR0143" H 4950 1150 50  0001 C CNN
+F 1 "GND" V 4950 1200 50  0000 C CNN
+F 2 "" H 4950 1400 50  0001 C CNN
+F 3 "" H 4950 1400 50  0001 C CNN
+	1    4950 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 1400 4950 1400
+$Comp
+L mainboard-rescue:+5V #PWR0144
+U 1 1 5D320D46
+P 4950 1500
+F 0 "#PWR0144" H 4950 1350 50  0001 C CNN
+F 1 "+5V" V 4950 1700 50  0000 C CNN
+F 2 "" H 4950 1500 50  0001 C CNN
+F 3 "" H 4950 1500 50  0001 C CNN
+	1    4950 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 1500 4950 1500
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5D4A1164
+P 10950 4600
+F 0 "J3" V 11150 4700 50  0000 L CNN
+F 1 "bin_sens1" V 11050 4400 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 10950 4600 50  0001 C CNN
+F 3 "~" H 10950 4600 50  0001 C CNN
+	1    10950 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1100 6900 0    60   Input ~ 0
+BIN_SEN1
+Text GLabel 1100 7000 0    60   Input ~ 0
+BIN_SEN2
+Text GLabel 1100 7100 0    60   Input ~ 0
+BIN_SEN3
+Text GLabel 1100 7200 0    60   Input ~ 0
+BIN_SEN4
+Text GLabel 1100 7300 0    60   Input ~ 0
+BIN_SEN5
+Text GLabel 1100 7400 0    60   Input ~ 0
+BIN_SEN6
+Text GLabel 10950 4850 3    60   Input ~ 0
+BIN_SEN1
+$Comp
+L mainboard-rescue:GND #PWR0147
+U 1 1 5D4A4DEC
+P 11050 4850
+F 0 "#PWR0147" H 11050 4600 50  0001 C CNN
+F 1 "GND" V 11050 4650 50  0000 C CNN
+F 2 "" H 11050 4850 50  0001 C CNN
+F 3 "" H 11050 4850 50  0001 C CNN
+	1    11050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4800 10850 4850
+Wire Wire Line
+	10950 4800 10950 4850
+Wire Wire Line
+	11050 4800 11050 4850
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5D53157F
+P 11350 4600
+F 0 "J6" V 11550 4700 50  0000 L CNN
+F 1 "bin_sens2" V 11450 4400 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 11350 4600 50  0001 C CNN
+F 3 "~" H 11350 4600 50  0001 C CNN
+	1    11350 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 11350 4850 3    60   Input ~ 0
+BIN_SEN2
+$Comp
+L mainboard-rescue:GND #PWR0148
+U 1 1 5D53158C
+P 11450 4850
+F 0 "#PWR0148" H 11450 4600 50  0001 C CNN
+F 1 "GND" V 11450 4650 50  0000 C CNN
+F 2 "" H 11450 4850 50  0001 C CNN
+F 3 "" H 11450 4850 50  0001 C CNN
+	1    11450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 4800 11250 4850
+Wire Wire Line
+	11350 4800 11350 4850
+Wire Wire Line
+	11450 4800 11450 4850
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5D561316
+P 11750 4600
+F 0 "J8" V 11950 4700 50  0000 L CNN
+F 1 "bin_sens3" V 11850 4400 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 11750 4600 50  0001 C CNN
+F 3 "~" H 11750 4600 50  0001 C CNN
+	1    11750 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 11750 4850 3    60   Input ~ 0
+BIN_SEN3
+$Comp
+L mainboard-rescue:GND #PWR0149
+U 1 1 5D561323
+P 11850 4850
+F 0 "#PWR0149" H 11850 4600 50  0001 C CNN
+F 1 "GND" V 11850 4650 50  0000 C CNN
+F 2 "" H 11850 4850 50  0001 C CNN
+F 3 "" H 11850 4850 50  0001 C CNN
+	1    11850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 4800 11650 4850
+Wire Wire Line
+	11750 4800 11750 4850
+Wire Wire Line
+	11850 4800 11850 4850
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5D59184A
+P 12150 4600
+F 0 "J4" V 12350 4700 50  0000 L CNN
+F 1 "bin_sens4" V 12250 4400 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 12150 4600 50  0001 C CNN
+F 3 "~" H 12150 4600 50  0001 C CNN
+	1    12150 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 12150 4850 3    60   Input ~ 0
+BIN_SEN4
+$Comp
+L mainboard-rescue:GND #PWR0152
+U 1 1 5D591857
+P 12250 4850
+F 0 "#PWR0152" H 12250 4600 50  0001 C CNN
+F 1 "GND" V 12250 4650 50  0000 C CNN
+F 2 "" H 12250 4850 50  0001 C CNN
+F 3 "" H 12250 4850 50  0001 C CNN
+	1    12250 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 4800 12050 4850
+Wire Wire Line
+	12150 4800 12150 4850
+Wire Wire Line
+	12250 4800 12250 4850
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5D591860
+P 12550 4600
+F 0 "J7" V 12750 4700 50  0000 L CNN
+F 1 "bin_sens5" V 12650 4400 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 12550 4600 50  0001 C CNN
+F 3 "~" H 12550 4600 50  0001 C CNN
+	1    12550 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0153
+U 1 1 5D59186D
+P 12650 4850
+F 0 "#PWR0153" H 12650 4600 50  0001 C CNN
+F 1 "GND" V 12650 4650 50  0000 C CNN
+F 2 "" H 12650 4850 50  0001 C CNN
+F 3 "" H 12650 4850 50  0001 C CNN
+	1    12650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 4800 12450 4850
+Wire Wire Line
+	12550 4800 12550 4850
+Wire Wire Line
+	12650 4800 12650 4850
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5D591876
+P 12950 4600
+F 0 "J9" V 13150 4700 50  0000 L CNN
+F 1 "bin_sens6" V 13050 4400 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 12950 4600 50  0001 C CNN
+F 3 "~" H 12950 4600 50  0001 C CNN
+	1    12950 4600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 12950 4850 3    60   Input ~ 0
+BIN_SEN6
+$Comp
+L mainboard-rescue:GND #PWR0154
+U 1 1 5D591883
+P 13050 4850
+F 0 "#PWR0154" H 13050 4600 50  0001 C CNN
+F 1 "GND" V 13050 4650 50  0000 C CNN
+F 2 "" H 13050 4850 50  0001 C CNN
+F 3 "" H 13050 4850 50  0001 C CNN
+	1    13050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 4800 12850 4850
+Wire Wire Line
+	12950 4800 12950 4850
+Wire Wire Line
+	13050 4800 13050 4850
+Text GLabel 3800 5700 2    60   Input ~ 0
+JUMPER
+NoConn ~ 7450 1700
+NoConn ~ 5950 1850
+Text GLabel 12550 4850 3    60   Input ~ 0
+BIN_SEN5
+$Comp
+L mainboard-rescue:+5V #PWR0155
+U 1 1 5C1152E7
+P 10850 4850
+F 0 "#PWR0155" H 10850 4700 50  0001 C CNN
+F 1 "+5V" V 10850 5050 50  0000 C CNN
+F 2 "" H 10850 4850 50  0001 C CNN
+F 3 "" H 10850 4850 50  0001 C CNN
+	1    10850 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0156
+U 1 1 5C115EB4
+P 11250 4850
+F 0 "#PWR0156" H 11250 4700 50  0001 C CNN
+F 1 "+5V" V 11250 5050 50  0000 C CNN
+F 2 "" H 11250 4850 50  0001 C CNN
+F 3 "" H 11250 4850 50  0001 C CNN
+	1    11250 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0157
+U 1 1 5C115F87
+P 11650 4850
+F 0 "#PWR0157" H 11650 4700 50  0001 C CNN
+F 1 "+5V" V 11650 5050 50  0000 C CNN
+F 2 "" H 11650 4850 50  0001 C CNN
+F 3 "" H 11650 4850 50  0001 C CNN
+	1    11650 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0158
+U 1 1 5C11605A
+P 12050 4850
+F 0 "#PWR0158" H 12050 4700 50  0001 C CNN
+F 1 "+5V" V 12050 5050 50  0000 C CNN
+F 2 "" H 12050 4850 50  0001 C CNN
+F 3 "" H 12050 4850 50  0001 C CNN
+	1    12050 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0159
+U 1 1 5C11612D
+P 12450 4850
+F 0 "#PWR0159" H 12450 4700 50  0001 C CNN
+F 1 "+5V" V 12450 5050 50  0000 C CNN
+F 2 "" H 12450 4850 50  0001 C CNN
+F 3 "" H 12450 4850 50  0001 C CNN
+	1    12450 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0160
+U 1 1 5C116200
+P 12850 4850
+F 0 "#PWR0160" H 12850 4700 50  0001 C CNN
+F 1 "+5V" V 12850 5050 50  0000 C CNN
+F 2 "" H 12850 4850 50  0001 C CNN
+F 3 "" H 12850 4850 50  0001 C CNN
+	1    12850 4850
+	-1   0    0    1   
+$EndComp
+Text GLabel 1100 6400 0    60   Input ~ 0
+SDA
+Text GLabel 1100 6500 0    60   Input ~ 0
+SCL
+Text GLabel 14300 4850 3    60   Input ~ 0
+SDA
+Text GLabel 14200 4850 3    60   Input ~ 0
+SCL
+$Comp
+L mainboard-rescue:GND #PWR0161
+U 1 1 5C14B429
+P 14400 4850
+F 0 "#PWR0161" H 14400 4600 50  0001 C CNN
+F 1 "GND" V 14400 4650 50  0000 C CNN
+F 2 "" H 14400 4850 50  0001 C CNN
+F 3 "" H 14400 4850 50  0001 C CNN
+	1    14400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J13
+U 1 1 5C14BE7D
+P 14200 4600
+F 0 "J13" V 14400 4750 50  0000 R CNN
+F 1 "i2c_con" V 14300 4750 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 14200 4600 50  0001 C CNN
+F 3 "~" H 14200 4600 50  0001 C CNN
+	1    14200 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0162
+U 1 1 5C14C6BF
+P 14100 4850
+F 0 "#PWR0162" H 14100 4700 50  0001 C CNN
+F 1 "+5V" V 14100 5050 50  0000 C CNN
+F 2 "" H 14100 4850 50  0001 C CNN
+F 3 "" H 14100 4850 50  0001 C CNN
+	1    14100 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14100 4800 14100 4850
+Wire Wire Line
+	14200 4800 14200 4850
+Wire Wire Line
+	14300 4800 14300 4850
+Wire Wire Line
+	14400 4800 14400 4850
+NoConn ~ 1100 5600
+NoConn ~ 1100 5700
+NoConn ~ 1150 6600
+NoConn ~ 1150 6700
+Text GLabel 1100 6000 0    60   Input ~ 0
+SER_RX
+Text GLabel 1100 6100 0    60   Input ~ 0
+SER_TX
+Wire Wire Line
+	1100 6000 1150 6000
+Wire Wire Line
+	1100 6100 1150 6100
+Text GLabel 15350 4850 3    60   Input ~ 0
+SER_RX
+Text GLabel 15450 4850 3    60   Input ~ 0
+SER_TX
+$Comp
+L Connector_Generic:Conn_01x03 J14
+U 1 1 5C3E1B9D
+P 15350 4600
+F 0 "J14" V 15500 4650 50  0000 L CNN
+F 1 "ser_con" V 15450 4450 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 15350 4600 50  0001 C CNN
+F 3 "~" H 15350 4600 50  0001 C CNN
+	1    15350 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15350 4800 15350 4850
+Wire Wire Line
+	15450 4800 15450 4850
+$Comp
+L mainboard-rescue:GND #PWR0163
+U 1 1 5C448346
+P 15250 4850
+F 0 "#PWR0163" H 15250 4600 50  0001 C CNN
+F 1 "GND" V 15250 4650 50  0000 C CNN
+F 2 "" H 15250 4850 50  0001 C CNN
+F 3 "" H 15250 4850 50  0001 C CNN
+	1    15250 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15250 4800 15250 4850
+Text GLabel 3800 5800 2    60   Input ~ 0
+SIDE
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 5C4B0BDF
+P 13650 4600
+F 0 "J10" V 13850 4750 50  0000 R CNN
+F 1 "jump_side" V 13750 4750 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 13650 4600 50  0001 C CNN
+F 3 "~" H 13650 4600 50  0001 C CNN
+	1    13650 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0164
+U 1 1 5C4B0D03
+P 13550 4850
+F 0 "#PWR0164" H 13550 4700 50  0001 C CNN
+F 1 "+5V" V 13550 5050 50  0000 C CNN
+F 2 "" H 13550 4850 50  0001 C CNN
+F 3 "" H 13550 4850 50  0001 C CNN
+	1    13550 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0165
+U 1 1 5C4B0F11
+P 13850 4850
+F 0 "#PWR0165" H 13850 4600 50  0001 C CNN
+F 1 "GND" V 13850 4650 50  0000 C CNN
+F 2 "" H 13850 4850 50  0001 C CNN
+F 3 "" H 13850 4850 50  0001 C CNN
+	1    13850 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 13650 4850 3    60   Input ~ 0
+JUMPER
+Text GLabel 13750 4850 3    60   Input ~ 0
+SIDE
+Wire Wire Line
+	13550 4800 13550 4850
+Wire Wire Line
+	13650 4800 13650 4850
+Wire Wire Line
+	13750 4800 13750 4850
+Wire Wire Line
+	13850 4800 13850 4850
+NoConn ~ 1150 9900
+$Comp
+L Connector_Generic:Conn_01x04 J12
+U 1 1 5C68BCB2
+P 14750 4600
+F 0 "J12" V 14950 4750 50  0000 R CNN
+F 1 "tactics_sw" V 14850 4750 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 14750 4600 50  0001 C CNN
+F 3 "~" H 14750 4600 50  0001 C CNN
+	1    14750 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0166
+U 1 1 5C68BCB8
+P 14650 4850
+F 0 "#PWR0166" H 14650 4700 50  0001 C CNN
+F 1 "+5V" V 14650 5050 50  0000 C CNN
+F 2 "" H 14650 4850 50  0001 C CNN
+F 3 "" H 14650 4850 50  0001 C CNN
+	1    14650 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0167
+U 1 1 5C68BCBE
+P 14950 4850
+F 0 "#PWR0167" H 14950 4600 50  0001 C CNN
+F 1 "GND" V 14950 4650 50  0000 C CNN
+F 2 "" H 14950 4850 50  0001 C CNN
+F 3 "" H 14950 4850 50  0001 C CNN
+	1    14950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 4800 14650 4850
+Wire Wire Line
+	14750 4800 14750 4850
+Wire Wire Line
+	14850 4800 14850 4850
+Wire Wire Line
+	14950 4800 14950 4850
+Text GLabel 3800 5900 2    60   Input ~ 0
+TACTIC1
+Text GLabel 3800 6000 2    60   Input ~ 0
+TACTIC2
+Text GLabel 14850 4850 3    60   Input ~ 0
+TACTIC1
+Text GLabel 14750 4850 3    60   Input ~ 0
+TACTIC2
+$Comp
+L mainboard-rescue:PC817 U10
+U 1 1 5C6726A3
+P 12400 1300
+F 0 "U10" H 12200 1500 50  0000 L CNN
+F 1 "PC817" H 12400 1500 50  0000 L CNN
+F 2 "Package_SO:SOP-4_4.4x2.8mm_P1.27mm" H 12200 1100 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/TPC817S1B-RAG/TPC817S1BRAGCT-ND/7359679" H 12400 1300 50  0001 L CNN
+	1    12400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:Conn_01x03 J30
+U 1 1 5C6726A9
+P 11200 1200
+F 0 "J30" H 11200 1400 50  0000 C CNN
+F 1 "Senzor2" V 11300 1200 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 11200 1200 50  0001 C CNN
+F 3 "" H 11200 1200 50  0001 C CNN
+	1    11200 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0168
+U 1 1 5C6726AF
+P 11450 800
+F 0 "#PWR0168" H 11450 650 50  0001 C CNN
+F 1 "+12V" H 11450 950 50  0000 C CNN
+F 2 "" H 11450 800 50  0001 C CNN
+F 3 "" H 11450 800 50  0001 C CNN
+	1    11450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0169
+U 1 1 5C6726B5
+P 11450 1800
+F 0 "#PWR0169" H 11450 1550 50  0001 C CNN
+F 1 "GND" H 11450 1650 50  0000 C CNN
+F 2 "" H 11450 1800 50  0001 C CNN
+F 3 "" H 11450 1800 50  0001 C CNN
+	1    11450 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 1300 11450 1800
+Wire Wire Line
+	11450 1300 11400 1300
+Wire Wire Line
+	11450 800  11450 1100
+Wire Wire Line
+	11450 1100 11400 1100
+$Comp
+L mainboard-rescue:R R22
+U 1 1 5C6726BF
+P 11900 1200
+F 0 "R22" V 11980 1200 50  0000 C CNN
+F 1 "500" V 11900 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11830 1200 50  0001 C CNN
+F 3 "" H 11900 1200 50  0001 C CNN
+	1    11900 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12100 1200 12050 1200
+$Comp
+L mainboard-rescue:GND #PWR0170
+U 1 1 5C6726C6
+P 12050 1800
+F 0 "#PWR0170" H 12050 1550 50  0001 C CNN
+F 1 "GND" H 12050 1650 50  0000 C CNN
+F 2 "" H 12050 1800 50  0001 C CNN
+F 3 "" H 12050 1800 50  0001 C CNN
+	1    12050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 1400 12050 1400
+Wire Wire Line
+	12050 1400 12050 1800
+$Comp
+L mainboard-rescue:R R25
+U 1 1 5C6726CE
+P 12750 1600
+F 0 "R25" V 12830 1600 50  0000 C CNN
+F 1 "10K" V 12750 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12680 1600 50  0001 C CNN
+F 3 "" H 12750 1600 50  0001 C CNN
+	1    12750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0171
+U 1 1 5C6726D4
+P 12750 1800
+F 0 "#PWR0171" H 12750 1550 50  0001 C CNN
+F 1 "GND" H 12750 1650 50  0000 C CNN
+F 2 "" H 12750 1800 50  0001 C CNN
+F 3 "" H 12750 1800 50  0001 C CNN
+	1    12750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 1400 12750 1450
+Connection ~ 12750 1400
+$Comp
+L mainboard-rescue:+5V #PWR0172
+U 1 1 5C6726DC
+P 12750 1150
+F 0 "#PWR0172" H 12750 1000 50  0001 C CNN
+F 1 "+5V" V 12750 1350 50  0000 C CNN
+F 2 "" H 12750 1150 50  0001 C CNN
+F 3 "" H 12750 1150 50  0001 C CNN
+	1    12750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 1200 12700 1200
+Wire Wire Line
+	12750 1800 12750 1750
+Text GLabel 12900 1350 1    60   Input ~ 0
+SENSOR2
+Wire Wire Line
+	12750 1150 12750 1200
+$Comp
+L mainboard-rescue:R R16
+U 1 1 5C6726E6
+P 11700 1000
+F 0 "R16" V 11600 1000 50  0000 C CNN
+F 1 "500" V 11700 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11630 1000 50  0001 C CNN
+F 3 "" H 11700 1000 50  0001 C CNN
+	1    11700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:R R17
+U 1 1 5C6726EC
+P 11700 1400
+F 0 "R17" V 11780 1400 50  0000 C CNN
+F 1 "1K" V 11700 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11630 1400 50  0001 C CNN
+F 3 "" H 11700 1400 50  0001 C CNN
+	1    11700 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0173
+U 1 1 5C6726F2
+P 11700 1800
+F 0 "#PWR0173" H 11700 1550 50  0001 C CNN
+F 1 "GND" H 11700 1650 50  0000 C CNN
+F 2 "" H 11700 1800 50  0001 C CNN
+F 3 "" H 11700 1800 50  0001 C CNN
+	1    11700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 1550 11700 1800
+Wire Wire Line
+	11400 1200 11700 1200
+Wire Wire Line
+	11700 1150 11700 1200
+Connection ~ 11700 1200
+$Comp
+L mainboard-rescue:+12V #PWR0174
+U 1 1 5C6726FC
+P 11700 800
+F 0 "#PWR0174" H 11700 650 50  0001 C CNN
+F 1 "+12V" H 11700 950 50  0000 C CNN
+F 2 "" H 11700 800 50  0001 C CNN
+F 3 "" H 11700 800 50  0001 C CNN
+	1    11700 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 800  11700 850 
+Wire Wire Line
+	12700 1400 12750 1400
+Wire Wire Line
+	11700 1200 11750 1200
+Wire Wire Line
+	11700 1200 11700 1250
+Wire Wire Line
+	12900 1400 12900 1350
+Wire Wire Line
+	12750 1400 12900 1400
+$Comp
+L mainboard-rescue:+5V #PWR0175
+U 1 1 5C672708
+P 13100 1000
+F 0 "#PWR0175" H 13100 850 50  0001 C CNN
+F 1 "+5V" V 13100 1200 50  0000 C CNN
+F 2 "" H 13100 1000 50  0001 C CNN
+F 3 "" H 13100 1000 50  0001 C CNN
+	1    13100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0176
+U 1 1 5C67270E
+P 13100 1500
+F 0 "#PWR0176" H 13100 1250 50  0001 C CNN
+F 1 "GND" H 13100 1350 50  0000 C CNN
+F 2 "" H 13100 1500 50  0001 C CNN
+F 3 "" H 13100 1500 50  0001 C CNN
+	1    13100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5C672714
+P 13100 1250
+F 0 "C10" H 13215 1296 50  0000 L CNN
+F 1 "100n" H 13215 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13138 1100 50  0001 C CNN
+F 3 "~" H 13100 1250 50  0001 C CNN
+	1    13100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 1000 13100 1100
+Wire Wire Line
+	13100 1400 13100 1500
+$Comp
+L mainboard-rescue:PC817 U8
+U 1 1 5C69E462
+P 10000 2850
+F 0 "U8" H 9800 3050 50  0000 L CNN
+F 1 "PC817" H 10000 3050 50  0000 L CNN
+F 2 "Package_SO:SOP-4_4.4x2.8mm_P1.27mm" H 9800 2650 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/TPC817S1B-RAG/TPC817S1BRAGCT-ND/7359679" H 10000 2850 50  0001 L CNN
+	1    10000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:Conn_01x03 J17
+U 1 1 5C69E468
+P 8800 2750
+F 0 "J17" H 8800 2950 50  0000 C CNN
+F 1 "Senzor3" V 8900 2750 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 8800 2750 50  0001 C CNN
+F 3 "" H 8800 2750 50  0001 C CNN
+	1    8800 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0177
+U 1 1 5C69E46E
+P 9050 2350
+F 0 "#PWR0177" H 9050 2200 50  0001 C CNN
+F 1 "+12V" H 9050 2500 50  0000 C CNN
+F 2 "" H 9050 2350 50  0001 C CNN
+F 3 "" H 9050 2350 50  0001 C CNN
+	1    9050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0178
+U 1 1 5C69E474
+P 9050 3350
+F 0 "#PWR0178" H 9050 3100 50  0001 C CNN
+F 1 "GND" H 9050 3200 50  0000 C CNN
+F 2 "" H 9050 3350 50  0001 C CNN
+F 3 "" H 9050 3350 50  0001 C CNN
+	1    9050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2850 9050 3350
+Wire Wire Line
+	9050 2850 9000 2850
+Wire Wire Line
+	9050 2350 9050 2650
+Wire Wire Line
+	9050 2650 9000 2650
+$Comp
+L mainboard-rescue:R R11
+U 1 1 5C69E47E
+P 9500 2750
+F 0 "R11" V 9580 2750 50  0000 C CNN
+F 1 "500" V 9500 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9430 2750 50  0001 C CNN
+F 3 "" H 9500 2750 50  0001 C CNN
+	1    9500 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 2750 9650 2750
+$Comp
+L mainboard-rescue:GND #PWR0179
+U 1 1 5C69E485
+P 9650 3350
+F 0 "#PWR0179" H 9650 3100 50  0001 C CNN
+F 1 "GND" H 9650 3200 50  0000 C CNN
+F 2 "" H 9650 3350 50  0001 C CNN
+F 3 "" H 9650 3350 50  0001 C CNN
+	1    9650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2950 9650 2950
+Wire Wire Line
+	9650 2950 9650 3350
+$Comp
+L mainboard-rescue:R R14
+U 1 1 5C69E48D
+P 10350 3150
+F 0 "R14" V 10430 3150 50  0000 C CNN
+F 1 "10K" V 10350 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10280 3150 50  0001 C CNN
+F 3 "" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0180
+U 1 1 5C69E493
+P 10350 3350
+F 0 "#PWR0180" H 10350 3100 50  0001 C CNN
+F 1 "GND" H 10350 3200 50  0000 C CNN
+F 2 "" H 10350 3350 50  0001 C CNN
+F 3 "" H 10350 3350 50  0001 C CNN
+	1    10350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2950 10350 3000
+Connection ~ 10350 2950
+$Comp
+L mainboard-rescue:+5V #PWR0181
+U 1 1 5C69E49B
+P 10350 2700
+F 0 "#PWR0181" H 10350 2550 50  0001 C CNN
+F 1 "+5V" V 10350 2900 50  0000 C CNN
+F 2 "" H 10350 2700 50  0001 C CNN
+F 3 "" H 10350 2700 50  0001 C CNN
+	1    10350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2750 10300 2750
+Wire Wire Line
+	10350 3350 10350 3300
+Text GLabel 10500 2900 1    60   Input ~ 0
+SENSOR3
+Wire Wire Line
+	10350 2700 10350 2750
+$Comp
+L mainboard-rescue:R R6
+U 1 1 5C69E4A5
+P 9300 2550
+F 0 "R6" V 9200 2550 50  0000 C CNN
+F 1 "500" V 9300 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 2550 50  0001 C CNN
+F 3 "" H 9300 2550 50  0001 C CNN
+	1    9300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:R R7
+U 1 1 5C69E4AB
+P 9300 2950
+F 0 "R7" V 9380 2950 50  0000 C CNN
+F 1 "1K" V 9300 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 2950 50  0001 C CNN
+F 3 "" H 9300 2950 50  0001 C CNN
+	1    9300 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0182
+U 1 1 5C69E4B1
+P 9300 3350
+F 0 "#PWR0182" H 9300 3100 50  0001 C CNN
+F 1 "GND" H 9300 3200 50  0000 C CNN
+F 2 "" H 9300 3350 50  0001 C CNN
+F 3 "" H 9300 3350 50  0001 C CNN
+	1    9300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3100 9300 3350
+Wire Wire Line
+	9000 2750 9300 2750
+Wire Wire Line
+	9300 2700 9300 2750
+Connection ~ 9300 2750
+$Comp
+L mainboard-rescue:+12V #PWR0183
+U 1 1 5C69E4BB
+P 9300 2350
+F 0 "#PWR0183" H 9300 2200 50  0001 C CNN
+F 1 "+12V" H 9300 2500 50  0000 C CNN
+F 2 "" H 9300 2350 50  0001 C CNN
+F 3 "" H 9300 2350 50  0001 C CNN
+	1    9300 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2350 9300 2400
+Wire Wire Line
+	10300 2950 10350 2950
+Wire Wire Line
+	9300 2750 9350 2750
+Wire Wire Line
+	9300 2750 9300 2800
+Wire Wire Line
+	10500 2950 10500 2900
+Wire Wire Line
+	10350 2950 10500 2950
+$Comp
+L mainboard-rescue:+5V #PWR0184
+U 1 1 5C69E4C7
+P 10700 2550
+F 0 "#PWR0184" H 10700 2400 50  0001 C CNN
+F 1 "+5V" V 10700 2750 50  0000 C CNN
+F 2 "" H 10700 2550 50  0001 C CNN
+F 3 "" H 10700 2550 50  0001 C CNN
+	1    10700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0185
+U 1 1 5C69E4CD
+P 10700 3050
+F 0 "#PWR0185" H 10700 2800 50  0001 C CNN
+F 1 "GND" H 10700 2900 50  0000 C CNN
+F 2 "" H 10700 3050 50  0001 C CNN
+F 3 "" H 10700 3050 50  0001 C CNN
+	1    10700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5C69E4D3
+P 10700 2800
+F 0 "C7" H 10815 2846 50  0000 L CNN
+F 1 "100n" H 10815 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10738 2650 50  0001 C CNN
+F 3 "~" H 10700 2800 50  0001 C CNN
+	1    10700 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2550 10700 2650
+Wire Wire Line
+	10700 2950 10700 3050
+$Comp
+L mainboard-rescue:PC817 U11
+U 1 1 5C69E4DB
+P 12400 2850
+F 0 "U11" H 12200 3050 50  0000 L CNN
+F 1 "PC817" H 12400 3050 50  0000 L CNN
+F 2 "Package_SO:SOP-4_4.4x2.8mm_P1.27mm" H 12200 2650 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/TPC817S1B-RAG/TPC817S1BRAGCT-ND/7359679" H 12400 2850 50  0001 L CNN
+	1    12400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:Conn_01x03 J31
+U 1 1 5C69E4E1
+P 11200 2750
+F 0 "J31" H 11200 2950 50  0000 C CNN
+F 1 "Senzor4" V 11300 2750 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 11200 2750 50  0001 C CNN
+F 3 "" H 11200 2750 50  0001 C CNN
+	1    11200 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0186
+U 1 1 5C69E4E7
+P 11450 2350
+F 0 "#PWR0186" H 11450 2200 50  0001 C CNN
+F 1 "+12V" H 11450 2500 50  0000 C CNN
+F 2 "" H 11450 2350 50  0001 C CNN
+F 3 "" H 11450 2350 50  0001 C CNN
+	1    11450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0187
+U 1 1 5C69E4ED
+P 11450 3350
+F 0 "#PWR0187" H 11450 3100 50  0001 C CNN
+F 1 "GND" H 11450 3200 50  0000 C CNN
+F 2 "" H 11450 3350 50  0001 C CNN
+F 3 "" H 11450 3350 50  0001 C CNN
+	1    11450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 2850 11450 3350
+Wire Wire Line
+	11450 2850 11400 2850
+Wire Wire Line
+	11450 2350 11450 2650
+Wire Wire Line
+	11450 2650 11400 2650
+$Comp
+L mainboard-rescue:R R23
+U 1 1 5C69E4F7
+P 11900 2750
+F 0 "R23" V 11980 2750 50  0000 C CNN
+F 1 "500" V 11900 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11830 2750 50  0001 C CNN
+F 3 "" H 11900 2750 50  0001 C CNN
+	1    11900 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12100 2750 12050 2750
+$Comp
+L mainboard-rescue:GND #PWR0188
+U 1 1 5C69E4FE
+P 12050 3350
+F 0 "#PWR0188" H 12050 3100 50  0001 C CNN
+F 1 "GND" H 12050 3200 50  0000 C CNN
+F 2 "" H 12050 3350 50  0001 C CNN
+F 3 "" H 12050 3350 50  0001 C CNN
+	1    12050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 2950 12050 2950
+Wire Wire Line
+	12050 2950 12050 3350
+$Comp
+L mainboard-rescue:R R26
+U 1 1 5C69E506
+P 12750 3150
+F 0 "R26" V 12830 3150 50  0000 C CNN
+F 1 "10K" V 12750 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12680 3150 50  0001 C CNN
+F 3 "" H 12750 3150 50  0001 C CNN
+	1    12750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0189
+U 1 1 5C69E50C
+P 12750 3350
+F 0 "#PWR0189" H 12750 3100 50  0001 C CNN
+F 1 "GND" H 12750 3200 50  0000 C CNN
+F 2 "" H 12750 3350 50  0001 C CNN
+F 3 "" H 12750 3350 50  0001 C CNN
+	1    12750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 2950 12750 3000
+Connection ~ 12750 2950
+$Comp
+L mainboard-rescue:+5V #PWR0190
+U 1 1 5C69E514
+P 12750 2700
+F 0 "#PWR0190" H 12750 2550 50  0001 C CNN
+F 1 "+5V" V 12750 2900 50  0000 C CNN
+F 2 "" H 12750 2700 50  0001 C CNN
+F 3 "" H 12750 2700 50  0001 C CNN
+	1    12750 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 2750 12700 2750
+Wire Wire Line
+	12750 3350 12750 3300
+Text GLabel 12900 2900 1    60   Input ~ 0
+SENSOR4
+Wire Wire Line
+	12750 2700 12750 2750
+$Comp
+L mainboard-rescue:R R18
+U 1 1 5C69E51E
+P 11700 2550
+F 0 "R18" V 11600 2550 50  0000 C CNN
+F 1 "500" V 11700 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11630 2550 50  0001 C CNN
+F 3 "" H 11700 2550 50  0001 C CNN
+	1    11700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:R R19
+U 1 1 5C69E524
+P 11700 2950
+F 0 "R19" V 11780 2950 50  0000 C CNN
+F 1 "1K" V 11700 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11630 2950 50  0001 C CNN
+F 3 "" H 11700 2950 50  0001 C CNN
+	1    11700 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0191
+U 1 1 5C69E52A
+P 11700 3350
+F 0 "#PWR0191" H 11700 3100 50  0001 C CNN
+F 1 "GND" H 11700 3200 50  0000 C CNN
+F 2 "" H 11700 3350 50  0001 C CNN
+F 3 "" H 11700 3350 50  0001 C CNN
+	1    11700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 3100 11700 3350
+Wire Wire Line
+	11400 2750 11700 2750
+Wire Wire Line
+	11700 2700 11700 2750
+Connection ~ 11700 2750
+$Comp
+L mainboard-rescue:+12V #PWR0192
+U 1 1 5C69E534
+P 11700 2350
+F 0 "#PWR0192" H 11700 2200 50  0001 C CNN
+F 1 "+12V" H 11700 2500 50  0000 C CNN
+F 2 "" H 11700 2350 50  0001 C CNN
+F 3 "" H 11700 2350 50  0001 C CNN
+	1    11700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 2350 11700 2400
+Wire Wire Line
+	12700 2950 12750 2950
+Wire Wire Line
+	11700 2750 11750 2750
+Wire Wire Line
+	11700 2750 11700 2800
+Wire Wire Line
+	12900 2950 12900 2900
+Wire Wire Line
+	12750 2950 12900 2950
+$Comp
+L mainboard-rescue:+5V #PWR0193
+U 1 1 5C69E540
+P 13100 2550
+F 0 "#PWR0193" H 13100 2400 50  0001 C CNN
+F 1 "+5V" V 13100 2750 50  0000 C CNN
+F 2 "" H 13100 2550 50  0001 C CNN
+F 3 "" H 13100 2550 50  0001 C CNN
+	1    13100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0194
+U 1 1 5C69E546
+P 13100 3050
+F 0 "#PWR0194" H 13100 2800 50  0001 C CNN
+F 1 "GND" H 13100 2900 50  0000 C CNN
+F 2 "" H 13100 3050 50  0001 C CNN
+F 3 "" H 13100 3050 50  0001 C CNN
+	1    13100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5C69E54C
+P 13100 2800
+F 0 "C11" H 13215 2846 50  0000 L CNN
+F 1 "100n" H 13215 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13138 2650 50  0001 C CNN
+F 3 "~" H 13100 2800 50  0001 C CNN
+	1    13100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 2550 13100 2650
+Wire Wire Line
+	13100 2950 13100 3050
+$Comp
+L mainboard-rescue:PC817 U9
+U 1 1 5C6D2258
+P 14950 1300
+F 0 "U9" H 14750 1500 50  0000 L CNN
+F 1 "PC817" H 14950 1500 50  0000 L CNN
+F 2 "Package_SO:SOP-4_4.4x2.8mm_P1.27mm" H 14750 1100 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/TPC817S1B-RAG/TPC817S1BRAGCT-ND/7359679" H 14950 1300 50  0001 L CNN
+	1    14950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:Conn_01x03 J18
+U 1 1 5C6D225E
+P 13750 1200
+F 0 "J18" H 13750 1400 50  0000 C CNN
+F 1 "Senzor5" V 13850 1200 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 13750 1200 50  0001 C CNN
+F 3 "" H 13750 1200 50  0001 C CNN
+	1    13750 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0195
+U 1 1 5C6D2264
+P 14000 800
+F 0 "#PWR0195" H 14000 650 50  0001 C CNN
+F 1 "+12V" H 14000 950 50  0000 C CNN
+F 2 "" H 14000 800 50  0001 C CNN
+F 3 "" H 14000 800 50  0001 C CNN
+	1    14000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0196
+U 1 1 5C6D226A
+P 14000 1800
+F 0 "#PWR0196" H 14000 1550 50  0001 C CNN
+F 1 "GND" H 14000 1650 50  0000 C CNN
+F 2 "" H 14000 1800 50  0001 C CNN
+F 3 "" H 14000 1800 50  0001 C CNN
+	1    14000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 1300 14000 1800
+Wire Wire Line
+	14000 1300 13950 1300
+Wire Wire Line
+	14000 800  14000 1100
+Wire Wire Line
+	14000 1100 13950 1100
+$Comp
+L mainboard-rescue:R R12
+U 1 1 5C6D2274
+P 14450 1200
+F 0 "R12" V 14530 1200 50  0000 C CNN
+F 1 "500" V 14450 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14380 1200 50  0001 C CNN
+F 3 "" H 14450 1200 50  0001 C CNN
+	1    14450 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14650 1200 14600 1200
+$Comp
+L mainboard-rescue:GND #PWR0197
+U 1 1 5C6D227B
+P 14600 1800
+F 0 "#PWR0197" H 14600 1550 50  0001 C CNN
+F 1 "GND" H 14600 1650 50  0000 C CNN
+F 2 "" H 14600 1800 50  0001 C CNN
+F 3 "" H 14600 1800 50  0001 C CNN
+	1    14600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 1400 14600 1400
+Wire Wire Line
+	14600 1400 14600 1800
+$Comp
+L mainboard-rescue:R R15
+U 1 1 5C6D2283
+P 15300 1600
+F 0 "R15" V 15380 1600 50  0000 C CNN
+F 1 "10K" V 15300 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15230 1600 50  0001 C CNN
+F 3 "" H 15300 1600 50  0001 C CNN
+	1    15300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0198
+U 1 1 5C6D2289
+P 15300 1800
+F 0 "#PWR0198" H 15300 1550 50  0001 C CNN
+F 1 "GND" H 15300 1650 50  0000 C CNN
+F 2 "" H 15300 1800 50  0001 C CNN
+F 3 "" H 15300 1800 50  0001 C CNN
+	1    15300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 1400 15300 1450
+Connection ~ 15300 1400
+$Comp
+L mainboard-rescue:+5V #PWR0199
+U 1 1 5C6D2291
+P 15300 1150
+F 0 "#PWR0199" H 15300 1000 50  0001 C CNN
+F 1 "+5V" V 15300 1350 50  0000 C CNN
+F 2 "" H 15300 1150 50  0001 C CNN
+F 3 "" H 15300 1150 50  0001 C CNN
+	1    15300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 1200 15250 1200
+Wire Wire Line
+	15300 1800 15300 1750
+Text GLabel 15450 1350 1    60   Input ~ 0
+SENSOR5
+Wire Wire Line
+	15300 1150 15300 1200
+$Comp
+L mainboard-rescue:R R8
+U 1 1 5C6D229B
+P 14250 1000
+F 0 "R8" V 14150 1000 50  0000 C CNN
+F 1 "500" V 14250 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14180 1000 50  0001 C CNN
+F 3 "" H 14250 1000 50  0001 C CNN
+	1    14250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:R R9
+U 1 1 5C6D22A1
+P 14250 1400
+F 0 "R9" V 14330 1400 50  0000 C CNN
+F 1 "1K" V 14250 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14180 1400 50  0001 C CNN
+F 3 "" H 14250 1400 50  0001 C CNN
+	1    14250 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0200
+U 1 1 5C6D22A7
+P 14250 1800
+F 0 "#PWR0200" H 14250 1550 50  0001 C CNN
+F 1 "GND" H 14250 1650 50  0000 C CNN
+F 2 "" H 14250 1800 50  0001 C CNN
+F 3 "" H 14250 1800 50  0001 C CNN
+	1    14250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 1550 14250 1800
+Wire Wire Line
+	13950 1200 14250 1200
+Wire Wire Line
+	14250 1150 14250 1200
+Connection ~ 14250 1200
+$Comp
+L mainboard-rescue:+12V #PWR0201
+U 1 1 5C6D22B1
+P 14250 800
+F 0 "#PWR0201" H 14250 650 50  0001 C CNN
+F 1 "+12V" H 14250 950 50  0000 C CNN
+F 2 "" H 14250 800 50  0001 C CNN
+F 3 "" H 14250 800 50  0001 C CNN
+	1    14250 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 800  14250 850 
+Wire Wire Line
+	15250 1400 15300 1400
+Wire Wire Line
+	14250 1200 14300 1200
+Wire Wire Line
+	14250 1200 14250 1250
+Wire Wire Line
+	15450 1400 15450 1350
+Wire Wire Line
+	15300 1400 15450 1400
+$Comp
+L mainboard-rescue:+5V #PWR0202
+U 1 1 5C6D22BD
+P 15650 1000
+F 0 "#PWR0202" H 15650 850 50  0001 C CNN
+F 1 "+5V" V 15650 1200 50  0000 C CNN
+F 2 "" H 15650 1000 50  0001 C CNN
+F 3 "" H 15650 1000 50  0001 C CNN
+	1    15650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0203
+U 1 1 5C6D22C3
+P 15650 1500
+F 0 "#PWR0203" H 15650 1250 50  0001 C CNN
+F 1 "GND" H 15650 1350 50  0000 C CNN
+F 2 "" H 15650 1500 50  0001 C CNN
+F 3 "" H 15650 1500 50  0001 C CNN
+	1    15650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5C6D22C9
+P 15650 1250
+F 0 "C9" H 15765 1296 50  0000 L CNN
+F 1 "100n" H 15765 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15688 1100 50  0001 C CNN
+F 3 "~" H 15650 1250 50  0001 C CNN
+	1    15650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15650 1000 15650 1100
+Wire Wire Line
+	15650 1400 15650 1500
+$Comp
+L mainboard-rescue:PC817 U12
+U 1 1 5C6D22D1
+P 14950 2850
+F 0 "U12" H 14750 3050 50  0000 L CNN
+F 1 "PC817" H 14950 3050 50  0000 L CNN
+F 2 "Package_SO:SOP-4_4.4x2.8mm_P1.27mm" H 14750 2650 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/TPC817S1B-RAG/TPC817S1BRAGCT-ND/7359679" H 14950 2850 50  0001 L CNN
+	1    14950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:Conn_01x03 J32
+U 1 1 5C6D22D7
+P 13750 2750
+F 0 "J32" H 13750 2950 50  0000 C CNN
+F 1 "Senzor6" V 13850 2750 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 13750 2750 50  0001 C CNN
+F 3 "" H 13750 2750 50  0001 C CNN
+	1    13750 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0204
+U 1 1 5C6D22DD
+P 14000 2350
+F 0 "#PWR0204" H 14000 2200 50  0001 C CNN
+F 1 "+12V" H 14000 2500 50  0000 C CNN
+F 2 "" H 14000 2350 50  0001 C CNN
+F 3 "" H 14000 2350 50  0001 C CNN
+	1    14000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0205
+U 1 1 5C6D22E3
+P 14000 3350
+F 0 "#PWR0205" H 14000 3100 50  0001 C CNN
+F 1 "GND" H 14000 3200 50  0000 C CNN
+F 2 "" H 14000 3350 50  0001 C CNN
+F 3 "" H 14000 3350 50  0001 C CNN
+	1    14000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 2850 14000 3350
+Wire Wire Line
+	14000 2850 13950 2850
+Wire Wire Line
+	14000 2350 14000 2650
+Wire Wire Line
+	14000 2650 13950 2650
+$Comp
+L mainboard-rescue:R R24
+U 1 1 5C6D22ED
+P 14450 2750
+F 0 "R24" V 14530 2750 50  0000 C CNN
+F 1 "500" V 14450 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14380 2750 50  0001 C CNN
+F 3 "" H 14450 2750 50  0001 C CNN
+	1    14450 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14650 2750 14600 2750
+$Comp
+L mainboard-rescue:GND #PWR0206
+U 1 1 5C6D22F4
+P 14600 3350
+F 0 "#PWR0206" H 14600 3100 50  0001 C CNN
+F 1 "GND" H 14600 3200 50  0000 C CNN
+F 2 "" H 14600 3350 50  0001 C CNN
+F 3 "" H 14600 3350 50  0001 C CNN
+	1    14600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 2950 14600 2950
+Wire Wire Line
+	14600 2950 14600 3350
+$Comp
+L mainboard-rescue:R R27
+U 1 1 5C6D22FC
+P 15300 3150
+F 0 "R27" V 15380 3150 50  0000 C CNN
+F 1 "10K" V 15300 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15230 3150 50  0001 C CNN
+F 3 "" H 15300 3150 50  0001 C CNN
+	1    15300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0207
+U 1 1 5C6D2302
+P 15300 3350
+F 0 "#PWR0207" H 15300 3100 50  0001 C CNN
+F 1 "GND" H 15300 3200 50  0000 C CNN
+F 2 "" H 15300 3350 50  0001 C CNN
+F 3 "" H 15300 3350 50  0001 C CNN
+	1    15300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 2950 15300 3000
+Connection ~ 15300 2950
+$Comp
+L mainboard-rescue:+5V #PWR0208
+U 1 1 5C6D230A
+P 15300 2700
+F 0 "#PWR0208" H 15300 2550 50  0001 C CNN
+F 1 "+5V" V 15300 2900 50  0000 C CNN
+F 2 "" H 15300 2700 50  0001 C CNN
+F 3 "" H 15300 2700 50  0001 C CNN
+	1    15300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 2750 15250 2750
+Wire Wire Line
+	15300 3350 15300 3300
+Text GLabel 15450 2900 1    60   Input ~ 0
+SENSOR6
+Wire Wire Line
+	15300 2700 15300 2750
+$Comp
+L mainboard-rescue:R R20
+U 1 1 5C6D2314
+P 14250 2550
+F 0 "R20" V 14150 2550 50  0000 C CNN
+F 1 "500" V 14250 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14180 2550 50  0001 C CNN
+F 3 "" H 14250 2550 50  0001 C CNN
+	1    14250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:R R21
+U 1 1 5C6D231A
+P 14250 2950
+F 0 "R21" V 14330 2950 50  0000 C CNN
+F 1 "1K" V 14250 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14180 2950 50  0001 C CNN
+F 3 "" H 14250 2950 50  0001 C CNN
+	1    14250 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0209
+U 1 1 5C6D2320
+P 14250 3350
+F 0 "#PWR0209" H 14250 3100 50  0001 C CNN
+F 1 "GND" H 14250 3200 50  0000 C CNN
+F 2 "" H 14250 3350 50  0001 C CNN
+F 3 "" H 14250 3350 50  0001 C CNN
+	1    14250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 3100 14250 3350
+Wire Wire Line
+	13950 2750 14250 2750
+Wire Wire Line
+	14250 2700 14250 2750
+Connection ~ 14250 2750
+$Comp
+L mainboard-rescue:+12V #PWR0210
+U 1 1 5C6D232A
+P 14250 2350
+F 0 "#PWR0210" H 14250 2200 50  0001 C CNN
+F 1 "+12V" H 14250 2500 50  0000 C CNN
+F 2 "" H 14250 2350 50  0001 C CNN
+F 3 "" H 14250 2350 50  0001 C CNN
+	1    14250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 2350 14250 2400
+Wire Wire Line
+	15250 2950 15300 2950
+Wire Wire Line
+	14250 2750 14300 2750
+Wire Wire Line
+	14250 2750 14250 2800
+Wire Wire Line
+	15450 2950 15450 2900
+Wire Wire Line
+	15300 2950 15450 2950
+$Comp
+L mainboard-rescue:+5V #PWR0211
+U 1 1 5C6D2336
+P 15650 2550
+F 0 "#PWR0211" H 15650 2400 50  0001 C CNN
+F 1 "+5V" V 15650 2750 50  0000 C CNN
+F 2 "" H 15650 2550 50  0001 C CNN
+F 3 "" H 15650 2550 50  0001 C CNN
+	1    15650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0212
+U 1 1 5C6D233C
+P 15650 3050
+F 0 "#PWR0212" H 15650 2800 50  0001 C CNN
+F 1 "GND" H 15650 2900 50  0000 C CNN
+F 2 "" H 15650 3050 50  0001 C CNN
+F 3 "" H 15650 3050 50  0001 C CNN
+	1    15650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5C6D2342
+P 15650 2800
+F 0 "C12" H 15765 2846 50  0000 L CNN
+F 1 "100n" H 15765 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15688 2650 50  0001 C CNN
+F 3 "~" H 15650 2800 50  0001 C CNN
+	1    15650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15650 2550 15650 2650
+Wire Wire Line
+	15650 2950 15650 3050
+$Comp
+L mainboard-rescue:D D2
+U 1 1 5C1A872C
+P 4900 4900
+F 0 "D2" H 4900 5000 50  0000 C CNN
+F 1 "D" H 4900 4800 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 4900 4900 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88711/s1.pdf" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:1702473-1702473 J23
+U 1 1 5C2AB30F
+P 11300 7500
+F 0 "J23" H 11100 7150 50  0000 L CNN
+F 1 "12V_IN" H 11250 7150 50  0000 L CNN
+F 2 "PHOENIX_1702473" H 11300 7500 50  0001 L BNN
+F 3 "277-2337-1-ND" H 11300 7500 50  0001 L BNN
+F 4 "https://www.digikey.rs/product-detail/en/phoenix-contact/1702473/277-2337-1-ND/2643219?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 11300 7500 50  0001 L BNN "Field4"
+F 5 "None" H 11300 7500 50  0001 L BNN "Field5"
+F 6 "1702473" H 11300 7500 50  0001 L BNN "Field6"
+F 7 "Fixed Miniature Connectors, Spring Cage, Horizontal, SMD, 2 Pos" H 11300 7500 50  0001 L BNN "Field7"
+F 8 "Phoenix Contact" H 11300 7500 50  0001 L BNN "Field8"
+	1    11300 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0213
+U 1 1 5C2E87D7
+P 11800 7300
+F 0 "#PWR0213" H 11800 7050 50  0001 C CNN
+F 1 "GND" V 11800 7100 50  0000 C CNN
+F 2 "" H 11800 7300 50  0001 C CNN
+F 3 "" H 11800 7300 50  0001 C CNN
+	1    11800 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11700 7600 11750 7600
+Wire Wire Line
+	11750 7600 11750 7300
+Wire Wire Line
+	11750 7300 11700 7300
+Wire Wire Line
+	11750 7300 11800 7300
+Connection ~ 11750 7300
+Wire Wire Line
+	11750 7700 11700 7700
+Wire Wire Line
+	12100 7700 12050 7700
+$Comp
+L mainboard-rescue:1702473-1702473 J24
+U 1 1 5C4121AE
+P 10000 7450
+F 0 "J24" H 9850 7100 50  0000 C CNN
+F 1 "5V_IN" H 10100 7100 50  0000 C CNN
+F 2 "PHOENIX_1702473" H 10000 7450 50  0001 L BNN
+F 3 "277-2337-1-ND" H 10000 7450 50  0001 L BNN
+F 4 "https://www.digikey.rs/product-detail/en/phoenix-contact/1702473/277-2337-1-ND/2643219?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 10000 7450 50  0001 L BNN "Field4"
+F 5 "None" H 10000 7450 50  0001 L BNN "Field5"
+F 6 "1702473" H 10000 7450 50  0001 L BNN "Field6"
+F 7 "Fixed Miniature Connectors, Spring Cage, Horizontal, SMD, 2 Pos" H 10000 7450 50  0001 L BNN "Field7"
+F 8 "Phoenix Contact" H 10000 7450 50  0001 L BNN "Field8"
+	1    10000 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0214
+U 1 1 5C4121B4
+P 10500 7250
+F 0 "#PWR0214" H 10500 7000 50  0001 C CNN
+F 1 "GND" V 10500 7050 50  0000 C CNN
+F 2 "" H 10500 7250 50  0001 C CNN
+F 3 "" H 10500 7250 50  0001 C CNN
+	1    10500 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 7550 10450 7550
+Wire Wire Line
+	10450 7550 10450 7250
+Wire Wire Line
+	10450 7250 10400 7250
+Wire Wire Line
+	10450 7250 10500 7250
+Connection ~ 10450 7250
+Wire Wire Line
+	10450 7650 10400 7650
+$Comp
+L mainboard-rescue:GND #PWR0215
+U 1 1 5C5FAAEA
+P 10650 8000
+F 0 "#PWR0215" H 10650 7750 50  0001 C CNN
+F 1 "GND" H 10650 7850 50  0000 C CNN
+F 2 "" H 10650 8000 50  0001 C CNN
+F 3 "" H 10650 8000 50  0001 C CNN
+	1    10650 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 7650 10900 7650
+Wire Wire Line
+	10900 7650 10900 7600
+Wire Wire Line
+	10650 7950 10650 8000
+$Comp
+L mainboard-rescue:NTR2101P Q2
+U 1 1 5C6EBC7E
+P 9400 7750
+F 0 "Q2" V 9600 7600 50  0000 L CNN
+F 1 "DMP2100U" V 9300 7850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9600 7675 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/diodes-incorporated/DMP2100U-7/DMP2100U-7CT-ND/3829371" H 9400 7750 50  0001 L CNN
+	1    9400 7750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:1702473-1702473 J25
+U 1 1 5C6EBC8F
+P 8750 7450
+F 0 "J25" H 8600 7100 50  0000 C CNN
+F 1 "5VA_IN" H 8850 7100 50  0000 C CNN
+F 2 "PHOENIX_1702473" H 8750 7450 50  0001 L BNN
+F 3 "277-2337-1-ND" H 8750 7450 50  0001 L BNN
+F 4 "https://www.digikey.rs/product-detail/en/phoenix-contact/1702473/277-2337-1-ND/2643219?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8750 7450 50  0001 L BNN "Field4"
+F 5 "None" H 8750 7450 50  0001 L BNN "Field5"
+F 6 "1702473" H 8750 7450 50  0001 L BNN "Field6"
+F 7 "Fixed Miniature Connectors, Spring Cage, Horizontal, SMD, 2 Pos" H 8750 7450 50  0001 L BNN "Field7"
+F 8 "Phoenix Contact" H 8750 7450 50  0001 L BNN "Field8"
+	1    8750 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0216
+U 1 1 5C6EBC95
+P 9250 7250
+F 0 "#PWR0216" H 9250 7000 50  0001 C CNN
+F 1 "GND" V 9250 7050 50  0000 C CNN
+F 2 "" H 9250 7250 50  0001 C CNN
+F 3 "" H 9250 7250 50  0001 C CNN
+	1    9250 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 7550 9200 7550
+Wire Wire Line
+	9200 7550 9200 7250
+Wire Wire Line
+	9200 7250 9150 7250
+Wire Wire Line
+	9200 7250 9250 7250
+Connection ~ 9200 7250
+Wire Wire Line
+	9200 7650 9150 7650
+$Comp
+L mainboard-rescue:GND #PWR0217
+U 1 1 5C6EBCA1
+P 9400 8000
+F 0 "#PWR0217" H 9400 7750 50  0001 C CNN
+F 1 "GND" H 9400 7850 50  0000 C CNN
+F 2 "" H 9400 8000 50  0001 C CNN
+F 3 "" H 9400 8000 50  0001 C CNN
+	1    9400 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 7650 9650 7650
+Wire Wire Line
+	9650 7650 9650 7600
+Wire Wire Line
+	9400 7950 9400 8000
+$Comp
+L mainboard-rescue:+5VA #PWR0218
+U 1 1 5C765195
+P 9650 7600
+F 0 "#PWR0218" H 9650 7450 50  0001 C CNN
+F 1 "+5VA" H 9650 7740 50  0000 C CNN
+F 2 "" H 9650 7600 50  0001 C CNN
+F 3 "" H 9650 7600 50  0001 C CNN
+	1    9650 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:1702473-1702473 J35
+U 1 1 5C886E21
+P 4250 4750
+F 0 "J35" V 4500 4550 50  0000 C CNN
+F 1 "RELAY2" V 4500 4750 50  0000 C CNN
+F 2 "PHOENIX_1702473" H 4250 4750 50  0001 L BNN
+F 3 "277-2337-1-ND" H 4250 4750 50  0001 L BNN
+F 4 "https://www.digikey.rs/product-detail/en/phoenix-contact/1702473/277-2337-1-ND/2643219?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4250 4750 50  0001 L BNN "Field4"
+F 5 "None" H 4250 4750 50  0001 L BNN "Field5"
+F 6 "1702473" H 4250 4750 50  0001 L BNN "Field6"
+F 7 "Fixed Miniature Connectors, Spring Cage, Horizontal, SMD, 2 Pos" H 4250 4750 50  0001 L BNN "Field7"
+F 8 "Phoenix Contact" H 4250 4750 50  0001 L BNN "Field8"
+	1    4250 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 4850 4650 4700
+Wire Wire Line
+	4650 4700 4750 4700
+Wire Wire Line
+	4900 4700 4900 4750
+Wire Wire Line
+	4750 4200 4750 4700
+Connection ~ 4750 4700
+Wire Wire Line
+	4750 4700 4900 4700
+Wire Wire Line
+	4650 4550 4650 4500
+$Comp
+L mainboard-rescue:GND #PWR0113
+U 1 1 5C9372DA
+P 4650 4500
+F 0 "#PWR0113" H 4650 4250 50  0001 C CNN
+F 1 "GND" H 4650 4350 50  0000 C CNN
+F 2 "" H 4650 4500 50  0001 C CNN
+F 3 "" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 4950 4650 5100
+Wire Wire Line
+	4650 5100 4750 5100
+Wire Wire Line
+	4900 5100 4900 5050
+$Comp
+L mainboard-rescue:GND #PWR0114
+U 1 1 5C972AB4
+P 4750 5150
+F 0 "#PWR0114" H 4750 4900 50  0001 C CNN
+F 1 "GND" H 4750 5000 50  0000 C CNN
+F 2 "" H 4750 5150 50  0001 C CNN
+F 3 "" H 4750 5150 50  0001 C CNN
+	1    4750 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 5100 4750 5150
+Connection ~ 4750 5100
+Wire Wire Line
+	4750 5100 4900 5100
+Wire Wire Line
+	4300 4300 4350 4300
+Wire Wire Line
+	4350 4300 4350 4200
+Wire Wire Line
+	4350 3550 4350 3600
+Wire Wire Line
+	4750 3550 4750 3600
+$Comp
+L Relay:G5Q-1A K1
+U 1 1 5CA938F2
+P 5750 3900
+F 0 "K1" H 6080 3946 50  0000 L CNN
+F 1 "G5Q-1A" H 6080 3855 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 6100 3850 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/G5Q-1A4-DC12/Z223-ND/355241" H 6850 3600 50  0001 C CNN
+	1    5750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0115
+U 1 1 5CA938F9
+P 5550 3550
+F 0 "#PWR0115" H 5550 3400 50  0001 C CNN
+F 1 "+12V" H 5550 3700 50  0000 C CNN
+F 2 "" H 5550 3550 50  0001 C CNN
+F 3 "" H 5550 3550 50  0001 C CNN
+	1    5550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+12V #PWR0118
+U 1 1 5CA938FF
+P 5950 3550
+F 0 "#PWR0118" H 5950 3400 50  0001 C CNN
+F 1 "+12V" H 5950 3700 50  0000 C CNN
+F 2 "" H 5950 3550 50  0001 C CNN
+F 3 "" H 5950 3550 50  0001 C CNN
+	1    5950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:D D1
+U 1 1 5CA93905
+P 6100 4900
+F 0 "D1" H 6100 5000 50  0000 C CNN
+F 1 "D" H 6100 4800 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 6100 4900 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88711/s1.pdf" H 6100 4900 50  0001 C CNN
+	1    6100 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:1702473-1702473 J36
+U 1 1 5CA93910
+P 5450 4750
+F 0 "J36" V 5700 4550 50  0000 C CNN
+F 1 "RELAY1" V 5700 4750 50  0000 C CNN
+F 2 "PHOENIX_1702473" H 5450 4750 50  0001 L BNN
+F 3 "277-2337-1-ND" H 5450 4750 50  0001 L BNN
+F 4 "https://www.digikey.rs/product-detail/en/phoenix-contact/1702473/277-2337-1-ND/2643219?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 5450 4750 50  0001 L BNN "Field4"
+F 5 "None" H 5450 4750 50  0001 L BNN "Field5"
+F 6 "1702473" H 5450 4750 50  0001 L BNN "Field6"
+F 7 "Fixed Miniature Connectors, Spring Cage, Horizontal, SMD, 2 Pos" H 5450 4750 50  0001 L BNN "Field7"
+F 8 "Phoenix Contact" H 5450 4750 50  0001 L BNN "Field8"
+	1    5450 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 4850 5850 4700
+Wire Wire Line
+	5850 4700 5950 4700
+Wire Wire Line
+	6100 4700 6100 4750
+Wire Wire Line
+	5950 4200 5950 4700
+Connection ~ 5950 4700
+Wire Wire Line
+	5950 4700 6100 4700
+Wire Wire Line
+	5850 4550 5850 4500
+$Comp
+L mainboard-rescue:GND #PWR0219
+U 1 1 5CA9391D
+P 5850 4500
+F 0 "#PWR0219" H 5850 4250 50  0001 C CNN
+F 1 "GND" H 5850 4350 50  0000 C CNN
+F 2 "" H 5850 4500 50  0001 C CNN
+F 3 "" H 5850 4500 50  0001 C CNN
+	1    5850 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 4950 5850 5100
+Wire Wire Line
+	5850 5100 5950 5100
+Wire Wire Line
+	6100 5100 6100 5050
+$Comp
+L mainboard-rescue:GND #PWR0220
+U 1 1 5CA93926
+P 5950 5150
+F 0 "#PWR0220" H 5950 4900 50  0001 C CNN
+F 1 "GND" H 5950 5000 50  0000 C CNN
+F 2 "" H 5950 5150 50  0001 C CNN
+F 3 "" H 5950 5150 50  0001 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5100 5950 5150
+Connection ~ 5950 5100
+Wire Wire Line
+	5950 5100 6100 5100
+Wire Wire Line
+	5500 4300 5550 4300
+Wire Wire Line
+	5550 4300 5550 4200
+Wire Wire Line
+	5550 3550 5550 3600
+Wire Wire Line
+	5950 3550 5950 3600
+Text GLabel 5500 4300 0    60   Input ~ 0
+R1_SIG
+$Comp
+L mainboard-rescue:R R32
+U 1 1 5CBF45D4
+P 7550 7250
+F 0 "R32" V 7630 7250 50  0000 C CNN
+F 1 "120" V 7550 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 7250 50  0001 C CNN
+F 3 "" H 7550 7250 50  0001 C CNN
+	1    7550 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 7450 7550 7400
+Wire Wire Line
+	7550 7100 7550 7050
+Wire Wire Line
+	7550 7050 7400 7050
+Wire Wire Line
+	7400 7050 7400 7550
+Connection ~ 7400 7550
+Wire Wire Line
+	7400 7550 7550 7550
+NoConn ~ 14150 8050
+NoConn ~ 13350 8050
+Text GLabel 3800 9100 2    60   Input ~ 0
+SENSOR1
+Text GLabel 3800 8900 2    60   Input ~ 0
+SENSOR2
+Text GLabel 3800 8700 2    60   Input ~ 0
+SENSOR3
+Text GLabel 3800 8300 2    60   Input ~ 0
+SENSOR4
+Text GLabel 3800 7500 2    60   Input ~ 0
+SENSOR5
+Text GLabel 3800 6900 2    60   Input ~ 0
+SENSOR6
+Text GLabel 3800 6200 2    60   Input ~ 0
+R1_CONT
+Text GLabel 3800 6300 2    60   Input ~ 0
+R2_CONT
+Text GLabel 3800 8200 2    60   Input ~ 0
+_S1_SIG
+Text GLabel 3800 8000 2    60   Input ~ 0
+_S2_SIG
+Text GLabel 3800 8100 2    60   Input ~ 0
+_S3_SIG
+Text GLabel 3800 7900 2    60   Input ~ 0
+_S4_SIG
+Text GLabel 3800 7800 2    60   Input ~ 0
+_S5_SIG
+Text GLabel 3800 7700 2    60   Input ~ 0
+_S6_SIG
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5C19F31D
+P 900 8000
+F 0 "J1" V 1000 8400 50  0000 C CNN
+F 1 "Conn_01x10" V 1000 7700 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x10_P1.27mm_Vertical" H 900 8000 50  0001 C CNN
+F 3 "~" H 900 8000 50  0001 C CNN
+	1    900  8000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3800 6800
+NoConn ~ 3800 7000
+NoConn ~ 3800 7100
+NoConn ~ 3800 7200
+NoConn ~ 3800 7400
+NoConn ~ 3800 7600
+NoConn ~ 3800 8400
+NoConn ~ 3800 8500
+NoConn ~ 3800 8600
+NoConn ~ 3800 8800
+NoConn ~ 3800 9000
+Text GLabel 3800 5600 2    60   Input ~ 0
+AX_CONTROL
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5C0C4E83
+P 7350 8700
+F 0 "Y1" V 7150 8600 50  0000 L CNN
+F 1 "Crystal_GND24" V 7050 8550 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm_HandSoldering" H 7350 8700 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/ecs-inc/ECS-160-20-3X-TR/XC1776CT-ND/2676640" H 7350 8700 50  0001 C CNN
+	1    7350 8700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 8550 7350 8550
+Wire Wire Line
+	7200 8850 7350 8850
+Connection ~ 7350 8550
+Wire Wire Line
+	7350 8550 7500 8550
+Connection ~ 7350 8850
+Wire Wire Line
+	7350 8850 7500 8850
+$Comp
+L mainboard-rescue:CP C13
+U 1 1 5C0D9FC9
+P 7050 2100
+F 0 "C13" H 7075 2200 50  0000 L CNN
+F 1 "CP" H 7075 2000 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 7088 1950 50  0001 C CNN
+F 3 "" H 7050 2100 50  0001 C CNN
+	1    7050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:+3V3 #PWR0109
+U 1 1 5C0DB636
+P 7050 1900
+F 0 "#PWR0109" H 7050 1750 50  0001 C CNN
+F 1 "+3V3" H 7050 2040 50  0000 C CNN
+F 2 "" H 7050 1900 50  0001 C CNN
+F 3 "" H 7050 1900 50  0001 C CNN
+	1    7050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0141
+U 1 1 5C1099AC
+P 7050 2300
+F 0 "#PWR0141" H 7050 2050 50  0001 C CNN
+F 1 "GND" H 7050 2150 50  0000 C CNN
+F 2 "" H 7050 2300 50  0001 C CNN
+F 3 "" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1900 7050 1950
+Wire Wire Line
+	7050 2250 7050 2300
+$Comp
+L mainboard-rescue:R R28
+U 1 1 5C34E068
+P 9200 8400
+F 0 "R28" V 9280 8400 50  0000 C CNN
+F 1 "1K" V 9200 8400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 8400 50  0001 C CNN
+F 3 "" H 9200 8400 50  0001 C CNN
+	1    9200 8400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C34E8EB
+P 9550 8400
+F 0 "D3" H 9650 8500 50  0000 R CNN
+F 1 "LED" H 9500 8500 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9550 8400 50  0001 C CNN
+F 3 "~" H 9550 8400 50  0001 C CNN
+	1    9550 8400
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0145
+U 1 1 5C34EF94
+P 9750 8400
+F 0 "#PWR0145" H 9750 8150 50  0001 C CNN
+F 1 "GND" V 9750 8200 50  0000 C CNN
+F 2 "" H 9750 8400 50  0001 C CNN
+F 3 "" H 9750 8400 50  0001 C CNN
+	1    9750 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 8400 9400 8400
+Wire Wire Line
+	9000 8400 9050 8400
+Wire Wire Line
+	9700 8400 9750 8400
+$Comp
+L mainboard-rescue:R R29
+U 1 1 5C40BAB1
+P 9200 8700
+F 0 "R29" V 9280 8700 50  0000 C CNN
+F 1 "1K" V 9200 8700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 8700 50  0001 C CNN
+F 3 "" H 9200 8700 50  0001 C CNN
+	1    9200 8700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5C40BAB7
+P 9550 8700
+F 0 "D5" H 9650 8800 50  0000 R CNN
+F 1 "LED" H 9500 8800 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9550 8700 50  0001 C CNN
+F 3 "~" H 9550 8700 50  0001 C CNN
+	1    9550 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0146
+U 1 1 5C40BABD
+P 9750 8700
+F 0 "#PWR0146" H 9750 8450 50  0001 C CNN
+F 1 "GND" V 9750 8500 50  0000 C CNN
+F 2 "" H 9750 8700 50  0001 C CNN
+F 3 "" H 9750 8700 50  0001 C CNN
+	1    9750 8700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 8700 9400 8700
+Wire Wire Line
+	9000 8700 9050 8700
+Wire Wire Line
+	9700 8700 9750 8700
+$Comp
+L mainboard-rescue:R R33
+U 1 1 5C46C282
+P 10800 8700
+F 0 "R33" V 10880 8700 50  0000 C CNN
+F 1 "1K" V 10800 8700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10730 8700 50  0001 C CNN
+F 3 "" H 10800 8700 50  0001 C CNN
+	1    10800 8700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5C46C288
+P 11150 8700
+F 0 "D6" H 11250 8800 50  0000 R CNN
+F 1 "LED" H 11100 8800 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 11150 8700 50  0001 C CNN
+F 3 "~" H 11150 8700 50  0001 C CNN
+	1    11150 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0221
+U 1 1 5C46C28E
+P 11350 8700
+F 0 "#PWR0221" H 11350 8450 50  0001 C CNN
+F 1 "GND" V 11350 8500 50  0000 C CNN
+F 2 "" H 11350 8700 50  0001 C CNN
+F 3 "" H 11350 8700 50  0001 C CNN
+	1    11350 8700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10950 8700 11000 8700
+Wire Wire Line
+	10600 8700 10650 8700
+Wire Wire Line
+	11300 8700 11350 8700
+$Comp
+L mainboard-rescue:R R34
+U 1 1 5C46C297
+P 10800 8400
+F 0 "R34" V 10880 8400 50  0000 C CNN
+F 1 "1K" V 10800 8400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10730 8400 50  0001 C CNN
+F 3 "" H 10800 8400 50  0001 C CNN
+	1    10800 8400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5C46C29D
+P 11150 8400
+F 0 "D7" H 11250 8500 50  0000 R CNN
+F 1 "LED" H 11100 8500 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 11150 8400 50  0001 C CNN
+F 3 "~" H 11150 8400 50  0001 C CNN
+	1    11150 8400
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:GND #PWR0222
+U 1 1 5C46C2A3
+P 11350 8400
+F 0 "#PWR0222" H 11350 8150 50  0001 C CNN
+F 1 "GND" V 11350 8200 50  0000 C CNN
+F 2 "" H 11350 8400 50  0001 C CNN
+F 3 "" H 11350 8400 50  0001 C CNN
+	1    11350 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10950 8400 11000 8400
+Wire Wire Line
+	10600 8400 10650 8400
+Wire Wire Line
+	11300 8400 11350 8400
+$Comp
+L mainboard-rescue:+12V #PWR0223
+U 1 1 5C49D17E
+P 9000 8400
+F 0 "#PWR0223" H 9000 8250 50  0001 C CNN
+F 1 "+12V" V 9000 8650 50  0000 C CNN
+F 2 "" H 9000 8400 50  0001 C CNN
+F 3 "" H 9000 8400 50  0001 C CNN
+	1    9000 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5V #PWR0224
+U 1 1 5C49D3A0
+P 9000 8700
+F 0 "#PWR0224" H 9000 8550 50  0001 C CNN
+F 1 "+5V" V 9000 8900 50  0000 C CNN
+F 2 "" H 9000 8700 50  0001 C CNN
+F 3 "" H 9000 8700 50  0001 C CNN
+	1    9000 8700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:+5VA #PWR0225
+U 1 1 5C49D481
+P 10600 8700
+F 0 "#PWR0225" H 10600 8550 50  0001 C CNN
+F 1 "+5VA" V 10600 8950 50  0000 C CNN
+F 2 "" H 10600 8700 50  0001 C CNN
+F 3 "" H 10600 8700 50  0001 C CNN
+	1    10600 8700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1700 900  0    60   Input ~ 0
+AX_PWR
+Wire Wire Line
+	1700 900  1800 900 
+Text GLabel 10600 8400 0    60   Input ~ 0
+AX_PWR
+Wire Notes Line
+	500  3250 8600 3250
+Wire Notes Line
+	8600 4200 16050 4200
+Wire Notes Line
+	6550 450  6550 3250
+Wire Notes Line
+	3350 3250 3350 500 
+Wire Notes Line
+	8250 6200 8250 11150
+Wire Notes Line
+	12400 6200 12400 9900
+Wire Notes Line
+	12400 9950 8250 9950
+Wire Notes Line
+	8600 500  8600 6200
+Wire Notes Line
+	10550 4200 10550 6200
+Wire Notes Line
+	13300 4200 13300 6200
+Wire Notes Line
+	3650 3250 3650 5400
+Wire Notes Line
+	3650 5400 5050 5400
+Wire Notes Line
+	5050 5400 5050 11200
+Wire Notes Line
+	5050 6200 16050 6200
+Text Notes 12450 9750 0    98   ~ 0
+Control a low-current device (ON/OFF)\n(electric valve)
+Text Notes 8450 9700 0    98   ~ 0
+12V, 5VA, 5V Inputs with protection,\nLED indicators
+Wire Wire Line
+	12100 7650 12100 7700
+Text Notes 5200 11050 0    98   ~ 0
+MCP25625 - CAN controller\nCAN 2.0 supported, up to 1Mbps\nWorking on 16MHz\n
+Text Notes 650  11050 0    98   ~ 0
+Arduino MEGA pinout
+Text Notes 600  3150 0    98   ~ 0
+AX-12 servo support 
+Text Notes 3450 3150 0    98   ~ 0
+HC-05 Bluetooth module
+Text Notes 6650 3150 0    98   ~ 0
+nRF24L01
+Text Notes 7300 2350 1    39   ~ 0
+fit if necessary
+Text Notes 8750 4100 0    98   ~ 0
+6x 12V sensors with isolation (PC817)
+Text Notes 5150 6100 0    98   ~ 0
+Two high power relays (12V devices)
+Text Notes 8700 6100 0    98   ~ 0
+4x servo 
+Text Notes 10650 6100 0    98   ~ 0
+6x binary 5V switch connectors
+Text Notes 13400 6100 0    79   ~ 0
+Jumper, Side & Tactics connector\nCommunication connectors (I2C, Serial)
+$Bitmap
+Pos 15450 10250
+Scale 1.000000
+Data
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 40 00 00 00 B4 08 02 00 00 00 6A 86 62 
+46 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C ED 9D 79 5C 4D F9 
+FF C7 CF BD 2D 2A 49 59 2A 8A C4 58 B2 95 09 C5 6D 93 68 A5 30 43 49 D9 1A 64 4C 98 EF 2C BE 63 
+BE 98 61 66 F0 18 CB 17 83 49 18 A6 09 85 92 94 16 4B 5A 94 92 54 A2 68 2F ED DA 68 B9 DB F9 FD 
+71 7F 8F 7E 7E D5 FD 9C FD DE 7B EA F3 FC 2B EE E7 7C CE EB 9C 7B 5F 67 F9 7C DE 9F F7 9B 83 A2 
+28 02 81 40 D8 09 57 DE 02 20 10 08 79 A0 81 21 10 16 03 0D 0C 81 B0 18 68 60 08 84 C5 40 03 43 
+20 2C 06 1A 18 02 61 31 D0 C0 10 08 8B 81 06 86 40 58 0C 34 30 04 C2 62 A0 81 21 10 16 03 0D 0C 
+81 B0 18 68 60 08 84 C5 40 03 43 20 2C 06 1A 18 02 61 31 D0 C0 10 08 8B 81 06 86 40 58 0C 34 30 
+04 C2 62 A0 81 21 10 16 03 0D 0C 81 B0 18 68 60 08 84 C5 40 03 43 20 2C 06 1A 18 02 61 31 D0 C0 
+10 08 8B 81 06 86 40 58 0C 34 30 04 C2 62 A0 81 21 10 16 03 0D 0C 81 B0 18 68 60 08 84 C5 28 CB 
+5B 00 8B 49 4E 4E FE F1 C7 1F 25 7F 9B 9A 9A 1E 3B 76 8C CB 85 17 44 88 4C 81 06 26 8F 95 95 95 
+B5 B5 F5 81 03 07 10 04 49 4C 4C E4 72 B9 C7 8E 1D 93 B7 28 C8 C0 42 69 DF BE 7D F2 D6 C0 62 16 
+2C 58 50 5D 5D FD F4 E9 53 04 41 D2 D2 D2 D4 D4 D4 AC AC AC E4 2D 0A 32 80 E0 C0 FA C0 14 11 89 
+44 9F 7F FE 79 78 78 B8 E4 9F E7 CF 9F DF B0 61 83 7C 25 41 06 0E D0 C0 34 D0 D9 D9 E9 E4 E4 94 
+98 98 88 20 88 B2 B2 F2 8D 1B 37 96 2E 5D 2A 6F 51 90 01 01 34 30 3D B4 B4 B4 D8 DA DA 3E 7F FE 
+1C 41 10 75 75 F5 D8 D8 58 6B 6B 6B 79 8B 82 F4 7F A0 81 69 A3 A6 A6 86 C7 E3 15 17 17 23 08 A2 
+AD AD FD E8 D1 A3 19 33 66 C8 5B 14 A4 9F 03 0D 4C 27 6F DE BC B1 B2 B2 AA AD AD 45 10 64 F4 E8 
+D1 29 29 29 E3 C6 8D 93 B7 28 48 7F 06 CE 5B D2 C9 27 9F 7C 12 1D 1D AD A5 A5 85 20 C8 DB B7 6F 
+1D 1D 1D EB EB EB E5 2D 0A D2 9F 81 06 A6 99 4F 3F FD 34 3C 3C 7C D0 A0 41 08 82 14 16 16 BA B8 
+B8 B4 B5 B5 C9 5B 14 A4 DF 02 0D 4C 3F F6 F6 F6 C1 C1 C1 92 A8 AC CC CC CC 15 2B 56 F0 F9 7C 79 
+8B 82 F4 4F A0 81 19 E1 B3 CF 3E 3B 75 EA 94 E4 EF F8 F8 78 5F 5F 5F B1 58 2C 5F 49 90 7E 09 8C 
+C4 62 8A 39 73 E6 70 38 9C 87 0F 1F 22 08 F2 E2 C5 8B 77 EF DE 39 3B 3B 73 38 1C 79 EB 82 F4 2B 
+A0 81 19 C4 D6 D6 B6 AE AE 2E 33 33 13 41 90 27 4F 9E 28 2B 2B DB D8 D8 C8 5B 14 A4 5F 01 A7 91 
+98 45 24 12 79 79 79 85 85 85 49 FE 19 18 18 F8 C5 17 5F C8 57 12 A4 3F 01 0D CC 38 5D 5D 5D 2E 
+2E 2E F7 EF DF 47 10 44 49 49 29 34 34 74 F9 F2 E5 F2 16 05 E9 27 40 03 CB 82 D6 D6 D6 05 0B 16 
+64 65 65 21 08 A2 A6 A6 16 13 13 63 67 67 27 6F 51 90 FE 00 34 B0 8C A8 AB AB E3 F1 78 6F DE BC 
+41 10 64 E8 D0 A1 0F 1F 3E 34 33 33 93 B7 28 08 EB 81 06 96 1D C5 C5 C5 56 56 56 D5 D5 D5 08 82 
+E8 EB EB A7 A4 A4 8C 1F 3F 5E DE A2 20 EC 06 CE 03 CB 8E F1 E3 C7 C7 C4 C4 0C 1D 3A 14 41 90 9A 
+9A 1A 47 47 47 49 D4 34 04 42 1A 68 60 99 62 6A 6A 7A EB D6 2D 35 35 35 04 41 DE BC 79 E3 E2 E2 
+D2 DA DA 2A 6F 51 10 16 03 0D 2C 6B 6C 6D 6D 43 42 42 94 94 94 10 04 C9 CA CA F2 F0 F0 E8 EA EA 
+92 B7 28 08 0D 88 44 22 13 13 13 4D 4D 4D 3D 3D BD 96 96 16 D9 EC 54 76 EF C0 0D 0D 0D C5 C5 C5 
+35 35 35 AD AD AD 42 A1 90 CB E5 AA A9 A9 0D 1D 3A 54 57 57 D7 D0 D0 70 C4 88 11 03 2A 4A 29 28 
+28 A8 7B 42 78 C5 8A 15 D7 AE 5D 93 58 7A 80 C3 E7 F3 4B 4A 4A 2A 2B 2B 1B 1B 1B 3B 3A 3A 50 14 
+55 51 51 D1 D4 D4 D4 D1 D1 19 3D 7A F4 98 31 63 24 AB 44 14 93 88 88 88 65 CB 96 49 FE 3E 7E FC 
+F8 F6 ED DB 65 B0 53 66 0D 5C 5A 5A 1A 19 19 79 EF DE BD F4 F4 74 F0 FB 9E B6 B6 B6 A9 A9 A9 85 
+85 C5 C2 85 0B ED EC EC 54 55 55 A9 EC 57 24 12 DD B8 71 43 11 96 10 58 59 59 49 5B 12 EC E1 E1 
+71 EB D6 2D C9 DF 9B 37 6F 3E 73 E6 8C 02 5E C2 52 52 52 4A 4A 4A 7A FF 3F E0 B8 88 C2 E7 F3 EF 
+DF BF 1F 13 13 93 94 94 94 97 97 27 10 08 A4 B5 54 52 52 9A 30 61 82 B9 B9 B9 B5 B5 B5 B3 B3 B3 
+A2 AD B5 B6 B7 B7 7F F0 E0 81 E4 EF 89 13 27 BE 7A F5 4A 16 69 86 51 06 E0 F3 F9 C1 C1 C1 A4 F3 
+33 6A 6B 6B 6F D9 B2 25 37 37 97 DC DE 85 42 E1 DA B5 6B E9 3D 4B A4 31 34 34 7C FD FA 75 9F 3A 
+7B 88 DC B3 67 0F 85 53 CE 08 57 AF 5E 55 56 EE 3B F1 30 E0 B8 F0 53 58 58 18 10 10 30 6C D8 30 
+72 E7 D6 C2 C2 22 28 28 48 72 A3 96 3B 39 39 39 3D E4 45 47 47 CB 60 BF 34 1B 58 28 14 9E 3F 7F 
+DE C8 C8 88 DC 57 D2 83 25 4B 96 3C 7B F6 8C A8 86 3E EF 18 72 64 F7 EE DD 7D EA EC 7D 95 39 75 
+EA 14 E5 6F 80 4E 4C 4D 4D 49 1C 17 1E 8A 8A 8A BC BC BC 68 B9 41 E9 E9 E9 1D 3D 7A 54 EE 36 EE 
+1D 21 EB EC EC 2C 83 FD D2 69 E0 EC EC 6C 73 73 73 EA 5F C9 C7 70 B9 DC 8D 1B 37 D6 D7 D7 E3 97 
+C1 5E 03 73 B9 DC AB 57 AF D2 F4 6D D0 00 13 06 E6 F3 F9 3F FD F4 13 ED AF B2 C6 C6 C6 11 11 11 
+B4 9F 01 9C 34 36 36 6A 68 68 F4 90 C4 E1 70 0A 0B 0B 99 DE 35 3D CF E8 28 8A 9E 38 71 62 EE DC 
+B9 92 14 E7 34 22 16 8B CF 9F 3F 3F 75 EA D4 1B 37 6E D0 DB B3 02 22 16 8B 7D 7D 7D EF DD BB 27 
+6F 21 4C 51 56 56 66 65 65 B5 77 EF 5E DA 07 DE 4B 4A 4A 3C 3C 3C 56 AE 5C D9 D8 D8 48 6F CF 78 
+08 0A 0A 6A 6F 6F EF F1 9F 28 8A 76 AF 09 67 10 EA D7 00 81 40 E0 E7 E7 C7 B8 50 04 D9 B4 69 13 
+9E 27 25 F6 DE 81 25 0C 19 32 24 23 23 83 FA F7 42 1D 7A EF C0 E9 E9 E9 BA BA BA CC 9C E3 FF C3 
+C0 C0 20 29 29 89 A1 13 D2 27 02 81 40 DA 3B A3 96 96 56 6B 6B 2B A3 7B A7 7A 07 16 89 44 DE DE 
+DE 41 41 41 14 FB C1 43 60 60 A0 AD AD AD 24 14 B1 1F D3 D6 D6 E6 E2 E2 52 58 58 28 6F 21 74 92 
+9A 9A BA 70 E1 C2 BA BA 3A A6 77 54 55 55 65 6F 6F 7F F6 EC 59 A6 77 D4 4D 64 64 64 59 59 59 9F 
+1F B5 B6 B6 5E BE 7C 99 D1 BD 53 35 70 40 40 40 68 68 28 2D 52 F0 F0 E4 C9 13 4B 4B CB 57 AF 5E 
+C9 6C 8F 72 A1 BE BE DE D1 D1 F1 ED DB B7 F2 16 42 0F 05 05 05 6E 6E 6E EF DF BF 97 CD EE 04 02 
+81 BF BF FF F7 DF 7F 2F 9B DD 9D 3C 79 12 F0 A9 64 60 92 B9 BD 53 32 F0 C5 8B 17 4F 9F 3E 4D 6C 
+7F 5C EE C8 91 23 C7 8C 19 33 6A D4 A8 DE EF FD 78 50 51 51 19 3E 7C 38 A0 C1 90 21 43 74 74 74 
+48 F4 CC 10 C6 C6 C6 24 B6 2A 2D 2D 75 72 72 6A 6A 6A A2 5D 8F 8C F9 F0 E1 C3 B2 65 CB 88 1E C8 
+E0 C1 83 0D 0C 0C 0C 0D 0D 87 0F 1F 4E 6E B0 5A 5F 5F 9F C4 56 44 C9 C9 C9 91 64 4D 92 C6 AB 57 
+AF 12 12 12 98 13 40 BE BC 68 69 69 69 40 40 00 9E 96 1C 0E C7 CE CE 6E C5 8A 15 36 36 36 93 27 
+4F FE 38 48 A3 B9 B9 B9 A0 A0 20 23 23 23 3E 3E 3E 2E 2E AE B3 B3 13 DC D5 F0 E1 C3 A3 A3 A3 47 
+8E 1C 09 6E 13 17 17 B7 76 ED 5A 45 08 51 F4 F1 F1 D9 B8 71 23 B9 6D 73 73 73 97 2C 59 12 1F 1F 
+AF AE AE 4E AF 2A 59 F2 FD F7 DF BF 7C F9 12 4F CB 91 23 47 7A 7A 7A 3A 3B 3B 9B 9B 9B 7F FC B6 
+2C 14 0A 2B 2A 2A 72 72 72 92 92 92 22 23 23 5F BF 7E 8D D9 D5 57 5F 7D B5 73 E7 4E F2 A2 71 03 
+BE FD 76 B7 59 B4 68 11 53 0A 48 BF 3D BB BB BB E3 E9 DF D9 D9 39 27 27 07 4F 87 8D 8D 8D 87 0E 
+1D 02 8C 73 A8 A9 A9 25 27 27 93 16 AC 68 E0 8C 36 59 BA 74 A9 40 20 90 8B 42 EA 83 58 99 99 99 
+78 EE 9F 3A 3A 3A 27 4E 9C C0 33 42 29 16 8B 1F 3D 7A E4 E6 E6 06 E8 CD DD DD 5D 28 14 D2 71 02 
+30 68 68 68 C0 73 6D E5 72 B9 45 45 45 0C 69 20 69 E0 D4 D4 54 4C DD AA AA AA 81 81 81 62 B1 98 
+50 CF AD AD AD DF 7D F7 5D EF 00 20 0E 87 73 ED DA 35 72 6A 15 13 FC E1 62 EB D6 AD 23 7A 1A 69 
+81 BA 81 17 2F 5E 8C 79 74 3C 1E AF B2 B2 92 A8 B6 C4 C4 C4 69 D3 A6 F5 EE 6D CE 9C 39 EF DF BF 
+27 75 B8 84 39 78 F0 20 CE 6F F0 5F FF FA 17 43 1A 48 1A D8 C3 C3 03 AC 58 55 55 35 26 26 86 B4 
+AC F4 F4 F4 1E AF 8E 87 0E 1D 22 DD 9B 62 42 28 DE F3 DB 6F BF 95 BD 42 8A 06 7E F6 EC 19 E6 71 
+39 3A 3A 92 0E A2 EA EC EC DC B1 63 C7 C7 BD 19 1B 1B D7 D4 D4 90 EB 8D 28 02 81 60 EC D8 B1 38 
+BF 3E 6D 6D 6D 86 2E 2B 64 0C 5C 5D 5D 8D B9 74 26 28 28 88 A2 B2 86 86 86 EE 24 AC 5B B6 6C 91 
+CB 2D 88 51 88 06 6C 1F 39 72 44 C6 0A 29 1A F8 CB 2F BF 04 1F 91 89 89 09 F5 69 D2 E0 E0 60 C9 
+A8 8A 8E 8E 4E 7E 7E 3E C5 DE F0 73 FD FA 75 42 5F DF D9 B3 67 99 90 41 C6 C0 98 93 6C 2E 2E 2E 
+B4 F8 AD A3 A3 E3 C1 83 07 99 99 99 F2 7A 09 64 14 12 2B 2E 2E 5D BA 24 4B 85 54 0C 2C 16 8B 47 
+8F 1E 0D D8 9C C3 E1 A4 A5 A5 D1 A2 33 3F 3F 3F 25 25 A5 A2 A2 82 96 DE 70 42 34 C5 F7 F4 E9 D3 
+99 B8 09 91 31 F0 CA 95 2B C1 5A 9F 3F 7F 4E BB D0 FE 07 09 03 2B 2B 2B 47 45 45 C9 4C 21 15 03 
+E7 E7 E7 83 8F 65 F9 F2 E5 32 3B 10 DA C9 CE CE 26 FA DD 21 08 72 FF FE 7D DA 95 90 99 61 03 07 
+3C 5B 58 58 CC 9C 39 93 44 B7 10 4C 84 42 E1 CA 95 2B 1F 3F 7E 2C 6F 21 D8 60 46 C5 CB 26 FC 96 
+21 4E 9C 38 41 62 2B 3C 73 4E 44 21 6C 60 A1 50 58 5A 5A 0A 68 B0 70 E1 42 F2 72 20 58 B4 B7 B7 
+BB BA BA E6 E5 E5 C9 5B 08 06 92 04 BA D2 50 56 56 B6 B5 B5 95 99 18 7A 69 68 68 08 09 09 21 B1 
+21 20 E8 92 34 84 0D DC D8 D8 28 12 89 00 0D A6 4C 99 42 41 0F 04 9B A6 A6 26 27 27 27 DA 7F 0A 
+F4 02 0E 7B 1E 3B 76 2C B9 38 3C 45 E0 DC B9 73 98 11 47 7D 22 12 89 CE 9C 39 43 AF 18 C2 06 C6 
+94 3E 64 C8 10 B2 62 20 78 A9 AA AA 72 74 74 6C 68 68 90 B7 10 A9 74 74 74 00 3E D5 D2 D2 92 99 
+12 7A 11 0A 85 54 4C 28 49 21 42 A3 1E C2 06 C6 9C 40 A2 57 1F 44 1A 05 05 05 CE CE CE 6D 6D 6D 
+F2 16 D2 37 E0 DF 49 EF D5 B3 6C 21 3C 3C BC A2 A2 02 D0 00 3C F6 DE D8 D8 78 E5 CA 15 1A F5 10 
+36 30 E6 0D 16 4F A8 2A 84 16 32 33 33 97 2F 5F AE 08 B9 FB 7A 03 BE C7 96 95 95 29 A6 6C 4C C0 
+03 51 1C 0E 27 3C 3C 1C FC 76 70 F2 E4 49 94 BE F5 49 84 0D AC A5 A5 05 D6 17 17 17 47 41 0F E4 
+7F 31 36 36 C6 13 67 9B 90 90 E0 EB EB 2B 16 8B 65 20 89 10 E0 C5 40 5D 5D 5D 8F 1E 3D 92 99 18 
+BA 78 F6 EC 59 52 52 12 A0 81 93 93 D3 DC B9 73 BD BC BC 00 6D B2 B3 B3 93 93 93 E9 92 44 D8 C0 
+1C 0E 67 E2 C4 89 80 06 29 29 29 E9 E9 E9 14 24 41 10 04 41 A6 4E 9D 1A 1A 1A 2A 2D 29 E4 C7 5C 
+BB 76 6D DB B6 6D 32 90 44 88 49 93 26 81 1B 1C 3D 7A 54 36 4A 68 04 73 1E 48 F2 45 60 86 A0 D1 
+38 9F 44 66 1E 78 F6 EC D9 E0 06 DB B6 6D 03 64 F7 85 E0 C4 CD CD ED FC F9 F3 78 92 45 9F 39 73 
+E6 A7 9F 7E 92 81 24 FC 60 A6 37 8C 89 89 89 88 88 90 8D 18 5A A8 AF AF 07 BF BE 4E 98 30 C1 C9 
+C9 09 41 90 59 B3 66 CD 9F 3F 1F D0 32 3C 3C BC B2 B2 92 16 55 64 0C 8C 39 D3 9B 99 99 B9 6D DB 
+36 1A 1F F4 07 2C BE BE BE BF FF FE 3B 9E 96 FB F6 ED 93 65 1E 19 4C C6 8C 19 33 79 F2 64 70 9B 
+0D 1B 36 BC 78 F1 42 36 7A A8 83 39 7B B4 75 EB D6 EE B5 93 5B B7 6E 05 B4 14 0A 85 B4 7D 59 24 
+A2 B7 5A 5A 5A F0 4C E2 F9 F9 F9 75 75 75 D1 1C 39 D6 8F 00 87 52 BA BA BA 76 B7 DC B5 6B 17 9E 
+AF 92 F6 15 97 14 17 33 FC F8 E3 8F 98 9A 75 75 75 E9 8A 88 66 14 3E 9F 6F 68 68 08 38 10 0D 0D 
+8D 77 EF DE 75 B7 EF EC EC 04 67 F0 D3 D5 D5 ED EC EC A4 2E 8C CC 1D 58 4B 4B CB DB DB 1B B3 59 
+50 50 90 8D 8D 4D 41 41 01 89 5D 40 3E E6 D7 5F 7F C5 93 D6 03 45 51 1F 1F 1F 46 13 B8 10 C2 CF 
+CF 0F F3 1D BE AE AE CE D6 D6 F6 C8 91 23 E0 E8 20 B9 83 F9 D0 BB 66 CD 9A 8F 13 39 0D 1A 34 A8 
+77 AA F7 8F A9 AB AB BB 76 ED 1A 0D CA C8 F9 FE CD 9B 37 2A 2A 2A 78 FA 57 55 55 DD B9 73 67 6D 
+6D 2D F5 8B 4D 3F 03 FF 1D 18 45 51 81 40 D0 5D 38 0B 8C A6 A6 26 5D 59 69 A9 2F E8 5F BF 7E 3D 
+1E CD 08 82 CC 9C 39 33 2A 2A 4A 61 17 8D F2 78 3C B0 FE DE 0B 78 CA CB CB C1 93 E1 B3 67 CF A6 
+2E 8C 7C 4A 1D 42 C5 D7 34 34 34 02 02 02 A8 57 D3 E9 4F 10 32 30 8A A2 1D 1D 1D 76 76 76 78 CE 
+F6 F0 E1 C3 5F BD 7A 45 5D 21 75 03 97 97 97 0F 1E 3C 18 FF EF C4 DC DC 3C 24 24 84 CF E7 53 17 
+4F 23 98 0B 33 6C 6C 6C FA DC 10 F3 9A FB F8 F1 63 8A DA C8 1B B8 A5 A5 85 68 0D 24 0E 87 B3 68 
+D1 A2 B0 B0 30 F8 6E 8C 12 37 30 8A A2 CD CD CD B3 66 CD C2 73 AA 8D 8C 8C 48 E4 A9 E9 01 2D 89 
+DD FF FB DF FF 12 FA 91 20 08 A2 A7 A7 B7 6B D7 AE 37 6F DE 50 D4 4F 17 98 0B 3F 43 43 43 FB DC 
+10 F3 75 66 F5 EA D5 14 B5 51 AA CC 90 92 92 42 AE 0E A8 A2 7D 43 72 81 84 81 51 14 AD A9 A9 F9 
+E4 93 4F F0 9C E4 69 D3 A6 7D 3C AC 42 02 5A 0C 2C 12 89 96 2C 59 42 EC F7 81 20 88 C2 5C EE 6B 
+6B 6B C1 95 9C 0C 0C 0C A4 3D 32 88 C5 62 F0 DA 1E 15 15 95 B7 6F DF 52 91 47 3E AD 2C 82 20 F3 
+E7 CF 3F 77 EE DC BA 75 EB 50 82 33 46 B5 B5 B5 07 0F 1E 3C 74 E8 90 83 83 C3 A6 4D 9B 96 2E 5D 
+4A B1 20 70 6F 9A 9A 9A E4 3B 2E A2 A9 A9 A9 A6 A6 46 7B B7 7A 7A 7A 71 71 71 56 56 56 98 69 DF 
+5F BC 78 E1 E2 E2 92 90 90 40 E8 21 96 76 B8 5C 6E 70 70 B0 AD AD 2D D1 45 F0 28 8A C6 C7 C7 C7 
+C7 C7 EB E9 E9 AD 5F BF DE CF CF 6F C2 84 09 0C 89 04 70 EE DC 39 70 7E E2 CD 9B 37 4B 1B 0F E2 
+70 38 5B B7 6E 05 64 5F 16 08 04 81 81 81 7B F7 EE 25 AF 8F 8A FB 25 9C 3D 7B 96 62 65 6A C9 0D 
+B9 B8 B8 98 BA 18 09 97 2F 5F 96 45 6D 65 20 26 26 26 D5 D5 D5 00 91 E4 EE C0 12 72 72 72 B4 B5 
+B5 F1 C8 70 76 76 26 FD 4A 49 63 6D A4 BA BA 3A 70 6F 98 74 DF 90 65 F9 86 CC E7 F3 0D 0C 0C 00 
+AA 54 55 55 C1 69 F4 9A 9B 9B 35 35 35 01 3D E8 EB EB 53 79 C4 A0 A7 BC 68 58 58 18 F5 E5 9D 5C 
+2E D7 D5 D5 35 21 21 81 E2 50 64 55 55 95 DC DD 2B E1 B3 CF 3E 03 E8 A4 62 60 14 45 93 92 92 70 
+26 7C F7 F6 F6 26 77 4A E9 2D 6E D6 D4 D4 44 4B 7E F3 D1 A3 47 EF DF BF BF A1 A1 81 C4 11 11 05 
+73 E5 90 B7 B7 37 66 27 FE FE FE E0 4E FE F9 E7 1F D2 0A 69 AB 0F 9C 9B 9B 3B 7D FA 74 EA 5F 0F 
+82 20 B3 67 CF BE 75 EB 16 69 1B 2B 4E 75 42 B0 09 29 1A 18 45 D1 A8 A8 28 3C C1 D2 08 82 04 04 
+04 90 38 93 B4 D7 07 16 0A 85 7B F7 EE C5 A9 19 CC E0 C1 83 BF FE FA 6B F0 33 0E 75 C0 11 91 08 
+BE 61 E4 DC DC 5C 70 27 96 96 96 A4 15 D2 59 E0 BB B3 B3 73 FF FE FD 74 BD 71 59 58 58 3C 7C F8 
+90 84 8C 81 63 60 14 45 2F 5F BE 8C F3 FD E5 97 5F 7E 21 7A 26 99 28 F0 8D A2 E8 D3 A7 4F E7 CD 
+9B 47 EC 54 4A 61 F0 E0 C1 3F FC F0 43 4B 4B 0B 39 25 60 32 32 32 C0 7B 37 37 37 C7 D9 15 66 FE 
+20 D2 53 F7 74 1A 58 C2 DB B7 6F B7 6C D9 42 D7 A0 94 97 97 57 5D 5D 1D 21 01 03 CA C0 28 8A E2 
+5F D6 13 18 18 48 E8 4C 32 64 60 14 45 C5 62 F1 F5 EB D7 A7 4E 9D 4A E0 6C 4A 67 D4 A8 51 D2 26 
+72 A8 E0 EB EB 0B DE EF C5 8B 17 71 76 85 59 C1 D3 D7 D7 97 9C 48 FA 0D 2C A1 BC BC 7C C7 8E 1D 
+B4 A4 D7 D1 D5 D5 BD 7B F7 2E FE 5D 0F 34 03 A3 28 8A B3 94 26 97 CB 0D 0B 0B C3 DF 2D 73 06 96 
+20 12 89 C2 C2 C2 2C 2C 2C 88 9D 56 29 78 7B 7B B7 B5 B5 51 94 D4 4D 4D 4D 0D 78 F6 68 C4 88 11 
+F8 6B 4A F0 F9 7C 70 A6 8E 41 83 06 91 8B 56 64 CA C0 12 5A 5A 5A 4E 9D 3A 45 71 F8 11 41 10 2E 
+97 7B E8 D0 21 9C 6F C5 03 D0 C0 62 B1 18 67 D0 E2 A0 41 83 F0 67 27 66 DA C0 DD A4 A7 A7 AF 5F 
+BF 9E FA CB D7 B4 69 D3 4A 4A 4A 68 91 F4 F3 CF 3F 83 F7 B5 6B D7 2E 42 1D EE DB B7 0F DC E1 81 
+03 07 48 E8 64 D6 C0 DD 64 64 64 F8 FB FB 0F 1D 3A 94 CA D7 B3 7D FB 76 3C 1E 2E 2F 2F A7 B2 17 
+1A 59 BA 74 29 40 27 8D 06 46 51 54 20 10 60 16 AC 92 A0 A5 A5 95 95 95 85 A7 4F 99 19 58 42 4B 
+4B 4B 60 60 A0 A5 A5 25 B1 B3 FC FF 19 35 6A 54 5E 5E 1E 45 25 5D 5D 5D E0 1B A6 92 92 52 69 69 
+29 A1 3E AB AA AA C0 CB 07 00 01 21 00 64 64 60 09 ED ED ED 7F FF FD B7 9D 9D 1D E9 79 E3 6F BE 
+F9 06 CF 8E F0 97 8D 63 0E 03 03 83 82 82 02 80 48 7A 0D 8C A2 68 47 47 07 CE 64 CB 7A 7A 7A 78 
+E2 D2 65 6C E0 6E F2 F2 F2 BE FE FA 6B 70 15 68 00 FA FA FA 14 A3 EE 31 D3 3E 7B 78 78 90 E8 16 
+B3 A4 09 89 D5 A0 1C 54 1E CB EE 8B 8A 8A 2E 5C B8 70 E9 D2 A5 AA AA 2A A2 DB 06 06 06 82 17 6A 
+49 28 28 28 90 6F 56 10 7D 7D FD 11 23 46 00 1A AC 5B B7 EE D2 A5 4B D2 3E 75 75 75 8D 8A 8A 22 
+BA D3 96 96 16 5B 5B DB E7 CF 9F 63 B6 34 36 36 4E 4E 4E 06 DF 67 CC CC CC 00 5D ED DE BD FB C0 
+81 03 44 15 E2 87 CF E7 47 46 46 5E B8 70 21 36 36 96 68 D2 AF 29 53 A6 A4 A7 A7 93 4E 5E 3B 6F 
+DE BC B4 B4 34 40 83 84 84 04 12 05 0C 1E 3D 7A 04 BE C2 5A 5B 5B 13 4E 15 46 E2 42 42 17 02 81 
+20 22 22 C2 C1 C1 81 90 60 35 35 B5 17 2F 5E C8 51 36 5D D0 7E 07 96 80 3F 58 7A C6 8C 19 E0 60 
+69 79 DD 81 7B 50 56 56 B6 7B F7 6E F0 D5 B0 37 A4 C7 75 9F 3C 79 02 EE D9 C4 C4 84 5C 90 82 58 
+2C 9E 31 63 06 B8 F3 67 CF 9E 11 EA 53 9E 06 EE 26 3B 3B DB D3 D3 13 7F F8 D4 FC F9 F3 15 76 E1 
+28 7E 18 32 30 8A A2 45 45 45 A3 46 8D C2 73 26 79 3C DE 87 0F 1F A4 F5 A3 20 06 96 D0 DE DE FE 
+C7 1F 7F 10 5A 00 47 68 F2 A2 9B 35 6B D6 80 BB 3D 75 EA 14 E9 A3 C0 4C 0A BF 61 C3 06 42 1D 2A 
+84 81 25 E4 E6 E6 E2 29 E8 2E 81 DE DC 31 72 81 39 03 A3 28 9A 9D 9D 8D 73 C8 D0 D5 D5 55 DA D8 
+89 42 19 58 42 57 57 D7 F1 E3 C7 71 C6 81 4F 9F 3E 5D 28 14 12 EA BF BA BA 1A 1C C2 A0 A5 A5 45 
+A5 A6 71 5B 5B 1B F8 7B 51 57 57 27 14 25 AA 10 31 C3 12 A6 4F 9F 7E F7 EE DD 73 E7 CE E1 09 F1 
+95 8C B9 CB 40 15 4B 31 35 35 8D 8A 8A C2 73 26 EF DC B9 B3 61 C3 06 05 CC 2C DD 27 AA AA AA DB 
+B7 6F CF CB CB C3 33 5C 97 97 97 17 1E 1E 4E A8 FF C0 C0 40 70 C6 F9 B5 6B D7 52 89 6E D0 D4 D4 
+04 5F B8 3B 3A 3A 82 82 82 08 F4 48 FA 5A C2 1C 8F 1F 3F FE 38 BD 90 34 12 13 13 E5 AD 94 12 8C 
+DE 81 25 DC BE 7D 1B B3 14 8E 84 1D 3B 76 F4 7E 2B 51 C0 3B 70 37 7C 3E DF C7 C7 07 F3 B8 16 2C 
+58 80 BF CF AE AE 2E 70 3E 7A 0E 87 F3 F2 E5 4B 8A CA 5F BE 7C 09 9E 85 19 3B 76 2C FE 8A F6 0A 
+74 07 EE C6 D2 D2 32 2A 2A 0A 1C 07 83 20 08 BD 35 66 FA 25 6E 6E 6E 17 2E 5C C0 33 69 77 FC F8 
+F1 DF 7E FB 4D 06 92 E8 42 45 45 E5 E2 C5 8B EE EE EE E0 66 89 89 89 D5 D5 D5 38 FB 0C 0B 0B AB 
+A9 A9 01 34 70 70 70 A0 5E 7C 73 CA 94 29 E0 11 EC F2 F2 F2 DB B7 6F E3 EC 4D 11 0D 8C 20 C8 FC 
+F9 F3 31 7F 4F B1 B1 B1 B2 11 C3 6A 7C 7D 7D 8F 1C 39 82 A7 E5 EE DD BB 03 03 03 99 D6 43 23 4A 
+4A 4A 97 2E 5D 1A 33 66 0C A0 8D 58 2C 8E 8F 8F C7 D9 21 CE C2 0B D4 A1 B3 74 03 C5 E7 01 E6 10 
+08 04 98 C1 EE AC 4E 76 29 83 47 E8 6E FE FD EF 7F E3 F9 31 70 B9 DC EB D7 AF 77 6F A5 C8 8F D0 
+DD 60 06 5D F8 FB FB E3 E9 07 B3 1E D0 B8 71 E3 88 0E 89 49 43 20 10 8C 1D 3B 16 BC BB DC DC 5C 
+3C 5D 29 E8 1D 18 41 10 65 65 E5 9D 3B 77 82 DB B0 28 AF BF 7C F9 E5 97 5F FC FC FC 30 9B 89 C5 
+62 6F 6F EF 7B F7 EE C9 40 12 5D AC 5C B9 12 6C 86 FC FC 7C 3C FD 9C 38 71 02 DC 60 EB D6 AD 38 
+07 14 30 51 56 56 DE BC 79 33 B8 0D CE 9B B0 E2 1A 18 41 10 CC 64 68 E0 4A AD 90 6E 38 1C CE D9 
+B3 67 F1 64 96 EE EA EA 5A B6 6C 59 66 66 A6 0C 54 D1 82 92 92 92 AB AB 2B A0 01 9E D8 F8 EA EA 
+EA B0 B0 30 40 03 75 75 F5 0D 1B 36 10 16 27 1D 3F 3F 3F F0 28 4F 70 70 70 53 53 13 66 3F 0A 6D 
+60 3D 3D 3D F0 A8 60 63 63 A3 CC C4 B0 1D 25 25 A5 90 90 90 05 0B 16 60 B6 6C 6B 6B 73 71 71 61 
+51 49 8D 99 33 67 02 3E C5 F3 23 F9 F3 CF 3F C1 B3 47 5E 5E 5E C3 87 0F 27 AC 4C 3A BA BA BA 9F 
+7F FE 39 A0 41 7B 7B FB 85 0B 17 30 FB 51 68 03 23 08 02 2E 30 D3 D1 D1 21 33 25 FD 00 35 35 B5 
+88 88 88 4F 3F FD 14 B3 65 7D 7D FD E2 C5 8B DF BD 7B 27 03 55 D4 A1 F8 23 E1 F3 F9 7F FE F9 27 
+B8 0D 13 05 5C C1 05 D0 10 04 39 7D FA 34 66 66 55 45 37 B0 82 A4 A7 EB 37 68 69 69 C5 C4 C4 80 
+2B 3C 4B 28 2F 2F 67 CB 1B 0A F8 47 82 39 8B 16 1A 1A 0A 9E 3D E2 F1 78 38 F3 E9 13 62 DE BC 79 
+E0 8B 69 71 71 71 74 74 34 B8 13 45 B7 07 F8 35 00 9C B0 13 D2 27 BA BA BA B1 B1 B1 E0 75 48 EC 
+A2 B9 B9 19 F0 29 66 9E 00 CC E1 22 CC 59 1F D2 50 9F 4F 52 68 03 77 75 75 81 D7 1B 82 9F 9D 20 
+D2 30 36 36 BE 7B F7 2E 9E 70 37 56 50 54 54 04 F8 54 4F 4F 0F F0 69 5A 5A 1A 78 F9 D1 A8 51 A3 
+56 AC 58 41 52 19 16 9E 9E 9E C3 86 0D 03 34 48 48 48 78 F9 F2 25 A0 81 42 1B F8 E9 D3 A7 42 A1 
+10 D0 00 E7 BA 39 48 6F 66 CC 98 71 FB F6 6D 9C 99 A5 15 1C F0 14 2E B8 9E 03 E6 EC D1 A6 4D 9B 
+68 2F 1B D2 8D 86 86 06 38 17 12 8A A2 7F FC F1 07 A0 01 49 03 37 34 34 F8 F8 F8 AC 5D BB 96 9E 
+1A A7 52 00 07 94 29 2B 2B D3 95 D6 70 60 C2 E3 F1 C2 C2 C2 68 C9 D2 2C 8D E0 E0 E0 65 CB 96 05 
+04 04 30 37 5F D0 D2 D2 02 5E 04 0F 08 47 A9 AE AE BE 7E FD 3A 60 5B 15 15 95 4D 9B 36 91 17 87 
+03 7F 7F 7F F0 3B FC A5 4B 97 5A 5A 5A A4 7E 4C 22 8E E4 C5 8B 17 E3 C7 8F 97 6C AE AC AC 4C 6E 
+D5 25 26 9D 9D 9D E0 45 AD 54 D2 61 2B 02 B2 8C C4 02 80 3F B3 74 0F C0 91 58 22 91 E8 87 1F 7E 
+E8 6E 6C 6F 6F CF 50 8D 32 CC 5B 28 E0 F7 B9 67 CF 1E F0 B6 AB 56 AD 62 42 73 0F 9C 9D 9D C1 32 
+8E 1F 3F 2E 6D 5B C2 06 BE 7B F7 6E 8F 05 8D 9A 9A 9A A9 A9 A9 D4 0E A1 0F 30 5F DF F7 EF DF 4F 
+FB 4E 65 89 82 18 18 45 51 9C C1 D2 3D 00 18 F8 FD FB F7 CB 97 2F EF D1 7E E5 CA 95 F8 17 D9 E0 
+E4 C3 87 0F E0 58 E8 C1 83 07 4B 4B FE DA D9 D9 09 7E 3D 46 10 24 29 29 89 5E C1 7D 82 99 3B 69 
+E2 C4 89 22 91 A8 CF 6D 89 19 F8 E4 C9 93 7D 46 93 69 6A 6A D2 7B 1F AE AC AC 04 0F B1 70 38 1C 
+B6 97 0B 57 1C 03 A3 28 FA CD 37 DF 80 7F 43 BD 91 66 E0 CA CA 4A 69 B3 23 EE EE EE 80 04 20 24 
+F8 EE BB EF C0 22 7D 7C 7C A4 6D 7B F9 F2 65 F0 B6 66 66 66 B2 49 FC 22 12 89 BA 1F 69 A5 11 1D 
+1D DD E7 B6 78 0D 2C 10 08 C0 F3 CE CA CA CA C7 8E 1D A3 E5 80 3B 3A 3A 30 6B D2 38 3A 3A 52 DF 
+91 7C 51 28 03 8B C5 62 CC 32 D6 3D E8 D3 C0 19 19 19 E0 09 2A 73 73 73 BA 52 37 47 44 44 60 3E 
+FC 03 9E 0D 67 CF 9E 0D DE 36 28 28 88 16 9D 78 38 7C F8 30 58 8C B3 B3 73 9F 1B E2 32 B0 58 2C 
+76 73 73 03 EF 40 82 AB AB 6B 45 45 05 95 23 79 FF FE 3D E6 2B 01 82 20 0F 1E 3C A0 B2 17 45 40 
+A1 0C 8C A2 A8 40 20 58 BA 74 29 9E 6F 59 42 6F 03 27 26 26 E2 29 52 39 74 E8 D0 BF FE FA 8B E2 
+B5 FE CE 9D 3B 98 E5 97 ED EC EC A4 6D 9E 9A 9A 0A DE 76 D8 B0 61 F4 3E 2C 80 69 68 68 00 CF 08 
+70 38 9C C2 C2 C2 DE 1B E2 BD 03 E3 5F 29 3A 64 C8 90 DF 7E FB 8D DC C1 E7 E7 E7 9B 99 99 61 EE 
+42 DA D5 88 5D 28 9A 81 51 14 6D 6F 6F B7 B2 B2 C2 F9 45 F7 36 70 4B 4B 8B 89 89 09 CE CD 6D 6D 
+6D C9 55 F4 12 0A 85 BF FE FA 2B E6 C2 20 0E 87 93 96 96 26 AD 13 4F 4F 4F F0 E6 38 33 90 D3 08 
+66 6D 8D ED DB B7 F7 DE 8A C0 3B 30 A0 D0 78 6F 74 75 75 F7 EF DF 5F 55 55 85 B3 F3 DA DA DA 6F 
+BF FD 16 33 0B 07 82 20 EA EA EA 6C 7F FB 95 A0 80 06 46 51 B4 A9 A9 09 BC 36 A0 9B 3E 1F A1 0B 
+0B 0B 09 05 FD BB B8 B8 C4 C4 C4 E0 5C 67 2B 16 8B 63 62 62 70 46 35 7E F1 C5 17 D2 FA A9 AC AC 
+04 17 49 E0 72 B9 45 45 45 E4 4F 22 29 30 57 80 F5 99 4F 8F C0 1C E0 D1 A3 47 AB AA AA 6E DC B8 
+81 A7 71 5D 5D DD 7F FE F3 9F BD 7B F7 5A 5B 5B 3B 3A 3A F2 78 BC 99 33 67 F6 4E 26 F8 F6 ED DB 
+E4 E4 E4 F0 F0 F0 88 88 88 CE CE 4E 3C 3D 1F 3E 7C 18 33 7E 23 39 39 D9 CF CF 0F 1C 04 22 1B 7C 
+7C 7C F6 EE DD 2B 6F 15 04 D0 D6 D6 8E 8D 8D E5 F1 78 C5 C5 C5 24 36 9F 38 71 62 64 64 E4 A2 45 
+8B DA DB DB F1 B4 8F 8E 8E 8E 8E 8E D6 D7 D7 77 73 73 B3 B7 B7 9F 3D 7B B6 B1 B1 71 8F A9 E9 AE 
+AE AE E7 CF 9F C7 C5 C5 85 84 84 80 C3 92 BA 19 3F 7E FC EF BF FF 2E ED D3 B3 67 CF 82 93 FE BB 
+BA BA 62 8E 2A D1 8E B9 B9 B9 85 85 05 20 28 A5 B5 B5 F5 F2 E5 CB 3D A3 2F 09 5D 24 BA BA BA 30 
+D7 E8 02 18 36 6C D8 94 29 53 CC CD CD E7 CC 99 33 75 EA 54 9C C9 41 3F C6 CB CB 0B F3 DD A9 AA 
+AA 8A 74 4A 7E 26 90 36 16 A2 98 77 60 09 AF 5F BF C6 0C 53 05 4C 23 25 24 24 E0 79 19 EE 13 15 
+15 95 B1 63 C7 9A 9A 9A CE 9D 3B 77 D6 AC 59 46 46 46 44 97 D1 6B 68 68 3C 7D FA 54 9A B6 CE CE 
+4E CC 43 8B 8D 8D 65 E6 BC 62 80 39 30 DE 3B A7 3C E1 79 E0 AE AE AE D5 AB 57 13 3A A1 74 61 6B 
+6B 8B A7 A0 23 66 41 74 19 23 ED 87 AE C8 06 46 51 34 2B 2B 0B 7C 1D 04 07 72 24 25 25 C9 25 D6 
+5A 59 59 F9 D6 AD 5B 00 61 7F FD F5 17 B8 87 49 93 26 49 9B 74 65 9A 8E 8E 0E CC 8A 50 71 71 71 
+1F 6F 42 38 94 52 55 55 F5 EF BF FF DE B3 67 0F E9 02 65 E4 B0 B1 B1 89 8C 8C C4 1C 78 44 10 84 
+D1 D8 C0 81 C3 AC 59 B3 70 9E F0 3E B1 B2 B2 4A 4D 4D 9D 34 69 12 BD AA C0 A8 A8 A8 5C B9 72 05 
+30 96 8E E2 08 10 FA F2 CB 2F E5 B5 88 55 4D 4D 6D E3 C6 8D E0 36 3D F5 93 BE 5A DC B9 73 47 66 
+8B 81 56 AD 5A D5 DE DE 8E 53 18 CE D7 24 99 C1 D2 3B B0 84 9B 37 6F 4A FB 35 E3 49 6A D7 D2 D2 
+E2 E5 E5 C5 CC 79 ED 89 8E 8E 4E 42 42 02 58 4F 72 72 32 B8 13 4D 4D CD E6 E6 66 9A 4E 1E 19 4A 
+4B 4B C1 AF 0C 3D 06 D8 C8 5F 69 5C 5C 5C 72 73 73 99 7E 9C 1E 34 68 D0 D1 A3 47 AF 5C B9 82 7F 
+DD 0C 5D 99 C7 20 08 82 2C 5B B6 8C 4A AE 59 2D 2D AD 90 90 90 B0 B0 30 9C B5 9A 48 63 61 61 91 
+99 99 89 59 31 10 33 70 DA C7 C7 87 62 15 6B 8A 18 19 19 81 63 2E C4 62 F1 E9 D3 A7 FF EF DF D4 
+AF 19 89 89 89 F3 E6 CD 63 E2 60 6C 6C 6C 48 14 22 7C FD FA 35 13 62 48 C3 EA 3B B0 84 3E 73 74 
+13 4A 2B DB DA DA BA 7B F7 6E 26 12 30 68 6A 6A 1E 3E 7C 18 4F 94 75 65 65 25 E6 EB 15 F5 E2 E0 
+D4 C1 4C 78 AE A3 A3 F3 FE FD 7B 49 63 7A F2 42 8B C5 E2 84 84 04 37 37 37 BA 5E 1E CC CC CC 6E 
+DE BC 49 2E 58 87 DC FC 07 73 F4 03 03 A3 28 BA 7D FB 76 9C C7 05 A0 A1 A1 E1 E7 9F 7F 36 30 30 
+A0 E5 C4 AA AB AB 7F F5 D5 57 D5 D5 D5 38 F7 8E 39 C6 6B 6F 6F 4F F4 88 98 40 24 12 61 8E 1D 74 
+47 22 D2 9C D8 BD BC BC FC E0 C1 83 73 E6 CC 21 37 C4 A5 AE AE BE 6A D5 AA 7B F7 EE 51 89 B3 2B 
+29 29 21 B1 6B 86 30 34 34 94 16 76 92 91 91 21 6D 9C 56 43 43 E3 FE FD FB A4 CF 00 13 88 C5 E2 
+1E 75 37 49 27 76 17 08 04 77 EE DC F1 F1 F1 01 27 A3 00 60 62 62 72 E8 D0 A1 BA BA 3A 42 FB E5 
+F3 F9 E0 20 90 9B 37 6F 92 3B 22 DA 39 7E FC 38 40 A7 8B 8B 4B B7 41 38 28 33 35 FE 6A 6B 6B 1F 
+3E 7C 98 9A 9A FA EC D9 B3 BC BC 3C 40 6A 2B 35 35 B5 19 33 66 58 5A 5A DA DB DB 3B 38 38 50 7F 
+CA 7A FF FE 7D 44 44 04 C5 4E E8 C2 CA CA 6A DC B8 71 D2 3E CD CF CF CF CA CA EA FD FF D3 A6 4D 
+63 22 8B 1A 45 04 02 81 87 87 47 77 9A 35 7F 7F FF FF F7 32 46 1C A1 50 98 99 99 99 9C 9C 9C 9E 
+9E 9E 93 93 53 5C 5C 0C 88 BD 31 34 34 34 37 37 B7 B1 B1 71 72 72 22 9D C8 A1 A8 A8 E8 F1 E3 C7 
+D2 3E F5 F4 F4 54 90 29 8C D6 D6 D6 C8 C8 48 69 9F 3A 38 38 74 A7 5B 66 CA C0 3D 68 6E 6E AE AC 
+AC 6C 68 68 68 6B 6B 93 24 E0 55 57 57 D7 D1 D1 31 30 30 30 34 34 84 A9 27 D9 C2 87 0F 1F 1C 1C 
+1C D2 D2 D2 10 04 E1 72 B9 57 AF 5E 05 27 37 26 84 50 28 AC AA AA AA AD AD 7D F7 EE 5D 67 67 A7 
+50 28 54 56 56 D6 D2 D2 D2 D5 D5 35 32 32 A2 52 D4 B3 1F 23 23 03 43 FA 0D 4D 4D 4D 0E 0E 0E 92 
+07 07 55 55 D5 E8 E8 68 CC B1 5F 08 73 40 03 43 08 53 5F 5F 6F 6D 6D 2D 29 DD 30 64 C8 90 07 0F 
+1E 98 9B 9B CB 5B D4 00 05 1A 18 42 86 B2 B2 32 1E 8F 27 49 FA AB AB AB 9B 9C 9C 8C 27 59 3C 84 
+76 E0 CB 27 84 0C 46 46 46 DD 99 A5 EB EA EA 1C 1D 1D F1 D7 D1 86 D0 08 34 30 84 24 D3 A7 4F EF 
+CE 2C 5D 52 52 E2 EC EC 0C AE 90 00 61 02 68 60 08 79 78 3C 5E 68 68 A8 64 EA E5 F9 F3 E7 EE EE 
+EE B0 DC 9C 8C 81 06 86 50 C2 CD CD ED DC B9 73 92 BF 1F 3D 7A B4 7A F5 6A 45 C8 A3 30 70 50 DA 
+B7 6F 9F BC 35 40 D8 8D 99 99 99 86 86 46 42 42 02 82 20 AF 5E BD AA AE AE 5E B2 64 89 8C 57 9B 
+0E 58 A0 81 21 34 C0 E3 F1 DA DA DA 24 41 4E 59 59 59 02 81 00 4E 0E CB 06 68 60 08 3D 2C 5A B4 
+A8 A4 A4 24 27 27 07 41 90 A4 A4 A4 61 C3 86 59 58 58 C8 5B 54 FF 07 CE 03 43 68 43 20 10 B8 BB 
+BB C7 C4 C4 20 08 C2 E1 70 FE F9 E7 1F 99 AD E6 1F B0 40 03 43 E8 E4 E3 5A 83 B7 45 00 00 01 A0 
+49 44 41 54 60 69 15 15 95 A8 A8 A8 C5 8B 17 CB 5B 54 7F 06 1A 18 42 33 8D 8D 8D D6 D6 D6 92 C4 
+46 9A 9A 9A F7 EF DF 9F 33 67 8E BC 45 F5 5B A0 81 21 F4 53 51 51 C1 E3 F1 2A 2A 2A 10 04 19 31 
+62 44 72 72 F2 E4 C9 93 E5 2D AA 7F 02 E7 81 21 F4 33 66 CC 98 BB 77 EF 4A D6 EB 37 34 34 38 3A 
+3A 4A A2 A6 21 B4 03 0D 0C 61 84 A9 53 A7 DE B9 73 47 92 DE BD AC AC CC C9 C9 09 90 D4 01 42 1A 
+68 60 08 53 58 5A 5A 5E BF 7E 5D 12 68 99 97 97 B7 64 C9 12 9C F5 56 20 F8 81 06 86 30 88 B3 B3 
+F3 C5 8B 17 25 51 59 29 29 29 9E 9E 9E E0 A2 44 10 A2 40 03 43 98 65 CD 9A 35 DD 75 C6 6E DF BE 
+BD 79 F3 66 38 6E 4A 23 30 12 0B C2 38 F3 E6 CD EB E8 E8 48 49 49 41 10 24 3B 3B BB B3 B3 D3 C1 
+C1 41 DE A2 FA 09 D0 C0 10 59 E0 E0 E0 50 56 56 96 9D 9D 8D 20 48 4A 4A 8A 96 96 16 43 C5 00 06 
+1A 70 1E 18 02 61 31 F0 1D 18 02 61 31 D0 C0 10 08 8B 81 06 86 40 58 0C 34 30 04 C2 62 A0 81 21 
+10 16 03 0D 0C 81 B0 18 68 60 08 84 C5 40 03 43 20 2C 06 1A 18 02 61 31 D0 C0 10 08 8B 81 06 86 
+40 58 0C 34 30 04 C2 62 A0 81 21 10 16 03 0D 0C 81 B0 18 68 60 08 84 C5 40 03 43 20 2C 06 1A 18 
+02 61 31 D0 C0 10 08 8B 81 06 86 40 58 0C 34 30 04 C2 62 A0 81 21 10 16 03 0D 0C 81 B0 18 68 60 
+08 84 C5 40 03 43 20 2C 06 1A 18 02 61 31 D0 C0 10 08 8B 81 06 86 40 58 0C 34 30 04 C2 62 FE 07 
+AF 19 7D 3B 9C 77 78 43 00 00 00 00 49 45 4E 44 AE 42 60 82 
+EndData
+$EndBitmap
+$EndSCHEMATC

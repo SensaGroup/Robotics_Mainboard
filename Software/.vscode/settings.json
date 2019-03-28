@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/silardgal/.platformio/penv/bin:/Users/silardgal/.platformio/penv:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/CrossPack-AVR/bin:/Library/TeX/texbin",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
