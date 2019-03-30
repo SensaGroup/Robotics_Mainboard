@@ -77,6 +77,9 @@ void init_system(void) {
         fucked = true;
     }
 
+    actuator_stepper_move(1, STEPPER_FORWARD, SCP_LEFT_STEPPER_ID);
+    actuator_stepper_move(1, STEPPER_FORWARD, SCP_RIGHT_STEPPER_ID);
+
    /* if(!init_lidar()) {
         Serial.println("Lidar is fucked...");
         fucked = true;

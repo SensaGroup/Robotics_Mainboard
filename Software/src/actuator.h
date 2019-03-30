@@ -17,10 +17,10 @@ uint8_t actuator_break_hbridge(byte num);
 uint8_t actuator_hbridge_timed(int dir, int achieve, int time, byte num);
 uint8_t actuator_stepper_enable(byte status, byte num);
 uint8_t actuator_stepper_rpm(int rpm, byte num);
-uint8_t actuator_stepper_move(int steps, byte dir, byte num);
+uint8_t actuator_stepper_move(unsigned int steps, int dir, int num);
 
 uint8_t actuator_relay_toggle(byte num);
-uint8_t actuator_update_servo(byte num, uint8_t pos);
+uint8_t actuator_update_servo(int num, int pos);
 uint8_t actuator_update_valves(uint8_t num, uint8_t status);
 uint8_t actuator_read_bin(uint8_t num);
 

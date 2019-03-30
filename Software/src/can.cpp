@@ -27,6 +27,7 @@ bool init_can(void) {
     }
 
     CAN0.setMode(MCP_NORMAL);   // Change to normal mode to allow messages to be transmitted
+    CAN0.enOneShotTX();
 
     pinMode(CAN0_INT, INPUT);
 
@@ -41,7 +42,7 @@ bool init_can(void) {
  *                  byte *data      - array data (8 bit)
  */
 void can_send(uint32_t ID, byte *data) {
-    CAN0.sendMsgBuf(ID, 0, 8, data);
+    CAN0.sendMsgBuf(ID, 8, data);
 } // end of can_send(...)
 
 /*

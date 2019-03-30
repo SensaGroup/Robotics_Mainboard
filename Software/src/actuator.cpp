@@ -1,4 +1,5 @@
 #include "actuator.h"
+#include "mechanism.h"
 
 Servo servo_1;  uint8_t servo1_current;
 Servo servo_2;  uint8_t servo2_current;
@@ -6,7 +7,25 @@ Servo servo_3;  uint8_t servo3_current;
 Servo servo_4;  uint8_t servo4_current;
 
 uint8_t valve_pins[6]   = {36, 35, 34, 33, 32, 31};
-uint8_t bin_pins[6]     = {A0, A1, A2, A3, A4, A5};
+uint8_t bin_pins[2]     = { A4, A5};
+/*
+ servo_1.write(0);
+    delay(1000);
+    servo_1.write(180);
+    */
+
+void move_servo_1(int pos) {
+    servo_1.write(pos);
+}
+void move_servo_2(int pos) {
+    servo_2.write(pos);
+}
+void move_servo_3(int pos) {
+    servo_3.write(pos);
+}
+void move_servo_4(int pos) {
+    servo_4.write(pos);
+}
 
 /*
  * Function:    bool init_actuator(void)
@@ -20,7 +39,10 @@ bool init_actuator(void) {
 
     // attach all servos
     servo_1.attach(10); servo_2.attach(11); servo_3.attach(12); servo_4.attach(13);
-
+    move_servo_1(0);
+    delay(1000);
+    move_servo_1(180);
+    
     // setup inputs and valve connectors
     for(int i=0; i<6; i++) {
         pinMode(valve_pins[i], OUTPUT);
@@ -28,6 +50,11 @@ bool init_actuator(void) {
 
         pinMode(bin_pins[i], INPUT);
     }
+
+    pinMode(A0, OUTPUT);    // dir right
+    pinMode(A1, OUTPUT);    // step right
+    pinMode(A2, OUTPUT);    // dir left
+    pinMode(A3, OUTPUT);    // step left
 
     // setup the actuator board
     byte ping_data[8] = {'P', 1, 0, 0, 0, 0, 0, 0};
@@ -68,24 +95,20 @@ uint8_t actuator_relay_toggle(byte num) {
  * Parameters:      byte num    - which servo
  *                  uint8_t pos - the position
  */
-uint8_t actuator_update_servo(byte num, uint8_t pos) {
+uint8_t actuator_update_servo(int num, int pos) {
 
     switch(num) {
         case 1:
             servo_1.write(pos);
-            servo1_current = pos;
             break;
         case 2:
             servo_2.write(pos);
-            servo2_current = pos;
             break;
         case 3:
             servo_3.write(pos);
-            servo3_current = pos;
             break;
         case 4:
-            servo_3.write(pos);
-            servo3_current = pos;
+            servo_4.write(pos);
             break;
     }
 
@@ -213,12 +236,34 @@ uint8_t actuator_stepper_rpm(int rpm, byte num) {
  *                  byte dir    - the direction
  *                  byte num    - which stepper
  */
-uint8_t actuator_stepper_move(int steps, byte dir, byte num) {
+uint8_t actuator_stepper_move(unsigned int steps, int dir, int num) {
 
-    byte stepper_data[8] = {'s', 'M', (byte)(steps >> 8), (byte)(steps & 0xFF), dir, num};
+    int pin_step, pin_dir;
 
-    can_send(ACTUATOR_CAN_ID, stepper_data);
-    Serial.print("sent...");
-    return can_wait_for_finish();
+    if(num == SCP_LEFT_STEPPER_ID) {
+        pin_step = A3; pin_dir = A2;
+    } else if(num == SCP_RIGHT_STEPPER_ID){
+        pin_step = A1; pin_dir = A0;
+    }
+
+
+    if(dir == 1) {
+        // forward
+        digitalWrite(pin_dir, LOW);
+
+    } else {
+        // backward
+        digitalWrite(pin_dir, HIGH);
+
+    }
+
+    for(unsigned int i=0; i<steps; i++) {
+
+        digitalWrite(pin_step, HIGH);
+        _delay_us(700);
+        digitalWrite(pin_step, LOW);
+        _delay_us(700);
+
+    }
 
 } // end of actuator_stepper_move(...)
