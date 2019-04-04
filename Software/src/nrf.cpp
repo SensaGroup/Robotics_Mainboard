@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include "nrf.h"
 
-RF24 radio(PIN_NRF_CS, PIN_NRF_CE);
+RF24 radio(PIN_NRF_CE, PIN_NRF_CS);
 
-const uint64_t pipes[][7] = {"sensa1", "sensa2"};
+byte addresses[][6] = {"1Node", "2Node"};  //2 modes one is transmiter and second is receiver
 
 /*
  * Function:        bool init_nrf(void)
@@ -11,20 +11,26 @@ const uint64_t pipes[][7] = {"sensa1", "sensa2"};
  */
 bool init_nrf(void) {
 
-    if(!radio.begin()) 
-        return false;
+   // Initiate the radio object
+  radio.begin();
 
-    radio.setPALevel(RF24_PA_MIN);
-    radio.setDataRate(RF24_2MBPS);
-    radio.setChannel(124);
-    radio.openWritingPipe(pipes[1]);
-    radio.openReadingPipe(1, pipes[0]);
+  // Set the transmit power to lowest available to prevent power supply related issues
+  radio.setPALevel(RF24_PA_MIN);
 
-    randomSeed(analogRead(A0));
+  // Set the speed of the transmission to the quickest available
+  radio.setDataRate(RF24_2MBPS);
 
-    return true;
+  // Use a channel unlikely to be used by Wifi, Microwave ovens etc
+  radio.setChannel(124);
+
+  // Open a writing and reading pipe on each radio, with opposite addresses
+  radio.openWritingPipe(addresses[1]);
+  radio.openReadingPipe(1, addresses[0]);
+  return true;
     
 } // end of init_nrf(...)
+
+
 
 /*
  * Function:        bool nrf_send(unsigned char ID, unsigned char task_ID, unsigned char status)
@@ -67,3 +73,108 @@ void nrf_read_process(void) {
     radio.stopListening();
 
 } // end of nrf_read_process(...)
+
+void Motor_start()
+{
+  /*  sending two digits to receiver board
+   *  firts digit:set witch modul is working,5-motor
+   *  second digit:if ist 1 turn on motor and if its 0 turn off
+   */
+  unsigned char data = 51;//random(0, 254);
+    
+  // Ensure we have stopped listening (even if we're not) or we won't be able to transmit
+  radio.stopListening(); 
+
+  // Did we manage to SUCCESSFULLY transmit that (by getting an acknowledgement back from the other Arduino)?
+  // Even we didn't we'll continue with the sketch, you never know, the radio fairies may help us
+  if (!radio.write( &data, sizeof(unsigned char) )) {
+    Serial.println("No acknowledgement of transmission - receiving radio device connected?");    
+  }
+  Serial.println(data);
+
+  delay(1000);
+}//end of Motor_start()
+
+/*
+    Function:     Motor_stop()
+    Description:  Send data to stop motor
+*/
+void Motor_stop()
+{
+   /*  sending two digits to receiver board
+   *  firts digit:set witch modul is working,5-motor
+   *  second digit:if ist 1 turn on motor and if its 0 turn off
+   */
+  unsigned char data = 50;//random(0, 254);
+    
+  // Ensure we have stopped listening (even if we're not) or we won't be able to transmit
+  radio.stopListening(); 
+
+  // Did we manage to SUCCESSFULLY transmit that (by getting an acknowledgement back from the other Arduino)?
+  // Even we didn't we'll continue with the sketch, you never know, the radio fairies may help us
+  if (!radio.write( &data, sizeof(unsigned char) )) {
+    Serial.println("No acknowledgement of transmission - receiving radio device connected?");    
+  }
+  Serial.println(data);
+
+  // Now listen for a response
+
+  // Try again 1s later
+  delay(1000);
+}//end of Motor_stop()
+
+/*
+    Function:     Led_start()
+    Description:  Send data to start led
+*/
+void Led_start()
+{
+   /*  sending two digits to receiver board
+   *  firts digit:set witch modul is working,4-LED
+   *  second digit:if ist 1 turn on motor and if its 0 turn off
+   */
+  unsigned char data = 41;//random(0, 254);
+    
+  // Ensure we have stopped listening (even if we're not) or we won't be able to transmit
+  radio.stopListening(); 
+
+  // Did we manage to SUCCESSFULLY transmit that (by getting an acknowledgement back from the other Arduino)?
+  // Even we didn't we'll continue with the sketch, you never know, the radio fairies may help us
+  if (!radio.write( &data, sizeof(unsigned char) )) {
+    Serial.println("No acknowledgement of transmission - receiving radio device connected?");    
+  }
+  Serial.println(data);
+
+  // Now listen for a response
+
+  // Try again 1s later
+  delay(1000);
+}//end of Led_start()
+
+/*
+    Function:     Led_stop()
+    Description:  Send data to stop led
+*/
+void Led_stop()
+{
+   /*  sending two digits to receiver board
+   *  firts digit:set witch modul is working,4-LED
+   *  second digit:if ist 1 turn on motor and if its 0 turn off
+   */
+  unsigned char data = 40;//random(0, 254);
+    
+  // Ensure we have stopped listening (even if we're not) or we won't be able to transmit
+  radio.stopListening(); 
+
+  // Did we manage to SUCCESSFULLY transmit that (by getting an acknowledgement back from the other Arduino)?
+  // Even we didn't we'll continue with the sketch, you never know, the radio fairies may help us
+  if (!radio.write( &data, sizeof(unsigned char) )) {
+    Serial.println("No acknowledgement of transmission - receiving radio device connected?");    
+  }
+  Serial.println(data);
+
+  // Now listen for a response
+
+  // Try again 1s later
+  delay(1000);
+}//end of Led_stop()

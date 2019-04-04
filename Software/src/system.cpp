@@ -25,14 +25,14 @@ static void init_jumper(void) {
  * Description:     setup all the switches
  */
 static void init_switches() {
-    pinMode(PIN_TACTIC1, INPUT);
-    pinMode(PIN_TACTIC2, INPUT);
+    //pinMode(PIN_TACTIC1, INPUT);
+    //pinMode(PIN_TACTIC2, INPUT);
     pinMode(PIN_SIDE,    INPUT);
 } // end of init_switches()
 
 // helper functions to read the switches
-int get_tactic1(void)   { return digitalRead(PIN_TACTIC1);  }
-int get_tactic2(void)   { return digitalRead(PIN_TACTIC2);  }
+//int get_tactic1(void)   { return digitalRead(PIN_TACTIC1);  }
+//int get_tactic2(void)   { return digitalRead(PIN_TACTIC2);  }
 int get_side(void)      { return digitalRead(PIN_SIDE);     }
 
 /*
@@ -80,20 +80,15 @@ void init_system(void) {
     actuator_stepper_move(1, STEPPER_FORWARD, SCP_LEFT_STEPPER_ID);
     actuator_stepper_move(1, STEPPER_FORWARD, SCP_RIGHT_STEPPER_ID);
 
-   /* if(!init_lidar()) {
-        Serial.println("Lidar is fucked...");
-        fucked = true;
-    }*/
-
-    /*if(!init_nrf()) {
+    if(!init_nrf()) {
         Serial.println("NRF is fucked...");
         fucked = true;
-    }*/
+    }
 
+    init_detection();
     init_timer();
     init_jumper();
     init_switches();
-    //init_display();
 
     if(fucked) {
         Serial.println("Something is totally fucked so let's not continue...");

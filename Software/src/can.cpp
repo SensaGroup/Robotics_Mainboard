@@ -73,7 +73,7 @@ uint8_t can_wait_for_finish(void) {
         CAN0.readMsgBuf(&rxId, &len, rxBuf);
         
         Serial.println(rxId);
-        if(rxId == 0x04) {
+        if(rxId == 0x04 || rxId == 0x10) {
         
             for(int i=0; i<len; i++) {
                 Serial.print(rxBuf[i]);

@@ -46,15 +46,16 @@ enum odometry_states
 #define odometry_command_ping               'H'
 
 bool init_odometry(void);
-uint8_t odometry_set_position(int16_t x, int16_t y, int16_t angle);
+uint8_t odometry_ping(void);
+void odometry_set_position(int16_t x, int16_t y, int16_t angle);
 void odometry_update_status(void);
-uint8_t odometry_set_speed(uint8_t speed);
+void odometry_set_speed(uint8_t speed);
 uint8_t odometry_move_forward(int16_t distance, uint8_t speed, uint8_t (*callback)());
 uint8_t odometry_rotate_for(uint16_t angle, uint8_t (*callback)());
 uint8_t odometry_set_angle(uint16_t angle, uint8_t (*callback)());
-uint8_t odometry_goto(int16_t x, int16_t y, uint8_t speed, uint8_t direction, uint8_t (*callback)());
+uint8_t odometry_goto(uint16_t x, uint16_t y, uint8_t speed, uint8_t direction, uint8_t (*callback)());
 uint8_t odometry_stop(uint8_t type);
-uint8_t odometry_end_match(void);
+void odometry_end_match(void);
 int16_t odometry_get_x(void);
 int16_t odometry_get_y(void);
 int16_t odometry_get_angle(void);

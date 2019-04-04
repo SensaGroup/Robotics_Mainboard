@@ -3,12 +3,12 @@
 
 #include <Arduino.h>
 #include "actuator.h"
-#include "TimerThree.h"
-#include "lidar.h"
+#include "TimerThree.h" 
 #include "nrf.h"
 #include "can.h"
 #include "odometry.h"
 #include "mechanism.h"
+#include "detection.h"
 
 #define PIN_JUMPER  3
 #define PIN_TACTIC1 5
